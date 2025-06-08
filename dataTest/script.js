@@ -7,23 +7,53 @@ async function loadDomainData() {
 
 function renderInfoPanel(field) {
     const panel = document.getElementById('infoPanel');
-    // Render array of {name, link} as hyperlinks
+    // Render array of {name, link} as hyperlinks in a bulleted list
     function renderLinks(arr) {
         if (!arr) return '';
-        return arr.map(obj => obj.link ? `<a href="${obj.link}" target="_blank" rel="noopener">${obj.name}</a>` : obj.name).join(', ');
+        return `<ul>` + arr.map(obj => `<li>${obj.link ? `<a href="${obj.link}" target="_blank" rel="noopener">${obj.name || obj.link}</a>` : (obj.name || obj.link)}</li>`).join('') + `</ul>`;
     }
-    panel.innerHTML = `
+    // Render a simple array as a bulleted list
+    function renderList(arr) {
+        if (!arr || arr.length === 0) return '';
+        // Split items by comma if they are long strings with commas
+        let items = [];
+        arr.forEach(item => {
+            if (typeof item === 'string' && item.includes(',')) {
+                // Split by comma, but keep phrases together
+                items.push(...item.split(/,(?![^()]*\))/).map(s => s.trim()).filter(Boolean));
+            } else {
+                items.push(item);
+            }
+        });
+        return `<ul>` + items.map(item => `<li>${item}</li>`).join('') + `</ul>`;
+    }
+    // Helper to check if a field is non-empty array
+    function hasContent(arr) {
+        return Array.isArray(arr) && arr.length > 0;
+    }
+    let html = `
         <h2>${field.name}</h2>
-        <div class="info-section"><h3>Core Concepts</h3><div>${(field.coreConcepts || []).join(', ')}</div></div>
-        <div class="info-section"><h3>Key Problems or Challenges</h3><div>${(field.keyProblems || []).join(', ')}</div></div>
-        <div class="info-section"><h3>Applications</h3><div>${(field.applications || []).join(', ')}</div></div>
-        <div class="info-section"><h3>Notable Tools / Libraries / Languages</h3><div>${(field.tools || []).join(', ')}</div></div>
-        <div class="info-section"><h3>Pioneers / Institutions</h3><div>${renderLinks(field.pioneers)}</div></div>
-        <div class="info-section"><h3>Timeline / Historical Milestones</h3><div>${(field.timeline || []).join(', ')}</div></div>
-        <div class="info-section"><h3>Related Fields</h3><div>${renderLinks(field.relatedFields)}</div></div>
-        <div class="info-section"><h3>Advancements</h3><div>${(field.advancements || []).join(', ')}</div></div>
-        <div class="info-section"><h3>Literature</h3><div>${renderLinks(field.literature)}</div></div>
+        <div class="info-section"><h3>Core Concepts</h3><div>${renderList(field.coreConcepts)}</div></div>
+        <div class="info-section"><h3>Key Problems or Challenges</h3><div>${renderList(field.keyProblems)}</div></div>
+        <div class="info-section"><h3>Applications</h3><div>${renderList(field.applications)}</div></div>
+        <div class="info-section"><h3>Notable Tools / Libraries / Languages</h3><div>${renderList(field.tools)}</div></div>
     `;
+    if (hasContent(field.pioneers)) {
+        html += `<div class="info-section"><h3>Pioneers / Institutions</h3><div>${renderLinks(field.pioneers)}</div></div>`;
+    }
+    if (hasContent(field.timeline)) {
+        html += `<div class="info-section"><h3>Timeline / Historical Milestones</h3><div>${renderList(field.timeline)}</div></div>`;
+    }
+    if (hasContent(field.relatedFields)) {
+        html += `<div class="info-section"><h3>Related Fields</h3><div>${renderLinks(field.relatedFields)}</div></div>`;
+    }
+    if (hasContent(field.advancements)) {
+        html += `<div class="info-section"><h3>Advancements</h3><div>${renderList(field.advancements)}</div></div>`;
+    }
+    if (hasContent(field.literature)) {
+        html += `<div class="info-section"><h3>Literature</h3><div>${renderLinks(field.literature)}</div></div>`;
+    }
+    panel.innerHTML = html;
 }
 
 // Utility: Convert hex color to HSL
@@ -114,6 +144,8 @@ function renderLeafletMap(domain) {
 
     // Store subsubfield tooltips for show/hide
     let subsubfieldTooltips = [];
+    // Store subfield tooltips for show/hide
+    let subfieldTooltips = [];
 
     // Subfields as 12-sided polygons evenly spread in the main field
     const subfields = domain.subfields || [];
@@ -143,20 +175,23 @@ function renderLeafletMap(domain) {
             fillOpacity: 0.5
         }).addTo(map);
 
-        // Always show subfield label at center
+        // Subfield label at center, always visible
         const subTooltip = L.tooltip({
             permanent: true,
             direction: 'center',
-            className: 'leaflet-tooltip-own'
+            className: 'leaflet-tooltip-own',
+            opacity: 0.9 // always visible
         })
         .setContent(sub.name)
         .setLatLng(subCenter);
         subTooltip.addTo(map);
+        subfieldTooltips.push({tooltip: subTooltip, idx: i});
 
         subPoly.on('click', (e) => {
             L.DomEvent.stopPropagation(e); // Prevent click bubbling to parent
             renderInfoPanel(sub);
             showSubsubfieldLabels(i); // Show only this subfield's subsubfield labels
+            showSubfieldLabels(i); // Show only this subfield's label
         });
 
         // Subsubfields as triangles inside each subfield polygon
@@ -207,6 +242,11 @@ function renderLeafletMap(domain) {
         });
     });
 
+    // Show/hide subfield labels
+    function showSubfieldLabels(subfieldIdx) {
+        // No-op: subfield labels are always visible
+    }
+
     // Show/hide subsubfield labels
     function showSubsubfieldLabels(subfieldIdx) {
         subsubfieldTooltips.forEach(obj => {
@@ -214,13 +254,21 @@ function renderLeafletMap(domain) {
         });
     }
 
-    // On map click, show main field info and hide all subsubfield labels
+    // On map click, show main field info and hide all subfield and subsubfield labels
     map.on('click', () => {
         renderInfoPanel(domain);
         showSubsubfieldLabels(null);
+        showSubfieldLabels(null);
     });
 
-    map.fitBounds(mainBounds);
+    // Show all subfield labels when main is clicked
+    mainPoly.on('click', () => {
+        renderInfoPanel(domain);
+        showSubsubfieldLabels(null); // Hide all subsubfield labels
+        showSubfieldLabels(true); // Show all subfield labels
+    });
+
+    map.fitBounds(mainPoly.getBounds());
 }
 
 loadDomainData();

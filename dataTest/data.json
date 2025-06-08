@@ -1,0 +1,1404 @@
+{
+  "name": "Boilerplate Domain",
+  "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+  "keyProblems": ["Problem X", "Problem Y"],
+  "applications": ["Application 1", "Application 2"],
+  "tools": ["Tool Alpha", "Tool Beta"],
+  "pioneers": [
+    {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+    {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+  ],
+  "timeline": ["Milestone 1", "Milestone 2"],
+  "subfields": [
+    {
+  "name": "Perception and Computer Vision",
+  "coreConcepts": [
+    "Image formation (camera models, optics)",
+    "Feature representation (edges, corners, textures)",
+    "Geometric transformations (translation, rotation, scaling)",
+    "Probabilistic inference",
+    "Machine learning for visual tasks",
+    "Multi-sensor data integration"
+  ],
+  "keyProblems": [
+    "Illumination variance and occlusions",
+    "Real-time processing for dynamic environments",
+    "Robustness to noise and sensor limitations",
+    "Generalization across diverse environments",
+    "Ethical implications (privacy, bias in datasets)",
+    "High computational demands"
+  ],
+  "applications": [
+    "Autonomous Vehicles: Lane keeping, pedestrian detection, traffic sign recognition.",
+    "Robotics: Object manipulation, navigation, human-robot collaboration (e.g., picking items in a warehouse, surgical robots).",
+    "Medical Imaging: Disease diagnosis (e.g., tumor detection in X-rays), surgical guidance.",
+    "Surveillance and Security: Facial recognition, anomaly detection.",
+    "Augmented Reality/Virtual Reality: Environment mapping, object tracking."
+  ],
+  "tools": [
+    "Python",
+    "C++",
+    "OpenCV",
+    "scikit-image",
+    "Pillow",
+    "Dlib",
+    "TensorFlow",
+    "PyTorch",
+    "Keras",
+    "PCL (Point Cloud Library)"
+  ],
+  "pioneers": [
+    {
+      "name": "David Marr",
+      "link": "https://en.wikipedia.org/wiki/David_Marr_(neuroscientist)"
+    },
+    {
+      "name": "Takeo Kanade",
+      "link": "https://en.wikipedia.org/wiki/Takeo_Kanade"
+    },
+    {
+      "name": "J.J. Gibson",
+      "link": "https://en.wikipedia.org/wiki/James_J._Gibson"
+    },
+    {
+      "name": "Andrew Ng",
+      "link": "https://en.wikipedia.org/wiki/Andrew_Ng"
+    },
+    {
+      "name": "Fei-Fei Li",
+      "link": "https://en.wikipedia.org/wiki/Fei-Fei_Li"
+    },
+    {
+      "name": "Carnegie Mellon University (CMU)",
+      "link": "https://www.cs.cmu.edu/"
+    },
+    {
+      "name": "Stanford University",
+      "link": "https://ai.stanford.edu/"
+    },
+    {
+      "name": "MIT",
+      "link": "https://www.csail.mit.edu/"
+    },
+    {
+      "name": "University of Washington",
+      "link": "https://cs.washington.edu/"
+    }
+  ],
+  "timeline": [
+    "1960s: Early efforts in AI to interpret images (e.g., MIT Summer Vision Project).",
+    "1970s-1980s: Development of foundational algorithms for edge detection (Marr-Hildreth, Canny), corner detection (Harris), and basic stereo vision.",
+    "1990s: Emergence of feature-based approaches (SIFT, SURF), increased focus on real-time systems.",
+    "2000s: Rise of machine learning for classification tasks (Support Vector Machines, boosting).",
+    "2012: AlexNet's breakthrough in ImageNet Large Scale Visual Recognition Challenge (ILSVRC), signaling the deep learning revolution.",
+    "2010s-Present: Dominance of deep learning for almost all vision tasks, rapid advancements in real-time performance and accuracy."
+  ],
+  "subfields": [
+    {
+      "name": "Image Processing Fundamentals",
+      "coreConcepts": [
+        "Pixel manipulation (intensity, color channels)",
+        "Image representation (grayscale, RGB, HSV)",
+        "Filtering (smoothing, sharpening, edge detection kernels)",
+        "Image enhancement (contrast adjustment, histogram equalization)",
+        "Morphological operations (erosion, dilation, opening, closing)",
+        "Frequency domain analysis (Fourier Transform)"
+      ],
+      "keyProblems": [
+        "Noise reduction without losing important details",
+        "Maintaining image quality during transformations",
+        "Computational efficiency for large images/videos",
+        "Parameter tuning for various algorithms",
+        "Handling different image formats and compressions"
+      ],
+      "applications": [
+        "Pre-processing for Computer Vision: Noise removal, contrast normalization.",
+        "Medical Imaging: Enhancing X-rays, MRI scans.",
+        "Photography: Image editing, artistic filters.",
+        "Quality Control: Detecting defects in manufacturing.",
+        "Remote Sensing: Satellite image enhancement."
+      ],
+      "tools": [
+        "Python",
+        "C++",
+        "MATLAB",
+        "OpenCV",
+        "scikit-image",
+        "Pillow",
+        "NumPy"
+      ],
+      "pioneers": [
+        {
+          "name": "A. K. Jain",
+          "link": "https://scholar.google.com/citations?user=nJv3950AAAAJ&hl=en"
+        },
+        {
+          "name": "Rafael C. Gonzalez",
+          "link": "https://scholar.google.com/citations?user=3GzW_lEAAAAJ&hl=en"
+        },
+        {
+          "name": "Bell Labs",
+          "link": "https://www.bell-labs.com/"
+        }
+      ],
+      "timeline": [
+        "1920s: Early photographic manipulation techniques.",
+        "1960s: First digital image processing on computers (e.g., for space exploration images).",
+        "1970s: Development of fundamental filters and operations.",
+        "1980s-1990s: Proliferation of software libraries and specialized hardware.",
+        "Present: Integration with deep learning for advanced image synthesis and manipulation."
+      ],
+      "relatedFields": [
+        {
+          "name": "Signal Processing",
+          "link": "https://en.wikipedia.org/wiki/Signal_processing"
+        },
+        {
+          "name": "Applied Mathematics",
+          "link": "https://en.wikipedia.org/wiki/Applied_mathematics"
+        },
+        {
+          "name": "Computer Graphics",
+          "link": "https://en.wikipedia.org/wiki/Computer_graphics"
+        }
+      ],
+      "advancements": [
+        "Development of adaptive filtering techniques.",
+        "Real-time processing for video streams.",
+        "Integration of deep learning for super-resolution and denoising."
+      ],
+      "literature": [
+        {
+          "name": "Digital Image Processing by Gonzalez & Woods",
+          "link": "https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356720"
+        },
+        {
+          "name": "Computer Vision by Shapiro & Stockton",
+          "link": "https://www.amazon.com/Computer-Vision-Linda-G-Shapiro/dp/0130307963"
+        }
+      ]
+    },
+    {
+      "name": "Feature Extraction and Description",
+      "coreConcepts": [
+        "Interest points/keypoints (corners, blobs)",
+        "Descriptors (histograms of gradients, local binary patterns)",
+        "Scale-invariance and rotation-invariance",
+        "Matching and correspondence",
+        "Dimensionality reduction for descriptors"
+      ],
+      "keyProblems": [
+        "Robustness to illumination, viewpoint changes, and noise",
+        "Computational cost of extraction and matching",
+        "Uniqueness and distinctiveness of features",
+        "Handling repetitive textures",
+        "Sparsity vs. density of features"
+      ],
+      "applications": [
+        "Image Stitching: Creating panoramas.",
+        "Object Tracking: Following objects in video.",
+        "Image Retrieval: Finding similar images in databases.",
+        "Localization: Identifying a robot's position based on visual landmarks.",
+        "Augmented Reality: Overlaying digital content onto the real world."
+      ],
+      "tools": [
+        "C++",
+        "Python",
+        "OpenCV (SIFT, SURF, ORB, AKAZE, BRISK)",
+        "scikit-image"
+      ],
+      "pioneers": [
+        {
+          "name": "David Lowe",
+          "link": "https://www.cs.ubc.ca/~lowe/"
+        },
+        {
+          "name": "Herbert Bay",
+          "link": "https://scholar.google.com/citations?user=P_P_TqQAAAAJ&hl=en"
+        },
+        {
+          "name": "Ethan Rublee",
+          "link": "https://scholar.google.com/citations?user=wU9xN40AAAAJ&hl=en"
+        },
+        {
+          "name": "University of British Columbia (UBC)",
+          "link": "https://www.cs.ubc.ca/"
+        }
+      ],
+      "timeline": [
+        "1980s: Early corner detectors (Harris, SUSAN).",
+        "1999: Introduction of SIFT, a breakthrough in robust feature description.",
+        "2006: SURF (Speeded Up Robust Features) as a faster alternative to SIFT.",
+        "2011: ORB (Oriented FAST and Rotated BRIEF) for real-time applications.",
+        "2010s-Present: Development of learning-based feature descriptors (e.g., L2-Net, SuperPoint) using deep neural networks."
+      ],
+      "relatedFields": [
+        {
+          "name": "Pattern Recognition",
+          "link": "https://en.wikipedia.org/wiki/Pattern_recognition"
+        },
+        {
+          "name": "Geometry",
+          "link": "https://en.wikipedia.org/wiki/Geometry"
+        },
+        {
+          "name": "Statistics",
+          "link": "https://en.wikipedia.org/wiki/Statistics"
+        }
+      ],
+      "advancements": [
+        "Development of highly discriminative and compact descriptors.",
+        "Real-time performance for feature extraction and matching.",
+        "Learning-based methods surpassing traditional handcrafted features."
+      ],
+      "literature": [
+        {
+          "name": "Distinctive image features from scale-invariant keypoints by Lowe",
+          "link": "https://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf"
+        },
+        {
+          "name": "SURF: Speeded Up Robust Features by Bay, Tuytelaars, & Van Gool",
+          "link": "https://www.vision.ee.ethz.ch/~surf/surf.pdf"
+        },
+        {
+          "name": "ORB: an efficient alternative to SIFT or SURF by Rublee et al.",
+          "link": "https://www.cs.cmu.edu/~tmalisie/bio-cv/ORB.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Object Detection and Recognition",
+      "coreConcepts": [
+        "Classification (identifying *what* an object is)",
+        "Localization (identifying *where* an object is, via bounding box)",
+        "Semantic Segmentation (pixel-level classification)",
+        "Instance Segmentation (pixel-level classification for individual instances)",
+        "Region proposal networks",
+        "Anchor boxes"
+      ],
+      "keyProblems": [
+        "Detecting small objects",
+        "Handling occlusions and variations in pose",
+        "Real-time performance in high-density scenes",
+        "Class imbalance in datasets",
+        "Domain adaptation (transferring models to new environments)",
+        "Computational resources for training and inference"
+      ],
+      "applications": [
+        "Autonomous Driving: Detecting vehicles, pedestrians, traffic lights.",
+        "Robotics: Picking and placing objects, grasping, human-robot interaction.",
+        "Retail: Inventory management, checkout-free stores.",
+        "Medical Imaging: Detecting anomalies or organs.",
+        "Security: Face detection, crowd analysis."
+      ],
+      "tools": [
+        "Python",
+        "C++",
+        "TensorFlow",
+        "PyTorch",
+        "YOLO (You Only Look Once)",
+        "SSD (Single Shot MultiBox Detector)",
+        "Faster R-CNN",
+        "Mask R-CNN",
+        "EfficientDet",
+        "DETR",
+        "COCO Dataset",
+        "PASCAL VOC Dataset",
+        "ImageNet Dataset",
+        "Open Images Dataset"
+      ],
+      "pioneers": [
+        {
+          "name": "Yann LeCun",
+          "link": "https://en.wikipedia.org/wiki/Yann_LeCun"
+        },
+        {
+          "name": "Ross Girshick",
+          "link": "https://scholar.google.com/citations?user=P_P_TqQAAAAJ&hl=en"
+        },
+        {
+          "name": "Joseph Redmon",
+          "link": "https://scholar.google.com/citations?user=d_P_TqQAAAAJ&hl=en"
+        },
+        {
+          "name": "Kaiming He",
+          "link": "https://scholar.google.com/citations?user=P_P_TqQAAAAJ&hl=en"
+        },
+        {
+          "name": "Facebook AI Research (FAIR)",
+          "link": "https://ai.meta.com/"
+        },
+        {
+          "name": "Google Brain/DeepMind",
+          "link": "https://deepmind.google/"
+        },
+        {
+          "name": "Microsoft Research",
+          "link": "https://www.microsoft.com/en-us/research/"
+        }
+      ],
+      "timeline": [
+        "Pre-2012: Handcrafted features + classifiers (e.g., Viola-Jones for face detection).",
+        "2012: AlexNet's success in ImageNet sparks interest in CNNs for recognition.",
+        "2014: R-CNN introduces region proposals with CNNs for object detection.",
+        "2015: Faster R-CNN integrates region proposal network, making it end-to-end. YOLO and SSD introduced for real-time single-shot detection.",
+        "2017: Mask R-CNN extends to instance segmentation.",
+        "2018-Present: Continued improvements in accuracy and speed, emergence of transformer-based models (e.g., DETR)."
+      ],
+      "relatedFields": [
+        {
+          "name": "Machine Learning / Deep Learning",
+          "link": "https://en.wikipedia.org/wiki/Deep_learning"
+        },
+        {
+          "name": "Pattern Recognition",
+          "link": "https://en.wikipedia.org/wiki/Pattern_recognition"
+        },
+        {
+          "name": "Statistics",
+          "link": "https://en.wikipedia.org/wiki/Statistics"
+        }
+      ],
+      "advancements": [
+        "End-to-end trainable deep learning models for detection and segmentation.",
+        "Significant improvements in accuracy and speed (real-time applications).",
+        "Development of robust models for diverse environments and object scales.",
+        "Transfer learning and pre-trained models for faster development."
+      ],
+      "literature": [
+        {
+          "name": "Rich feature hierarchies for accurate object detection and semantic segmentation by Girshick et al. (R-CNN)",
+          "link": "https://arxiv.org/abs/1311.2524"
+        },
+        {
+          "name": "Faster R-CNN: Towards real-time object detection with region proposal networks by Ren et al.",
+          "link": "https://arxiv.org/abs/1506.01497"
+        },
+        {
+          "name": "You Only Look Once: Unified, Real-Time Object Detection by Redmon et al. (YOLO)",
+          "link": "https://arxiv.org/abs/1506.02640"
+        },
+        {
+          "name": "Mask R-CNN by He et al.",
+          "link": "https://arxiv.org/abs/1703.06870"
+        }
+      ]
+    },
+    {
+      "name": "3D Reconstruction and Point Cloud Processing",
+      "coreConcepts": [
+        "Depth sensing (Stereo Vision, Structured Light, Time-of-Flight)",
+        "Point clouds and meshes",
+        "Registration (aligning multiple 3D scans)",
+        "Surface reconstruction",
+        "Volumetric representations",
+        "SLAM (Simultaneous Localization and Mapping) - often uses 3D data"
+      ],
+      "keyProblems": [
+        "Noise and sparsity in point cloud data",
+        "Computational cost of processing large 3D datasets",
+        "Handling dynamic environments and moving objects",
+        "Achieving high accuracy and completeness",
+        "Real-time processing for interactive applications",
+        "Ambiguity in reconstruction from 2D images"
+      ],
+      "applications": [
+        "Robotics: Environment mapping, object manipulation, grasping in 3D.",
+        "Autonomous Vehicles: Creating high-definition maps, obstacle detection.",
+        "Virtual/Augmented Reality: Building 3D models of real-world scenes.",
+        "Architecture and Construction: Building Information Modeling (BIM), progress monitoring.",
+        "Cultural Heritage Preservation: Digitizing historical artifacts.",
+        "Industrial Inspection: Quality control, defect detection on surfaces."
+      ],
+      "tools": [
+        "C++",
+        "Python",
+        "PCL (Point Cloud Library)",
+        "Open3D",
+        "Ceres Solver",
+        "g2o",
+        "MeshLab",
+        "CloudCompare",
+        "Blender",
+        "LiDAR",
+        "RGB-D cameras (Intel RealSense, Azure Kinect)"
+      ],
+      "pioneers": [
+        {
+          "name": "Marc Pollefeys",
+          "link": "https://www.cs.unc.edu/~marc/"
+        },
+        {
+          "name": "Andrew Davison",
+          "link": "https://www.imperial.ac.uk/people/andrew.davison"
+        },
+        {
+          "name": "Simon Fraser University",
+          "link": "https://www.sfu.ca/computing.html"
+        },
+        {
+          "name": "ETH Zurich",
+          "link": "https://ethz.ch/en.html"
+        },
+        {
+          "name": "Imperial College London",
+          "link": "https://www.imperial.ac.uk/"
+        }
+      ],
+      "timeline": [
+        "1980s-1990s: Early work on stereo vision and photometric stereo.",
+        "2000s: Development of Structure from Motion (SfM) for reconstructing 3D scenes from uncalibrated images. Multi-View Stereo (MVS) algorithms.",
+        "2010: Release of Microsoft Kinect, democratizing RGB-D sensing and sparking research in real-time dense 3D reconstruction (e.g., KinectFusion).",
+        "2010s-Present: Advancements in LiDAR technology, integration of deep learning for semantic segmentation and feature extraction on point clouds."
+      ],
+      "relatedFields": [
+        {
+          "name": "Computer Graphics",
+          "link": "https://en.wikipedia.org/wiki/Computer_graphics"
+        },
+        {
+          "name": "Computational Geometry",
+          "link": "https://en.wikipedia.org/wiki/Computational_geometry"
+        },
+        {
+          "name": "Applied Mathematics (Numerical Optimization)",
+          "link": "https://en.wikipedia.org/wiki/Numerical_optimization"
+        },
+        {
+          "name": "Robotics (SLAM is a major intersection)",
+          "link": "https://en.wikipedia.org/wiki/Robotics"
+        }
+      ],
+      "advancements": [
+        "Real-time dense 3D reconstruction (e.g., KinectFusion, Open3D).",
+        "Robust algorithms for registering large and noisy point clouds.",
+        "Deep learning on point clouds (e.g., PointNet, PointNet++).",
+        "High-resolution and long-range LiDAR sensors."
+      ],
+      "literature": [
+        {
+          "name": "Computer Vision: Algorithms and Applications by Szeliski",
+          "link": "https://szeliski.org/Book/"
+        },
+        {
+          "name": "KinectFusion: Real-time dense surface reconstruction and tracking by Newcombe et al.",
+          "link": "https://www.microsoft.com/en-us/research/publication/kinectfusion-real-time-dense-surface-reconstruction-and-tracking/"
+        },
+        {
+          "name": "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation by Qi et al.",
+          "link": "https://arxiv.org/abs/1706.02413"
+        }
+      ]
+    },
+    {
+      "name": "Simultaneous Localization and Mapping (SLAM)",
+      "coreConcepts": [
+        "Localization (determining the robot's pose)",
+        "Mapping (building a representation of the environment)",
+        "Data association (matching observations to known landmarks)",
+        "Loop closure (recognizing previously visited locations)",
+        "State estimation (Kalman Filters, Particle Filters, Optimization-based methods)",
+        "Odometry"
+      ],
+      "keyProblems": [
+        "Drift accumulation in localization",
+        "Robustness to dynamic environments (moving objects)",
+        "Computational complexity for large-scale maps",
+        "Handling perceptual aliasing (similar-looking places)",
+        "Real-time performance on constrained hardware",
+        "Initialization and recovery from failure"
+      ],
+      "applications": [
+        "Autonomous Vehicles: Self-driving cars need to know where they are and build maps.",
+        "Robotics: Mobile robot navigation, domestic robots (e.g., robot vacuums), industrial AGVs.",
+        "Augmented Reality: Tracking device pose and mapping the environment for AR overlays.",
+        "Drones: Autonomous flight and mapping.",
+        "Indoor Navigation: Mapping and localization for wayfinding."
+      ],
+      "tools": [
+        "C++",
+        "Python",
+        "ORB-SLAM",
+        "Cartographer (Google)",
+        "gmapping",
+        "LOAM",
+        "VINS-Mono",
+        "Ceres Solver",
+        "g2o",
+        "GTSAM",
+        "ROS",
+        "Cameras (mono, stereo, RGB-D)",
+        "LiDAR",
+        "IMU (Inertial Measurement Unit)"
+      ],
+      "pioneers": [
+        {
+          "name": "Hugh Durrant-Whyte",
+          "link": "https://en.wikipedia.org/wiki/Hugh_Durrant-Whyte"
+        },
+        {
+          "name": "Andrew Davison",
+          "link": "https://www.imperial.ac.uk/people/andrew.davison"
+        },
+        {
+          "name": "Georg Klein",
+          "link": "https://www.eng.cam.ac.uk/profiles/gk211"
+        },
+        {
+          "name": "Raul Mur-Artal",
+          "link": "https://scholar.google.com/citations?user=P_P_TqQAAAAJ&hl=en"
+        },
+        {
+          "name": "Cyrill Stachniss",
+          "link": "https://www.ipb.uni-bonn.de/people/cyrill-stachniss/"
+        },
+        {
+          "name": "University of Sydney",
+          "link": "https://www.sydney.edu.au/engineering/our-research/robotics-and-intelligent-systems.html"
+        },
+        {
+          "name": "Imperial College London",
+          "link": "https://www.imperial.ac.uk/robotics/"
+        },
+        {
+          "name": "Technical University of Munich (TUM)",
+          "link": "https://www.in.tum.de/en/departments/robotics-and-ai/"
+        },
+        {
+          "name": "Google",
+          "link": "https://ai.google/research/teams/robotics/"
+        }
+      ],
+      "timeline": [
+        "1980s: Initial theoretical formulations of SLAM, often using Kalman filters for small environments.",
+        "1990s: Focus on Extended Kalman Filter (EKF) SLAM and early visual SLAM concepts.",
+        "2000s: Particle filters (FastSLAM), appearance-based SLAM, and the rise of graph-based optimization methods. PTAM introduces parallel tracking and mapping.",
+        "2010: Kinect sensor democratizes RGB-D SLAM (e.g., KinectFusion for dense reconstruction).",
+        "2015: ORB-SLAM (Visual SLAM) achieves high accuracy and robustness. Google releases Cartographer (LiDAR-based SLAM).",
+        "2010s-Present: Focus on robust, real-time, large-scale SLAM; multi-sensor fusion, semantic SLAM, and learning-based approaches."
+      ],
+      "relatedFields": [
+        {
+          "name": "State Estimation and Filtering",
+          "link": "https://en.wikipedia.org/wiki/State_estimation"
+        },
+        {
+          "name": "Optimization",
+          "link": "https://en.wikipedia.org/wiki/Optimization_(mathematics)"
+        },
+        {
+          "name": "Graph Theory",
+          "link": "https://en.wikipedia.org/wiki/Graph_theory"
+        },
+        {
+          "name": "Control Theory",
+          "link": "https://en.wikipedia.org/wiki/Control_theory"
+        },
+        {
+          "name": "Computer Graphics",
+          "link": "https://en.wikipedia.org/wiki/Computer_graphics"
+        }
+      ],
+      "advancements": [
+        "Development of robust, real-time visual SLAM systems (e.g., ORB-SLAM3).",
+        "High-accuracy LiDAR-based SLAM for mapping large outdoor environments.",
+        "Effective multi-sensor fusion for improved robustness (e.g., VIO).",
+        "Loop closure detection leading to globally consistent maps.",
+        "Integration of semantic information to create 'intelligent' maps."
+      ],
+      "literature": [
+        {
+          "name": "Simultaneous localization and mapping (SLAM): part I the essential fundamentals by Durrant-Whyte & Bailey",
+          "link": "https://ieeexplore.ieee.org/document/1638210"
+        },
+        {
+          "name": "Parallel Tracking and Mapping for Small AR Workspaces by Klein & Murray (PTAM)",
+          "link": "https://www.robots.ox.ac.uk/~gk/PTAM/index.html"
+        },
+        {
+          "name": "ORB-SLAM: A Versatile and Accurate Monocular SLAM System by Mur-Artal et al.",
+          "link": "https://arxiv.org/abs/1505.00067"
+        },
+        {
+          "name": "LSD-SLAM: Large-Scale Direct Monocular SLAM by Engel et al.",
+          "link": "https://arxiv.org/abs/1403.0413"
+        }
+      ]
+    },
+    {
+      "name": "Sensor Fusion",
+      "coreConcepts": [
+        "Multiple sensor modalities (camera, LiDAR, radar, IMU, GPS)",
+        "Data synchronization and calibration",
+        "State estimation (Kalman Filters, Extended Kalman Filters, Unscented Kalman Filters, Particle Filters)",
+        "Probabilistic models",
+        "Complementary filtering",
+        "Weighted averaging"
+      ],
+      "keyProblems": [
+        "Sensor calibration and synchronization errors",
+        "Handling different sensor update rates and latencies",
+        "Dealing with sensor failures or noise",
+        "Computational complexity for real-time applications",
+        "Optimal weighting of diverse sensor data",
+        "Managing data redundancy and complementarity"
+      ],
+      "applications": [
+        "Autonomous Vehicles: Combining camera, LiDAR, radar, and GPS for robust perception and localization.",
+        "Robotics: Enhancing robot pose estimation, environmental understanding, and object tracking.",
+        "Navigation Systems: Combining GPS, IMU, and visual odometry for accurate indoor/outdoor positioning.",
+        "Human Activity Recognition: Fusing data from wearable sensors.",
+        "Medical Devices: Combining various physiological sensors for better diagnostics."
+      ],
+      "tools": [
+        "C++",
+        "Python",
+        "filterpy (Python for Kalman filters)",
+        "Eigen (for linear algebra)",
+        "robot_localization (ROS package)",
+        "ROS",
+        "MATLAB/Simulink"
+      ],
+      "pioneers": [
+        {
+          "name": "Rudolf Kalman",
+          "link": "https://en.wikipedia.org/wiki/Rudolf_E._K%C3%A1lm%C3%A1n"
+        },
+        {
+          "name": "Peter Welch",
+          "link": "https://www.cs.unc.edu/~welch/"
+        },
+        {
+          "name": "Carnegie Mellon University (CMU)",
+          "link": "https://www.cs.cmu.edu/"
+        },
+        {
+          "name": "Stanford University",
+          "link": "https://ai.stanford.edu/"
+        },
+        {
+          "name": "MIT",
+          "link": "https://www.csail.mit.edu/"
+        }
+      ],
+      "timeline": [
+        "1960s: Introduction of the Kalman Filter, initially for aerospace applications (e.g., Apollo program).",
+        "1980s-1990s: Application of Kalman filters to robotics for state estimation (e.g., mobile robot localization).",
+        "2000s: Development of more advanced filters (UKF, PF) and increased use in autonomous systems.",
+        "2010s-Present: Widespread adoption in autonomous vehicles and advanced robotics due to the availability of diverse and complementary sensors. Focus on robust, real-time, and adaptive fusion techniques."
+      ],
+      "relatedFields": [
+        {
+          "name": "Control Theory",
+          "link": "https://en.wikipedia.org/wiki/Control_theory"
+        },
+        {
+          "name": "Statistics and Probability Theory",
+          "link": "https://en.wikipedia.org/wiki/Probability_theory"
+        },
+        {
+          "name": "Signal Processing",
+          "link": "https://en.wikipedia.org/wiki/Signal_processing"
+        },
+        {
+          "name": "Optimal Control",
+          "link": "https://en.wikipedia.org/wiki/Optimal_control"
+        }
+      ],
+      "advancements": [
+        "Development of robust and efficient non-linear filters.",
+        "Learning-based fusion techniques that can adapt to sensor noise and biases.",
+        "Graph-optimization approaches for globally consistent state estimation (e.g., GTSAM).",
+        "Sophisticated methods for online sensor calibration."
+      ],
+      "literature": [
+        {
+          "name": "An Introduction to the Kalman Filter by Welch & Bishop",
+          "link": "https://www.cs.unc.edu/~welch/media/pdf/kalman_intro.pdf"
+        },
+        {
+          "name": "Probabilistic Robotics by Thrun, Burgard, & Fox",
+          "link": "https://www.probabilistic-robotics.org/"
+        },
+        {
+          "name": "Multitarget-Multisensor Tracking: Principles and Techniques by Bar-Shalom and Li",
+          "link": "https://www.amazon.com/Multitarget-Multisensor-Tracking-Principles-Techniques-Information/dp/096423080X"
+        }
+      ]
+    }
+  ],
+  "relatedFields": [
+    {
+      "name": "Signal Processing",
+      "link": "https://en.wikipedia.org/wiki/Signal_processing"
+    },
+    {
+      "name": "Applied Mathematics (Linear Algebra, Calculus, Statistics)",
+      "link": "https://en.wikipedia.org/wiki/Applied_mathematics"
+    },
+    {
+      "name": "Machine Learning / Deep Learning",
+      "link": "https://en.wikipedia.org/wiki/Deep_learning"
+    },
+    {
+      "name": "Cognitive Science",
+      "link": "https://en.wikipedia.org/wiki/Cognitive_science"
+    },
+    {
+      "name": "Optics and Physics",
+      "link": "https://en.wikipedia.org/wiki/Optics"
+    }
+  ],
+  "advancements": [
+    "Deep Convolutional Neural Networks (CNNs) leading to super-human performance in specific tasks.",
+    "Real-time object detection models (e.g., YOLO, SSD).",
+    "Robust SLAM algorithms for complex environments.",
+    "Development of large-scale annotated datasets (e.g., ImageNet, COCO).",
+    "Event cameras and neuromorphic vision for high-speed, low-power perception."
+  ],
+  "literature": [
+    {
+      "name": "Vision: A Computational Investigation into the Human Representation and Processing of Visual Information by Marr",
+      "link": "https://mitpress.mit.edu/books/vision"
+    },
+    {
+      "name": "A Computational Approach to Edge Detection by Canny",
+      "link": "https://ieeexplore.ieee.org/document/4767851"
+    },
+    {
+      "name": "Distinctive image features from scale-invariant keypoints by Lowe (SIFT)",
+      "link": "https://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf"
+    },
+    {
+      "name": "ImageNet Classification with Deep Convolutional Neural Networks by Krizhevsky, Sutskever, & Hinton (AlexNet paper)",
+      "link": "https://proceedings.neurips.cc/paper/2012/file/c399862d3b4b88d76872589d4653ed55-Paper.pdf"
+    },
+    {
+      "name": "CVPR (Conference on Computer Vision and Pattern Recognition)",
+      "link": "https://cvpr.thecvf.com/"
+    },
+    {
+      "name": "ICCV (International Conference on Computer Vision)",
+      "link": "https://iccv.thecvf.com/"
+    },
+    {
+      "name": "ECCV (European Conference on Computer Vision)",
+      "link": "https://eccv.thecvf.com/"
+    },
+    {
+      "name": "NeurIPS (Conference on Neural Information Processing Systems)",
+      "link": "https://neurips.cc/"
+    },
+    {
+      "name": "ICML (International Conference on Machine Learning)",
+      "link": "https://icml.cc/"
+    }
+  ]
+},
+    {
+      "name": "Subfield 2",
+      "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+      "keyProblems": ["Problem X", "Problem Y"],
+      "applications": ["Application 1", "Application 2"],
+      "tools": ["Tool Alpha", "Tool Beta"],
+      "pioneers": [
+        {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+        {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+      ],
+      "timeline": ["Milestone 1", "Milestone 2"],
+      "relatedFields": [
+        {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+        {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+      ],
+      "advancements": ["Advancement 1", "Advancement 2"],
+      "literature": [
+        {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+        {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+      ],
+      "subsubfields": [
+        {
+          "name": "Subsubfield 1",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 2",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 3",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 4",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 5",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 6",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Subfield 3",
+      "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+      "keyProblems": ["Problem X", "Problem Y"],
+      "applications": ["Application 1", "Application 2"],
+      "tools": ["Tool Alpha", "Tool Beta"],
+      "pioneers": [
+        {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+        {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+      ],
+      "timeline": ["Milestone 1", "Milestone 2"],
+      "relatedFields": [
+        {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+        {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+      ],
+      "advancements": ["Advancement 1", "Advancement 2"],
+      "literature": [
+        {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+        {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+      ],
+      "subsubfields": [
+        {
+          "name": "Subsubfield 1",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 2",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 3",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 4",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 5",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 6",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Subfield 4",
+      "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+      "keyProblems": ["Problem X", "Problem Y"],
+      "applications": ["Application 1", "Application 2"],
+      "tools": ["Tool Alpha", "Tool Beta"],
+      "pioneers": [
+        {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+        {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+      ],
+      "timeline": ["Milestone 1", "Milestone 2"],
+      "relatedFields": [
+        {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+        {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+      ],
+      "advancements": ["Advancement 1", "Advancement 2"],
+      "literature": [
+        {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+        {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+      ],
+      "subsubfields": [
+        {
+          "name": "Subsubfield 1",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 2",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 3",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 4",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 5",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 6",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Subfield 5",
+      "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+      "keyProblems": ["Problem X", "Problem Y"],
+      "applications": ["Application 1", "Application 2"],
+      "tools": ["Tool Alpha", "Tool Beta"],
+      "pioneers": [
+        {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+        {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+      ],
+      "timeline": ["Milestone 1", "Milestone 2"],
+      "relatedFields": [
+        {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+        {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+      ],
+      "advancements": ["Advancement 1", "Advancement 2"],
+      "literature": [
+        {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+        {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+      ],
+      "subsubfields": [
+        {
+          "name": "Subsubfield 1",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 2",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 3",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 4",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 5",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        },
+        {
+          "name": "Subsubfield 6",
+          "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+          "keyProblems": ["Problem X", "Problem Y"],
+          "applications": ["Application 1", "Application 2"],
+          "tools": ["Tool Alpha", "Tool Beta"],
+          "pioneers": [
+            {"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"},
+            {"name": "Institution A", "link": "https://en.wikipedia.org/wiki/Institution_A"}
+          ],
+          "timeline": ["Milestone 1", "Milestone 2"],
+          "relatedFields": [
+            {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+            {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+          ],
+          "advancements": ["Advancement 1", "Advancement 2"],
+          "literature": [
+            {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+            {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+          ]
+        }
+      ]
+    }
+  ],
+  "relatedFields": [
+    {"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"},
+    {"name": "Related Field 2", "link": "https://en.wikipedia.org/wiki/Related_Field_2"}
+  ],
+  "advancements": ["Advancement 1", "Advancement 2"],
+  "literature": [
+    {"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"},
+    {"name": "Paper 2", "link": "https://scholar.google.com/scholar?q=Paper+2"}
+  ]
+}

@@ -1,0 +1,1197 @@
+{
+  "name": "Robotics",
+  "coreConcepts": [
+    "Robot Kinematics & Dynamics",
+    "Perception (Computer Vision, Sensor Fusion)",
+    "Motion Planning & Navigation",
+    "Robot Control",
+    "Robot Operating Systems (ROS)",
+    "Human-Robot Interaction (HRI)",
+    "Robot Learning & AI"
+  ],
+  "keyProblems": [
+    "Robustness in unstructured environments",
+    "Real-time decision making under uncertainty",
+    "Safe human-robot collaboration",
+    "Generalization of learned behaviors",
+    "Energy efficiency and battery life",
+    "Sim-to-Real gap",
+    "Cybersecurity for robotic systems"
+  ],
+  "applications": [
+    "Industrial automation (assembly, logistics)",
+    "Autonomous vehicles (cars, drones, delivery robots)",
+    "Healthcare (surgical robots, rehabilitation, assistive devices)",
+    "Exploration (space, underwater, hazardous environments)",
+    "Service robotics (household, hospitality, elder care)",
+    "Agriculture (harvesting, monitoring, precision farming)"
+  ],
+  "tools": [
+    "ROS (Robot Operating System)",
+    "Gazebo (Simulator)",
+    "OpenCV (Computer Vision Library)",
+    "PyTorch/TensorFlow (Deep Learning Frameworks)",
+    "Matlab/Simulink (Control System Design)",
+    "MoveIt! (Motion Planning Framework)",
+    "SolidWorks/Fusion 360 (CAD for robot design)"
+  ],
+  "pioneers": [
+    {
+      "name": "Joseph F. Engelberger",
+      "link": "https://en.wikipedia.org/wiki/Joseph_F._Engelberger"
+    },
+    {
+      "name": "George Devol",
+      "link": "https://en.wikipedia.org/wiki/George_Devol"
+    },
+    {
+      "name": "Marvin Minsky",
+      "link": "https://en.wikipedia.org/wiki/Marvin_Minsky"
+    },
+    {
+      "name": "Marc Raibert",
+      "link": "https://en.wikipedia.org/wiki/Marc_Raibert"
+    },
+    {
+      "name": "Rodney Brooks",
+      "link": "https://en.wikipedia.org/wiki/Rodney_Brooks"
+    }
+  ],
+  "timeline": [
+    "1954: George Devol invents the first programmable robot, Unimate.",
+    "1961: Unimate is installed in a General Motors plant, becoming the first industrial robot.",
+    "1966: Shakey the Robot (SRI International) demonstrates early AI and perception capabilities.",
+    "1970s: Development of PUMA (Programmable Universal Machine for Assembly) industrial robots.",
+    "1980s: Growth of mobile robotics research, focus on navigation and mapping.",
+    "Early 2000s: Emergence of Robot Operating System (ROS).",
+    "2004-2007: DARPA Grand Challenge drives autonomous vehicle research.",
+    "2010s: Deep learning revolutionizes robot perception and manipulation.",
+    "Present: Rise of collaborative robots (cobots) and advanced AI in robotics."
+  ],
+  "subfields": [
+    {
+      "name": "Robot Operating Systems (ROS) & Middleware",
+      "coreConcepts": [
+        "Nodes, Topics, Services, Actions",
+        "Computation Graph",
+        "Message Passing & Serialization",
+        "ROS Packages & Workspaces",
+        "URDF & XACRO (Robot Description)",
+        "Launch Files & Configuration"
+      ],
+      "keyProblems": [
+        "Real-time performance and determinism in ROS 1 (addressed in ROS 2)",
+        "Managing complex multi-robot systems",
+        "Security of ROS communications",
+        "Debugging distributed robotic systems",
+        "Interoperability with non-ROS systems",
+        "Resource management on embedded platforms"
+      ],
+      "applications": [
+        "Rapid prototyping of robot applications",
+        "Standardized communication between robot components",
+        "Building complex robotic systems from modular parts",
+        "Research and development in academic and industrial settings",
+        "Deployment of autonomous systems (e.g., AGVs, inspection robots)"
+      ],
+      "tools": [
+        "ROS (Robot Operating System) - ROS 1, ROS 2",
+        "catkin/colcon (Build Tools)",
+        "roscore, rosrun, roslaunch (ROS 1 tools)",
+        "rviz (3D Visualization)",
+        "rqt_plot (Data Plotting)",
+        "rosbag (Data Recording/Playback)",
+        "DDS (Data Distribution Service - ROS 2 backend)"
+      ],
+      "pioneers": [
+        {
+          "name": "Willow Garage",
+          "link": "https://en.wikipedia.org/wiki/Willow_Garage"
+        },
+        {
+          "name": "Open Robotics",
+          "link": "https://www.openrobotics.org/"
+        }
+      ],
+      "timeline": [
+        "2007: Initial development of ROS at Stanford University AI Lab.",
+        "2009: ROS released as open-source by Willow Garage.",
+        "2011: ROS Fuerte released, popularizing ROS.",
+        "2017: ROS 2 announced, focusing on real-time and multi-robot support.",
+        "2018: First ROS 2 stable release (Ardent Apalone).",
+        "Ongoing: Continuous development and release cycles for ROS 1 and ROS 2."
+      ],
+      "relatedFields": [
+        {
+          "name": "Distributed Systems",
+          "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+        },
+        {
+          "name": "Operating Systems",
+          "link": "https://en.wikipedia.org/wiki/Operating_system"
+        },
+        {
+          "name": "Software Engineering",
+          "link": "https://en.wikipedia.org/wiki/Software_engineering"
+        },
+        {
+          "name": "Cyber-Physical Systems",
+          "link": "https://en.wikipedia.org/wiki/Cyber-physical_system"
+        }
+      ],
+      "advancements": [
+        "Transition to ROS 2 for improved real-time performance and scalability.",
+        "Enhanced security features in ROS 2.",
+        "Integration with cloud robotics platforms.",
+        "Standardization of robot description formats (URDF, SDFormat).",
+        "Development of new tools for debugging and visualization."
+      ],
+      "literature": [
+        {
+          "name": "ROS: An Open-Source Robot Operating System",
+          "link": "https://www.ros.org/ros-paper/"
+        },
+        {
+          "name": "Robotics Operating System (ROS): A Survey of Current Applications and Future Challenges",
+          "link": "https://ieeexplore.ieee.org/document/8617835/"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "ROS Architecture & Concepts",
+          "coreConcepts": ["Nodes", "Topics", "Services", "Actions", "Parameter Server", "ROS Master/Daemon"],
+          "keyProblems": ["Understanding asynchronous communication", "Managing distributed components"],
+          "applications": ["Designing modular robot software", "Debugging communication issues"],
+          "tools": ["roscore", "rqt_graph", "rosnode", "rostopic"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "C++ and Python for ROS",
+          "coreConcepts": ["ROS Client Libraries (roscpp, rospy)", "Message callbacks", "Publishers & Subscribers", "Service Servers & Clients"],
+          "keyProblems": ["Memory management (C++)", "Performance optimization", "Debugging multi-threaded ROS nodes"],
+          "applications": ["Writing robot drivers", "Implementing control loops", "Developing high-performance algorithms"],
+          "tools": ["gdb", "pdb", "valgrind", "catkin_make", "colcon build"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "ROS Tools & Utilities",
+          "coreConcepts": ["Launch files for system orchestration", "RViz for visualization", "rosbag for data logging/playback", "rqt tools for introspection"],
+          "keyProblems": ["Complex launch file management", "Visualizing large datasets", "Debugging runtime issues with logs"],
+          "applications": ["Setting up robot deployments", "Analyzing robot behavior offline", "Real-time monitoring"],
+          "tools": ["roslaunch", "rviz", "rosbag", "rqt_plot", "rqt_console"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Message Definition & Communication",
+          "coreConcepts": ["Standard ROS messages (sensor_msgs, geometry_msgs)", "Custom message definitions (.msg files)", "Service definitions (.srv files)", "Action definitions (.action files)", "Serialization/Deserialization"],
+          "keyProblems": ["Defining efficient message structures", "Ensuring backward compatibility", "Handling large data payloads"],
+          "applications": ["Inter-node data exchange", "Defining robot APIs", "Creating standardized data interfaces"],
+          "tools": ["rosmsg", "rossrv", "rosaction"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "URDF & XACRO",
+          "coreConcepts": ["Universal Robot Description Format (URDF)", "XML Macros (XACRO)", "Joints, Links, Transmissions", "Collisions, Visuals, Inertial Properties"],
+          "keyProblems": ["Accurate robot modeling", "Complex kinematic chains", "Maintaining consistent physical properties"],
+          "applications": ["Robot simulation", "Motion planning", "Robot visualization", "Collision checking"],
+          "tools": ["urdf_to_graphiz", "check_urdf", "rviz (for visualizing URDF)"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Cloud Robotics & Distributed Systems",
+          "coreConcepts": ["Remote ROS communication", "Multi-robot coordination", "Cloud computing integration", "Edge computing for robots"],
+          "keyProblems": ["Network latency and bandwidth", "Data synchronization across distributed robots", "Security in cloud deployments"],
+          "applications": ["Fleet management of robots", "Offloading heavy computation to cloud", "Remote control and monitoring"],
+          "tools": ["ROS over VPN", "ROS 2 DDS", "Cloud platforms (AWS RoboMaker, Google Cloud Robotics Platform)"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        }
+      ]
+    },
+    {
+      "name": "Perception & Computer Vision for Robotics",
+      "coreConcepts": [
+        "Image Processing Fundamentals (filtering, edge detection)",
+        "2D/3D Vision Sensors (monocular, stereo, RGB-D, LiDAR)",
+        "Object Recognition & Pose Estimation",
+        "Simultaneous Localization and Mapping (SLAM)",
+        "Point Cloud Processing",
+        "Machine Learning & Deep Learning for Perception",
+        "Sensor Fusion"
+      ],
+      "keyProblems": [
+        "Robustness to lighting and weather conditions",
+        "Computational complexity for real-time processing",
+        "Data scarcity and annotation for deep learning",
+        "Generalization to novel environments",
+        "Handling occlusion",
+        "Ambiguity in visual data",
+        "Ethical considerations (privacy)"
+      ],
+      "applications": [
+        "Autonomous navigation (self-driving cars, drones)",
+        "Industrial automation (pick-and-place, inspection)",
+        "Healthcare (surgical robots, patient monitoring)",
+        "Agricultural robotics (crop monitoring, harvesting)",
+        "Human-Robot Interaction (gesture recognition)",
+        "Security and surveillance"
+      ],
+      "tools": [
+        "OpenCV (Open Source Computer Vision Library)",
+        "ROS (Robot Operating System)",
+        "PyTorch / TensorFlow (Deep Learning Frameworks)",
+        "PCL (Point Cloud Library)",
+        "CUDA (GPU acceleration)",
+        "Gazebo (Simulator for sensor modeling)",
+        "Label Studio (Data Annotation Tool)"
+      ],
+      "pioneers": [
+        {
+          "name": "Larry Roberts",
+          "link": "https://en.wikipedia.org/wiki/Lawrence_Roberts"
+        },
+        {
+          "name": "David Marr",
+          "link": "https://en.wikipedia.org/wiki/David_Marr_(neuroscientist)"
+        },
+        {
+          "name": "Takeo Kanade",
+          "link": "https://en.wikipedia.org/wiki/Takeo_Kanade"
+        },
+        {
+          "name": "Andrew Ng",
+          "link": "https://en.wikipedia.org/wiki/Andrew_Ng"
+        },
+        {
+          "name": "Wolfram Burgard",
+          "link": "https://en.wikipedia.org/wiki/Wolfram_Burgard"
+        }
+      ],
+      "timeline": [
+        "1957: First digital image scanner developed.",
+        "1960s: Early work on 3D scene understanding (MIT Blocks World).",
+        "1970s-1980s: Development of foundational algorithms (Hough Transform, RANSAC).",
+        "2000s: Rise of smart cameras, integration of ML for pattern recognition, SLAM algorithms.",
+        "2012: AlexNet breakthrough in ImageNet (deep learning revolution for CV).",
+        "Mid-2010s onwards: Widespread adoption of deep learning in robotics perception.",
+        "Late 2010s - Present: Focus on Sim2Real, NeRFs, Vision-Language Models."
+      ],
+      "relatedFields": [
+        {
+          "name": "Machine Learning",
+          "link": "https://en.wikipedia.org/wiki/Machine_learning"
+        },
+        {
+          "name": "Artificial Intelligence",
+          "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+        },
+        {
+          "name": "Control Systems",
+          "link": "https://en.wikipedia.org/wiki/Control_system"
+        },
+        {
+          "name": "Sensor Technology",
+          "link": "https://en.wikipedia.org/wiki/Sensor"
+        },
+        {
+          "name": "Computational Geometry",
+          "link": "https://en.wikipedia.org/wiki/Computational_geometry"
+        }
+      ],
+      "advancements": [
+        "Deep Learning and Transformer Models for robust recognition.",
+        "Advanced Sensor Fusion for comprehensive environmental understanding.",
+        "Synthetic Data Generation and Sim2Real for efficient training.",
+        "Real-time performance on edge devices (e.g., NVIDIA Jetson).",
+        "Neural Radiance Fields (NeRFs) for novel 3D scene representation.",
+        "Vision-Language Models (VLMs) for semantic understanding."
+      ],
+      "literature": [
+        {
+          "name": "ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)",
+          "link": "https://proceedings.neurips.cc/paper/2012/file/c399862d3b4b574937ae9676906af20e-Paper.pdf"
+        },
+        {
+          "name": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+          "link": "https://arxiv.org/abs/1506.01497"
+        },
+        {
+          "name": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+          "link": "https://arxiv.org/abs/1505.04597"
+        },
+        {
+          "name": "Attention Is All You Need (Transformer)",
+          "link": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+          "name": "ORB-SLAM: A Versatile and Accurate Monocular SLAM System",
+          "link": "https://ieeexplore.ieee.org/document/7130282/"
+        },
+        {
+          "name": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+          "link": "https://arxiv.org/abs/2003.08934"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Image Processing Fundamentals",
+          "coreConcepts": ["Filtering (Gaussian, Median)", "Edge Detection (Canny, Sobel)", "Image Segmentation (Thresholding, K-means)", "Feature Extraction (SIFT, SURF, ORB)"],
+          "keyProblems": ["Noise reduction without blurring edges", "Robust segmentation in varied lighting"],
+          "applications": ["Preprocessing sensor data", "Extracting meaningful features from images"],
+          "tools": ["OpenCV", "Pillow (Python)", "NumPy"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "2D/3D Vision Sensors",
+          "coreConcepts": ["Monocular Cameras", "Stereo Vision (depth estimation)", "RGB-D Cameras (Kinect, RealSense)", "LiDAR (3D point clouds)", "Radar (velocity, range)"],
+          "keyProblems": ["Sensor calibration", "Noise reduction in sensor data", "Dealing with sensor limitations (e.g., LiDAR in rain)"],
+          "applications": ["Environment mapping", "Object detection", "Obstacle avoidance"],
+          "tools": ["ROS camera drivers", "PCL (for 3D data)", "sensor_msgs (ROS messages)"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Object Recognition & Pose Estimation",
+          "coreConcepts": ["Deep Learning (CNNs, Transformers)", "Object Detection (e.g., YOLO, Faster R-CNN)", "Semantic Segmentation", "Instance Segmentation", "6D Pose Estimation"],
+          "keyProblems": ["Real-time performance", "Robustness to occlusion and viewpoint changes", "Generalization to novel objects"],
+          "applications": ["Picking and placing objects", "Identifying objects for navigation", "Human-robot collaboration"],
+          "tools": ["PyTorch", "TensorFlow", "OpenCV (DNN module)", "Detectron2"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Simultaneous Localization and Mapping (SLAM)",
+          "coreConcepts": ["State Estimation (Kalman filters, particle filters)", "Loop Closure Detection", "Map Representation (grid maps, point clouds, topological maps)", "Visual SLAM, LiDAR SLAM, Multi-sensor SLAM"],
+          "keyProblems": ["Drift accumulation", "Computational cost for large maps", "Robustness in dynamic environments"],
+          "applications": ["Autonomous navigation for mobile robots", "AR/VR", "3D reconstruction"],
+          "tools": ["ORB-SLAM", "Cartographer", "GMapping", "Hector SLAM", "RTAB-Map"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Point Cloud Processing",
+          "coreConcepts": ["Filtering (statistical outlier removal, voxel grid)", "Segmentation (ground plane, clustering)", "Registration (ICP, NDT)", "Feature Extraction (normals, curvatures)"],
+          "keyProblems": ["Handling noisy and sparse data", "Real-time processing of large point clouds", "Robust feature matching"],
+          "applications": ["3D object recognition", "Environment mapping", "Collision detection", "Scene understanding"],
+          "tools": ["PCL (Point Cloud Library)", "Open3D", "ROS (point_cloud_transport)"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Machine Learning & Deep Learning for Perception",
+          "coreConcepts": ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning", "Convolutional Neural Networks (CNNs)", "Recurrent Neural Networks (RNNs)", "Generative Adversarial Networks (GANs)"],
+          "keyProblems": ["Data imbalance", "Overfitting/Underfitting", "Model interpretability", "Computational resources for training"],
+          "applications": ["Object classification", "Scene understanding", "Anomaly detection", "Synthetic data generation"],
+          "tools": ["PyTorch", "TensorFlow", "Keras", "Scikit-learn"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        }
+      ]
+    },
+    {
+      "name": "Motion Planning & Control",
+      "coreConcepts": [
+        "Kinematics (Forward & Inverse)",
+        "Path Planning Algorithms (A*, RRT, PRM)",
+        "Trajectory Generation",
+        "Robot Control Architectures (PID, Impedance)",
+        "Collision Avoidance",
+        "State Estimation & Filtering"
+      ],
+      "keyProblems": [
+        "Real-time planning in dynamic environments",
+        "Handling complex constraints (e.g., joint limits, obstacles)",
+        "Ensuring smooth and safe trajectories",
+        "Robustness to uncertainties in sensing and actuation",
+        "Achieving precise control under disturbances",
+        "Scalability for high-DOF robots"
+      ],
+      "applications": [
+        "Autonomous navigation (mobile robots, drones)",
+        "Manipulation tasks (pick-and-place, assembly)",
+        "Human-robot collaboration (shared control, safe interaction)",
+        "Surgical robots (precise instrument movement)",
+        "Industrial robotic arms"
+      ],
+      "tools": [
+        "MoveIt! (ROS Motion Planning Framework)",
+        "OMPL (Open Motion Planning Library)",
+        "Drake (Robotics Toolbox)",
+        "Matlab/Simulink (Control System Design)",
+        "ROS Navigation Stack",
+        "Gazebo (Simulation for motion validation)"
+      ],
+      "pioneers": [
+        {
+          "name": "Richard P. Paul",
+          "link": "https://en.wikipedia.org/wiki/Richard_P._Paul"
+        },
+        {
+          "name": "Jean-Claude Latombe",
+          "link": "https://profiles.stanford.edu/jean-claude-latombe"
+        },
+        {
+          "name": "Oussama Khatib",
+          "link": "https://en.wikipedia.org/wiki/Oussama_Khatib"
+        }
+      ],
+      "timeline": [
+        "1960s-1970s: Early work on robot kinematics and inverse kinematics.",
+        "1980s: Development of classical path planning algorithms (e.g., A*).",
+        "1990s: Probabilistic roadmap (PRM) and Rapidly-exploring Random Tree (RRT) algorithms emerge.",
+        "Early 2000s: Focus on dynamic motion planning and reactive control.",
+        "2010s: Integration of learning-based methods into motion planning.",
+        "Present: Emphasis on robust, safe, and explainable planning and control."
+      ],
+      "relatedFields": [
+        {
+          "name": "Control Theory",
+          "link": "https://en.wikipedia.org/wiki/Control_theory"
+        },
+        {
+          "name": "Artificial Intelligence (Planning)",
+          "link": "https://en.wikipedia.org/wiki/Planning_(artificial_intelligence)"
+        },
+        {
+          "name": "Optimization",
+          "link": "https://en.wikipedia.org/wiki/Optimization_(mathematics)"
+        },
+        {
+          "name": "Linear Algebra",
+          "link": "https://en.wikipedia.org/wiki/Linear_algebra"
+        },
+        {
+          "name": "Differential Equations",
+          "link": "https://en.wikipedia.org/wiki/Differential_equation"
+        }
+      ],
+      "advancements": [
+        "Sampling-based planners (RRT, PRM) for high-dimensional spaces.",
+        "Optimization-based planning for smoother and more optimal trajectories.",
+        "Learning-based motion planning (e.g., inverse reinforcement learning for preferences).",
+        "Adaptive control strategies for unknown dynamics and disturbances.",
+        "Human-aware motion planning for safe collaboration."
+      ],
+      "literature": [
+        {
+          "name": "Planning Algorithms",
+          "link": "http://planning.cs.uiuc.edu/book/index.html"
+        },
+        {
+          "name": "Robotics: Modelling, Planning and Control",
+          "link": "https://www.springer.com/gp/book/9781846286422"
+        },
+        {
+          "name": "Robot Motion Planning: From Theory to Practice",
+          "link": "https://ompl.kavrakilab.org/pubs.html"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Kinematics (Forward & Inverse)",
+          "coreConcepts": ["Joint angles", "End-effector pose", "Denavit-Hartenberg parameters", "Jacobian matrix", "Singularities"],
+          "keyProblems": ["Solving inverse kinematics for complex robots", "Handling redundant robots", "Avoiding singularities"],
+          "applications": ["Calculating robot arm configurations", "Controlling end-effector position"],
+          "tools": ["ROS KDL (Kinematics and Dynamics Library)", "SymPy (for symbolic derivation)"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Path Planning Algorithms",
+          "coreConcepts": ["Configuration space", "Obstacle representation", "Graph search (A*, Dijkstra)", "Sampling-based (RRT, PRM)", "Grid-based, Roadmap-based, Cell Decomposition"],
+          "keyProblems": ["Computational cost in high dimensions", "Completeness vs. optimality", "Handling narrow passages"],
+          "applications": ["Robot navigation in cluttered environments", "Manipulator trajectory generation"],
+          "tools": ["OMPL (Open Motion Planning Library)", "ROS Navigation Stack", "MoveIt!"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Trajectory Generation",
+          "coreConcepts": ["Polynomial trajectories", "Splines (Cubic, Quintic)", "Via-points", "Time scaling", "Jerk limitation"],
+          "keyProblems": ["Ensuring smooth and continuous motion", "Adhering to dynamic constraints (velocity, acceleration)", "Minimizing energy consumption"],
+          "applications": ["Smooth robot movements", "Generating paths for welding or painting", "Executing desired robot behaviors"],
+          "tools": ["Robotics Toolbox (Matlab)", "ROS Industrial"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Robot Control Architectures",
+          "coreConcepts": ["PID Control (Proportional-Integral-Derivative)", "Joint-space Control", "Operational-space Control", "Impedance Control", "Force Control", "Adaptive Control"],
+          "keyProblems": ["Tuning controller gains", "Robustness to disturbances", "Achieving desired stiffness/compliance"],
+          "applications": ["Precise joint positioning", "Interacting with the environment", "Force-sensitive tasks"],
+          "tools": ["ROS Control", "Simulink", "State-space control libraries"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Collision Avoidance",
+          "coreConcepts": ["Obstacle detection (from sensors)", "Collision checking algorithms", "Reactive collision avoidance", "Predictive collision avoidance", "Self-collision detection"],
+          "keyProblems": ["Real-time collision detection", "Avoiding local minima", "Distinguishing static vs. dynamic obstacles"],
+          "applications": ["Safe robot navigation", "Human-robot collaboration", "Industrial safety"],
+          "tools": ["FCL (Flexible Collision Library)", "Bullet Physics", "MoveIt! (collision checking)"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "State Estimation & Filtering",
+          "coreConcepts": ["Kalman Filter (KF)", "Extended Kalman Filter (EKF)", "Unscented Kalman Filter (UKF)", "Particle Filter (PF)", "Complementary Filter", "Sensor noise modeling"],
+          "keyProblems": ["Dealing with non-linear dynamics", "Estimating unobservable states", "Computational cost for high-dimensional states"],
+          "applications": ["Estimating robot position and velocity", "Sensor fusion for robust localization", "Tracking dynamic objects"],
+          "tools": ["filterpy (Python)", "Eigen (C++)", "ROS robot_localization package"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        }
+      ]
+    },
+    {
+      "name": "Robot Learning & AI",
+      "coreConcepts": [
+        "Reinforcement Learning (RL)",
+        "Imitation Learning / Learning from Demonstration (LfD)",
+        "Machine Learning Fundamentals (Supervised, Unsupervised)",
+        "Deep Learning Architectures (CNNs, RNNs, Transformers)",
+        "Transfer Learning & Domain Adaptation",
+        "Human-Robot Interaction (HRI) via Learning"
+      ],
+      "keyProblems": [
+        "Sim-to-Real gap in learned policies",
+        "Data efficiency in real-world learning",
+        "Safety and robustness of learned behaviors",
+        "Explainability and interpretability of AI models",
+        "Generalization to novel tasks/environments",
+        "Ethical considerations in AI-driven robots"
+      ],
+      "applications": [
+        "Learning complex manipulation skills",
+        "Adapting to unknown environments",
+        "Optimizing robot control policies",
+        "Learning human preferences and intent",
+        "Personalized robot assistants",
+        "Generative models for robot behaviors"
+      ],
+      "tools": [
+        "PyTorch / TensorFlow (Deep Learning Frameworks)",
+        "RL Libraries (Stable Baselines3, Ray RLLib)",
+        "Gymnasium / MuJoCo (Simulation Environments for RL)",
+        "ROS (for integrating learned policies)",
+        "OpenAI Gym (for standardized RL environments)"
+      ],
+      "pioneers": [
+        {
+          "name": "Richard S. Sutton",
+          "link": "https://en.wikipedia.org/wiki/Richard_S._Sutton"
+        },
+        {
+          "name": "Andrew Ng",
+          "link": "https://en.wikipedia.org/wiki/Andrew_Ng"
+        },
+        {
+          "name": "Sergey Levine",
+          "link": "https://people.eecs.berkeley.edu/~svlevine/"
+        },
+        {
+          "name": "Pieter Abbeel",
+          "link": "https://people.eecs.berkeley.edu/~pabbeel/"
+        }
+      ],
+      "timeline": [
+        "1990s: Early work on reinforcement learning (Q-learning, TD-Gammon).",
+        "2000s: Rise of imitation learning and learning from demonstration.",
+        "2012: Deep learning breakthrough, impacting robot learning.",
+        "Mid-2010s: Deep Reinforcement Learning (DRL) applied to robotic control (e.g., DeepMind's work).",
+        "Late 2010s: Focus on Sim2Real transfer and meta-learning for robotics.",
+        "Present: Integration of large language models (LLMs) and foundation models with robot learning."
+      ],
+      "relatedFields": [
+        {
+          "name": "Machine Learning",
+          "link": "https://en.wikipedia.org/wiki/Machine_learning"
+        },
+        {
+          "name": "Artificial Intelligence",
+          "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+        },
+        {
+          "name": "Cognitive Science",
+          "link": "https://en.wikipedia.org/wiki/Cognitive_science"
+        },
+        {
+          "name": "Control Theory",
+          "link": "https://en.wikipedia.org/wiki/Control_theory"
+        },
+        {
+          "name": "Neuroscience",
+          "link": "https://en.wikipedia.org/wiki/Neuroscience"
+        }
+      ],
+      "advancements": [
+        "Deep Reinforcement Learning (DRL) for complex motor skills.",
+        "Meta-learning and Few-shot learning for rapid adaptation.",
+        "Foundation models for robotics (pre-trained large models).",
+        "Robust Sim2Real techniques for transferring learned policies.",
+        "Inverse Reinforcement Learning for learning from human preferences."
+      ],
+      "literature": [
+        {
+          "name": "Reinforcement Learning: An Introduction",
+          "link": "http://incompleteideas.net/book/the-book-2nd.html"
+        },
+        {
+          "name": "End-to-End Training of Deep Visuomotor Policies",
+          "link": "https://arxiv.org/abs/1509.06825"
+        },
+        {
+          "name": "Learning Dexterous In-Hand Manipulation",
+          "link": "https://arxiv.org/abs/1808.00177"
+        },
+        {
+          "name": "ChatGPT for Robotics: Design Principles and Model Abilities",
+          "link": "https://arxiv.org/abs/2304.05364"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Reinforcement Learning for Robotics",
+          "coreConcepts": ["Agent-Environment Interaction", "States, Actions, Rewards", "Policies (Q-learning, Actor-Critic)", "Model-free vs. Model-based RL"],
+          "keyProblems": ["Sparse rewards", "Exploration-exploitation dilemma", "Sample inefficiency", "Safety constraints"],
+          "applications": ["Learning robotic locomotion", "Learning manipulation skills", "Optimizing robot control parameters"],
+          "tools": ["Stable Baselines3", "Ray RLLib", "MuJoCo", "Isaac Gym"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Imitation Learning/Learning from Demonstration",
+          "coreConcepts": ["Demonstration data", "Behavior cloning", "Inverse Reinforcement Learning (IRL)", "Generative Adversarial Imitation Learning (GAIL)"],
+          "keyProblems": ["Covariate shift", "Collecting diverse and expert demonstrations", "Generalization to unseen situations"],
+          "applications": ["Teaching robots new tasks from human examples", "Robot surgery", "Learning complex assembly sequences"],
+          "tools": ["TensorFlow/PyTorch (for model training)", "Specific LfD libraries"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Machine Learning Fundamentals",
+          "coreConcepts": ["Supervised Learning (regression, classification)", "Unsupervised Learning (clustering, dimensionality reduction)", "Feature Engineering", "Model Evaluation (metrics, cross-validation)"],
+          "keyProblems": ["Overfitting/Underfitting", "Bias-variance tradeoff", "Data quality and quantity"],
+          "applications": ["Robot fault detection", "Predictive maintenance", "Sensor data analysis", "Task classification"],
+          "tools": ["Scikit-learn", "NumPy", "Pandas"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Deep Learning Architectures for Robotics",
+          "coreConcepts": ["Convolutional Neural Networks (CNNs)", "Recurrent Neural Networks (RNNs)", "Transformers", "Autoencoders", "Generative Models (GANs, VAEs)"],
+          "keyProblems": ["Choosing appropriate architecture for task", "Training stability", "Computational cost"],
+          "applications": ["Visual perception (object detection, segmentation)", "Robot control from raw sensor data", "Predicting robot dynamics"],
+          "tools": ["PyTorch", "TensorFlow", "Keras"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Transfer Learning & Domain Adaptation",
+          "coreConcepts": ["Pre-trained models", "Fine-tuning", "Feature extraction", "Domain shift", "Adversarial domain adaptation"],
+          "keyProblems": ["Bridging the Sim2Real gap effectively", "Negative transfer", "Identifying relevant source domains"],
+          "applications": ["Transferring policies from simulation to real robots", "Adapting models to new environments/tasks with less data"],
+          "tools": ["Pre-trained models from PyTorch Hub/TensorFlow Hub"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Human-Robot Interaction (HRI) via Learning",
+          "coreConcepts": ["Intent recognition", "Learning preferences", "Adaptive robot behavior", "Empathy in HRI", "Trust modeling"],
+          "keyProblems": ["Understanding ambiguous human input", "Maintaining user trust", "Learning from limited human feedback", "Ethical considerations of learned social behaviors"],
+          "applications": ["Social robots", "Collaborative robots that adapt to user style", "Personalized assistive robotics"],
+          "tools": ["Affective computing libraries", "Natural Language Processing (NLP) toolkits"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        }
+      ]
+    },
+    {
+      "name": "Simulation & Testing",
+      "coreConcepts": [
+        "Robot Simulators (Gazebo, Webots, CoppeliaSim)",
+        "Physics Engines (ODE, Bullet, PhysX)",
+        "Simulation-to-Real Transfer (Sim2Real)",
+        "Robot Description Formats (SDF, URDF)",
+        "Automated Testing & CI/CD for Robotics",
+        "Synthetic Data Generation"
+      ],
+      "keyProblems": [
+        "Achieving high-fidelity simulation (realism)",
+        "Bridging the Sim2Real gap effectively",
+        "Computational cost of complex simulations",
+        "Creating realistic sensor noise models",
+        "Standardizing testing methodologies for robotics",
+        "Verifying safety-critical robot behaviors"
+      ],
+      "applications": [
+        "Rapid prototyping and testing of robot software",
+        "Training AI/ML models (especially RL)",
+        "Debugging robot control and perception algorithms",
+        "Virtual commissioning of robotic systems",
+        "Generating large datasets for deep learning",
+        "Safety verification and validation"
+      ],
+      "tools": [
+        "Gazebo",
+        "NVIDIA Isaac Sim",
+        "Webots",
+        "CoppeliaSim (V-REP)",
+        "Unity 3D / Unreal Engine (with robotics plugins)",
+        "Docker (for consistent test environments)",
+        "Jenkins/GitLab CI (for CI/CD)"
+      ],
+      "pioneers": [
+        {
+          "name": "ROS/Gazebo Community",
+          "link": "https://www.openrobotics.org/"
+        },
+        {
+          "name": "NVIDIA",
+          "link": "https://www.nvidia.com/en-us/deep-learning-ai/solutions/robotics/"
+        }
+      ],
+      "timeline": [
+        "1980s: Early robot simulators emerge (e.g., GRASP).",
+        "1990s: Focus on more realistic physics engines.",
+        "Early 2000s: Development of open-source simulators like Gazebo.",
+        "2010s: Increased use of simulation for deep learning training.",
+        "Late 2010s - Present: Advancements in high-fidelity simulation, synthetic data generation, and Sim2Real techniques."
+      ],
+      "relatedFields": [
+        {
+          "name": "Game Development",
+          "link": "https://en.wikipedia.org/wiki/Video_game_development"
+        },
+        {
+          "name": "Computer Graphics",
+          "link": "https://en.wikipedia.org/wiki/Computer_graphics"
+        },
+        {
+          "name": "Physics Engines",
+          "link": "https://en.wikipedia.org/wiki/Physics_engine"
+        },
+        {
+          "name": "Software Testing",
+          "link": "https://en.wikipedia.org/wiki/Software_testing"
+        },
+        {
+          "name": "DevOps",
+          "link": "https://en.wikipedia.org/wiki/DevOps"
+        }
+      ],
+      "advancements": [
+        "High-fidelity physics and sensor simulation.",
+        "Automated synthetic data generation for perception training.",
+        "Domain randomization for improved Sim2Real transfer.",
+        "Cloud-based simulation for massive parallel testing.",
+        "Standardization of robot model formats for simulation."
+      ],
+      "literature": [
+        {
+          "name": "Gazebo: A Multi-Robot Simulator for Research and Development",
+          "link": "https://ieee.sps.paper.org/document/6386566"
+        },
+        {
+          "name": "Physics-Based Simulation for Robotics",
+          "link": "https://sim.stanford.edu/pubs/journals/gsp08-roboticssim.pdf"
+        },
+        {
+          "name": "Learning to Simulate: A Survey of Simulation Methods in Robotics",
+          "link": "https://arxiv.org/abs/2103.04410"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Robot Simulators",
+          "coreConcepts": ["Graphical user interface", "Physics engine integration", "Sensor modeling", "Robot model import (URDF/SDF)", "API for programmatic control"],
+          "keyProblems": ["Accuracy of physics simulation", "Lack of real-world complexity", "Computational overhead"],
+          "applications": ["Developing robot software", "Testing control algorithms", "Training AI agents"],
+          "tools": ["Gazebo", "NVIDIA Isaac Sim", "Webots", "CoppeliaSim"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Physics Engines for Robotics",
+          "coreConcepts": ["Rigid body dynamics", "Collision detection & response", "Joint constraints", "Contact forces", "Friction models"],
+          "keyProblems": ["Computational stability and accuracy", "Realism vs. performance tradeoff", "Modeling complex materials"],
+          "applications": ["Simulating robot interactions with environment", "Predicting robot behavior", "Testing manipulation tasks"],
+          "tools": ["ODE (Open Dynamics Engine)", "Bullet Physics", "PhysX (NVIDIA)", "MuJoCo"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Simulation-to-Real Transfer (Sim2Real)",
+          "coreConcepts": ["Domain Randomization", "Domain Adaptation", "System Identification", "Reality Gap", "Transfer Learning"],
+          "keyProblems": ["Discrepancies between simulation and reality", "Finding optimal randomization parameters", "Transferring learned policies effectively"],
+          "applications": ["Accelerating robot learning in simulation", "Reducing real-world data collection", "Deploying simulated controllers to real robots"],
+          "tools": ["ROS (for common interfaces)", "TensorFlow/PyTorch (for domain adaptation)", "Isaac Gym/Sim (for randomization)"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Robot Description Formats (SDF, URDF)",
+          "coreConcepts": ["Universal Robot Description Format (URDF)", "Simulation Description Format (SDF)", "Robot kinematics & dynamics", "Visual and collision models", "Joint limits, Inertial properties"],
+          "keyProblems": ["Maintaining consistency between different tools", "Complexity for highly articulated robots", "Extending formats for new robot features"],
+          "applications": ["Defining robot models for simulation", "Loading robots into planning frameworks", "Visualizing robot structures"],
+          "tools": ["ROS URDF/XACRO parsers", "SDF format specification"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Automated Testing & CI/CD",
+          "coreConcepts": ["Unit testing", "Integration testing", "System testing", "Regression testing", "Continuous Integration (CI)", "Continuous Deployment (CD)"],
+          "keyProblems": ["Testing hardware-dependent robot code", "Reproducibility of tests", "Managing complex test environments", "Ensuring safety in automated testing"],
+          "applications": ["Ensuring software quality and reliability", "Faster deployment of robot updates", "Reducing manual testing effort"],
+          "tools": ["GoogleTest (C++), pytest (Python)", "Jenkins", "GitLab CI/CD", "Docker"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Data Collection & Dataset Generation in Simulation",
+          "coreConcepts": ["Synthetic data generation", "Annotation automation", "Procedural generation of environments", "Data augmentation techniques"],
+          "keyProblems": ["Ensuring diversity and realism of synthetic data", "Managing large datasets", "Bridging the domain gap to real data"],
+          "applications": ["Training deep learning models for perception (e.g., object detection)", "Generating ground truth for SLAM evaluation", "Benchmarking algorithms"],
+          "tools": ["NVIDIA Isaac Sim (Replicator)", "Unity Perception package", "Blender (for 3D asset creation)"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        }
+      ]
+    },
+    {
+      "name": "Human-Robot Interaction (HRI)",
+      "coreConcepts": [
+        "Safety in HRI (physical and psychological)",
+        "Robot Autonomy Levels",
+        "Communication Modalities (verbal, non-verbal, gesture)",
+        "Trust & Transparency in HRI",
+        "Social Robotics & Emotional Intelligence",
+        "HRI Design Principles & Evaluation Methods"
+      ],
+      "keyProblems": [
+        "Ensuring safe and intuitive physical interaction",
+        "Understanding complex human intent and context",
+        "Designing robots that are perceived as trustworthy and helpful",
+        "Adapting to individual human differences and preferences",
+        "Managing user expectations and preventing over-reliance",
+        "Addressing ethical and societal implications of HRI"
+      ],
+      "applications": [
+        "Collaborative industrial robots (cobots)",
+        "Assistive robots for elderly and disabled individuals",
+        "Social companion robots (e.g., for education, entertainment)",
+        "Service robots in hospitality and retail",
+        "Teleoperation and remote assistance",
+        "Surgical and rehabilitation robots"
+      ],
+      "tools": [
+        "ROS (for HRI-specific packages)",
+        "OpenCV (for gesture recognition)",
+        "Speech recognition (e.g., Google Speech-to-Text)",
+        "Natural Language Processing (NLP) libraries (e.g., SpaCy, NLTK)",
+        "Affective computing tools (e.g., for emotion detection)",
+        "Robot design software (e.g., SolidWorks, Fusion 360)"
+      ],
+      "pioneers": [
+        {
+          "name": "Hiroshi Ishiguro",
+          "link": "https://en.wikipedia.org/wiki/Hiroshi_Ishiguro"
+        },
+        {
+          "name": "Cynthia Breazeal",
+          "link": "https://en.wikipedia.org/wiki/Cynthia_Breazeal"
+        },
+        {
+          "name": "Brian Scassellati",
+          "link": "https://www.cs.yale.edu/homes/scassellati/"
+        },
+        {
+          "name": "Julie Shah",
+          "link": "https://engineering.mit.edu/faculty/julie-shah/"
+        }
+      ],
+      "timeline": [
+        "1960s-1970s: Early research in human-computer interaction (HCI) lays groundwork.",
+        "1980s: First industrial cobots (e.g., FANUC's Intelligent Robot).",
+        "1990s: Emergence of social robotics research (e.g., MIT's Kismet).",
+        "Early 2000s: Increased focus on safety standards for collaborative robots (ISO 10218).",
+        "2010s: Commercialization of collaborative robots; deep learning enhances HRI capabilities.",
+        "Present: Advancements in natural language understanding, gesture recognition, and explainable AI for HRI."
+      ],
+      "relatedFields": [
+        {
+          "name": "Psychology",
+          "link": "https://en.wikipedia.org/wiki/Psychology"
+        },
+        {
+          "name": "Cognitive Science",
+          "link": "https://en.wikipedia.org/wiki/Cognitive_science"
+        },
+        {
+          "name": "Ergonomics",
+          "link": "https://en.wikipedia.org/wiki/Ergonomics"
+        },
+        {
+          "name": "Sociology",
+          "link": "https://en.wikipedia.org/wiki/Sociology"
+        },
+        {
+          "name": "Natural Language Processing (NLP)",
+          "link": "https://en.wikipedia.org/wiki/Natural_language_processing"
+        }
+      ],
+      "advancements": [
+        "More sophisticated intent recognition via deep learning.",
+        "Enhanced natural language understanding and generation for robots.",
+        "Adaptive robot behaviors that learn from human feedback.",
+        "Improved safety mechanisms for physical human-robot collaboration.",
+        "Development of trust-building behaviors in robots.",
+        "Embodied AI agents with advanced social capabilities."
+      ],
+      "literature": [
+        {
+          "name": "The Handbook of Human-Robot Interaction",
+          "link": "https://link.springer.com/book/10.1007/978-3-319-05179-1"
+        },
+        {
+          "name": "Human-Robot Interaction: An Introduction",
+          "link": "https://mitpress.mit.edu/books/human-robot-interaction"
+        },
+        {
+          "name": "Trust in Human-Robot Interaction: A Review",
+          "link": "https://arxiv.org/abs/2102.09100"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Safety in HRI",
+          "coreConcepts": ["Physical collision detection", "Force/torque sensing", "Safety standards (ISO 10218, ISO/TS 15066)", "Speed and separation monitoring", "Power and force limiting"],
+          "keyProblems": ["Predicting human motion for safe interaction", "Ensuring fault tolerance in safety systems", "Certification and compliance"],
+          "applications": ["Collaborative assembly lines", "Rehabilitation robots", "Service robots in public spaces"],
+          "tools": ["Safety-rated sensors", "Certified safety PLCs"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Robot Autonomy Levels",
+          "coreConcepts": ["Levels of automation (e.g., SAE J3016 for vehicles)", "Shared control", "Teleoperation", "Supervisory control", "Full autonomy"],
+          "keyProblems": ["Defining clear handover protocols", "Maintaining human situational awareness", "Trust calibration based on autonomy level"],
+          "applications": ["Autonomous driving", "Remote surgery", "Exploration robots", "Assistive robots"],
+          "tools": ["Human-machine interface (HMI) design tools"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Communication Modalities",
+          "coreConcepts": ["Verbal communication (speech recognition, synthesis)", "Non-verbal communication (gestures, gaze, facial expressions)", "Haptic feedback", "Visual displays"],
+          "keyProblems": ["Natural language understanding in noisy environments", "Generating natural-sounding speech", "Accurate gesture recognition"],
+          "applications": ["Social robots that can converse", "Robots responding to human gestures", "Tactile feedback for teleoperation"],
+          "tools": ["ROS Speech Recognition packages", "OpenCV (for visual cues)", "Haptic devices"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Trust & Transparency in HRI",
+          "coreConcepts": ["Trust formation and erosion", "Explainable AI (XAI)", "Predictability of robot behavior", "Communication of uncertainty"],
+          "keyProblems": ["Building and maintaining human trust", "Explaining complex AI decisions to users", "Avoiding over-trust or under-trust"],
+          "applications": ["Autonomous systems requiring human oversight", "Robots in safety-critical applications", "Personalized human-robot teams"],
+          "tools": ["XAI toolkits (e.g., LIME, SHAP)"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "Social Robotics & Emotional Intelligence",
+          "coreConcepts": ["Theory of Mind for robots", "Empathy and rapport building", "Social cues recognition", "Emotional expression (robot design)", "Long-term human-robot relationships"],
+          "keyProblems": ["Simulating realistic emotions", "Adapting to cultural differences", "Ethical implications of emotional manipulation"],
+          "applications": ["Companion robots", "Therapy robots", "Educational robots", "Robots for elder care"],
+          "tools": ["Affective computing libraries", "Cognitive architectures (e.g., ACT-R)"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        },
+        {
+          "name": "HRI Design Principles & Evaluation",
+          "coreConcepts": ["User-centered design", "Affordances", "Usability testing", "Quantitative & qualitative HRI metrics", "Ethical design considerations"],
+          "keyProblems": ["Designing intuitive and natural interactions", "Measuring the effectiveness of HRI", "Ensuring generalizability of research findings"],
+          "applications": ["Developing new robot interfaces", "Evaluating user experience with robots", "Standardizing HRI research methodologies"],
+          "tools": ["User experience (UX) design software", "Statistical analysis tools"],
+          "pioneers": [],
+          "timeline": [],
+          "relatedFields": [],
+          "advancements": [],
+          "literature": []
+        }
+      ]
+    }
+  ],
+  "relatedFields": [
+    {
+      "name": "Artificial Intelligence",
+      "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+    },
+    {
+      "name": "Computer Vision",
+      "link": "https://en.wikipedia.org/wiki/Computer_vision"
+    },
+    {
+      "name": "Machine Learning",
+      "link": "https://en.wikipedia.org/wiki/Machine_learning"
+    },
+    {
+      "name": "Control Theory",
+      "link": "https://en.wikipedia.org/wiki/Control_theory"
+    },
+    {
+      "name": "Software Engineering",
+      "link": "https://en.wikipedia.org/wiki/Software_engineering"
+    },
+    {
+      "name": "Mechatronics",
+      "link": "https://en.wikipedia.org/wiki/Mechatronics"
+    },
+    {
+      "name": "Human-Computer Interaction (HCI)",
+      "link": "https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction"
+    }
+  ],
+  "advancements": [
+    "Increased autonomy and intelligence due to AI and ML.",
+    "Improved human-robot collaboration capabilities.",
+    "Enhanced perception in complex and unstructured environments.",
+    "Robust navigation and manipulation in dynamic settings.",
+    "Greater use of simulation for rapid development and testing.",
+    "Development of more flexible and reconfigurable robotic systems."
+  ],
+  "literature": [
+    {
+      "name": "Robotics, Vision and Control: Fundamental Algorithms In Matlab (3rd Edition)",
+      "link": "https://www.springer.com/gp/book/9783030174415"
+    },
+    {
+      "name": "The Art of Robot Programming",
+      "link": "https://www.goodreads.com/book/show/25732159-the-art-of-robot-programming"
+    },
+    {
+      "name": "Introduction to Robotics: Mechanics and Control (4th Edition)",
+      "link": "https://www.pearson.com/us/higher-education/program/Craig-Introduction-to-Robotics-Mechanics-and-Control-4th-Edition/PGM166548.html"
+    },
+    {
+      "name": "Probabilistic Robotics",
+      "link": "http://www.probabilistic-robotics.org/"
+    },
+    {
+      "name": "A Survey on Robot Learning from Demonstration",
+      "link": "https://arxiv.org/abs/1510.02111"
+    }
+  ]
+}

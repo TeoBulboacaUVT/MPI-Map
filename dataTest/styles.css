@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0a174e;
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+#map {
+    flex: 2;
+    min-width: 0;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.info-panel {
+    flex: 1;
+    background: #1a1a2e;
+    padding: 2rem;
+    overflow-y: auto;
+    min-width: 350px;
+}
+
+.info-panel h2, .info-panel h3 {
+    color: #4fc3f7;
+}
+
+.info-section {
+    margin-bottom: 1.5rem;
+}
+
+.subfield, .subsubfield {
+    background: #222a44;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.subsubfield {
+    background: #283c63;
+    margin-left: 1.5rem;
+}

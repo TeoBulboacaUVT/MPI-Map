@@ -1,0 +1,1412 @@
+{
+  "name": "OS and Networks",
+  "coreConcepts": [
+    "Virtualization (VMs, containers)",
+    "Concurrency (processes, threads)",
+    "Persistence (file systems)",
+    "Memory Management (paging, segmentation)",
+    "Process Scheduling (CPU time allocation)",
+    "Device I/O Management (drivers, interrupts)",
+    "OSI Model (7-layer abstraction)",
+    "TCP/IP Protocol Suite (packetization, addressing)",
+    "Network Interface Cards (NICs)",
+    "Routers and Switches",
+    "Kernel/User Space Separation",
+    "Sockets (network communication)",
+    "Network Topology",
+    "Protocol Stacks"
+  ],
+  "keyProblems": [
+    "Concurrency Correctness (deadlocks, race conditions)",
+    "Security Vulnerabilities (DDoS, man-in-the-middle, hardware flaws)",
+    "Resource Allocation Complexity",
+    "Scalability Challenges",
+    "Compatibility Issues",
+    "Network Reliability (congestion control, error checking)",
+    "Evolving Infrastructure Demands (IPv6, 5G)",
+    "Real-time Deadlines",
+    "Energy Efficiency",
+    "Hardware-Software Interface Optimization",
+    "Debugging Complexity",
+    "Interoperability"
+  ],
+  "applications": [
+    "Personal Computing (desktops, laptops)",
+    "Mobile Devices (smartphones, tablets)",
+    "Data Centers (servers, storage)",
+    "Embedded Systems (IoT, automotive)",
+    "Cloud Computing Platforms",
+    "Internet of Things (IoT) Ecosystems",
+    "High-Performance Computing (HPC)",
+    "Telemedicine",
+    "Online Gaming",
+    "Web Hosting and Services"
+  ],
+  "tools": [
+    "Linux (operating system)",
+    "Windows Server (operating system)",
+    "macOS (operating system)",
+    "Rust (programming language)",
+    "C (programming language)",
+    "Python (programming language)",
+    "Docker (containerization)",
+    "Kubernetes (container orchestration)",
+    "VMware (virtualization)",
+    "Wireshark (network analysis)",
+    "tcpdump (packet capturing)",
+    "ns-3 (network simulator)",
+    "OpenDaylight (SDN controller)",
+    "Open vSwitch (virtual switch)",
+    "POSIX (OS standard)",
+    "glibc (C library)",
+    "System Calls (OS interface)"
+  ],
+  "pioneers": [
+    {
+      "name": "Dennis Ritchie",
+      "link": "https://en.wikipedia.org/wiki/Dennis_Ritchie"
+    },
+    {
+      "name": "Ken Thompson",
+      "link": "https://en.wikipedia.org/wiki/Ken_Thompson"
+    },
+    {
+      "name": "Linus Torvalds",
+      "link": "https://en.wikipedia.org/wiki/Linus_Torvalds"
+    },
+    {
+      "name": "Vinton Cerf",
+      "link": "https://en.wikipedia.org/wiki/Vint_Cerf"
+    },
+    {
+      "name": "Robert Kahn",
+      "link": "https://en.wikipedia.org/wiki/Robert_Kahn_(computer_scientist)"
+    },
+    {
+      "name": "Paul Baran",
+      "link": "https://en.wikipedia.org/wiki/Paul_Baran"
+    },
+    {
+      "name": "Donald Davies",
+      "link": "https://en.wikipedia.org/wiki/Donald_Davies"
+    },
+    {
+      "name": "Robert Metcalfe",
+      "link": "https://en.wikipedia.org/wiki/Robert_Metcalfe"
+    },
+    {
+      "name": "Tim Berners-Lee",
+      "link": "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+    }
+  ],
+  "timeline": [
+    "1956: GM-NAA I/O, considered the first operating system, is developed.",
+    "1961: CTSS (Compatible Time-Sharing System) is developed at MIT, pioneering time-sharing concepts.",
+    "1969: ARPANET, a precursor to the Internet, is established; UNIX operating system is created at Bell Labs.",
+    "1971: UNIX operating system design prioritizes simplicity and portability, influencing future OSes.",
+    "1974: TCP/IP protocols are defined, laying the groundwork for modern internet communication.",
+    "1983: ARPANET fully adopts TCP/IP, marking the official birth of the Internet.",
+    "1984: Apple Macintosh popularizes Graphical User Interfaces (GUIs), changing user interaction with OSes.",
+    "1991: Linus Torvalds releases the Linux kernel, leading to the open-source Linux ecosystem.",
+    "2000s: Virtualization technologies (e.g., VMware, Xen) become mainstream for server consolidation.",
+    "2007: Apple releases iOS, revolutionizing mobile operating systems.",
+    "2013-2015: Containerization (Docker) and Software-Defined Networking (SDN) emerge as key technologies.",
+    "2020s: AI-enhanced operating systems and networking, quantum and edge networking gain prominence."
+  ],
+  "subfields": [
+    {
+      "name": "Operating Systems",
+      "coreConcepts": [
+        "Kernel (core of the OS)",
+        "Process Management (scheduling, synchronization)",
+        "Memory Management (virtual memory, paging)",
+        "File Systems (data storage, organization)",
+        "Device Management (drivers, I/O)",
+        "System Calls (interface for applications)",
+        "Concurrency Control"
+      ],
+      "keyProblems": [
+        "Concurrency Correctness (deadlocks, race conditions)",
+        "Security Vulnerabilities (exploits, rootkits)",
+        "Resource Allocation Fairness and Efficiency",
+        "Performance Optimization (latency, throughput)",
+        "Hardware-Software Interoperability",
+        "Reliability and Fault Tolerance",
+        "Debugging and Maintenance Complexity"
+      ],
+      "applications": [
+        "Desktop Computing (Windows, macOS, Linux)",
+        "Mobile Devices (Android, iOS)",
+        "Servers (Linux, Windows Server)",
+        "Embedded Systems (RTOS for IoT, automotive)",
+        "Mainframe Computers",
+        "High-Performance Computing Clusters",
+        "Cloud Computing Infrastructure"
+      ],
+      "tools": [
+        "Linux Kernel",
+        "Windows NT Kernel",
+        "macOS (Darwin kernel)",
+        "GNU Core Utilities",
+        "POSIX (standard)",
+        "GDB (debugger)",
+        "Systemd (Linux init system)",
+        "VirtualBox (virtualization software)",
+        "Docker (container platform)",
+        "Kubernetes (orchestration)",
+        "Rust (language for systems programming)",
+        "C (language for OS development)"
+      ],
+      "pioneers": [
+        {
+          "name": "Dennis Ritchie",
+          "link": "https://en.wikipedia.org/wiki/Dennis_Ritchie"
+        },
+        {
+          "name": "Ken Thompson",
+          "link": "https://en.wikipedia.org/wiki/Ken_Thompson"
+        },
+        {
+          "name": "Linus Torvalds",
+          "link": "https://en.wikipedia.org/wiki/Linus_Torvalds"
+        },
+        {
+          "name": "Alan Turing",
+          "link": "https://en.wikipedia.org/wiki/Alan_Turing"
+        },
+        {
+          "name": "Grace Hopper",
+          "link": "https://en.wikipedia.org/wiki/Grace_Hopper"
+        },
+        {
+          "name": "John von Neumann",
+          "link": "https://en.wikipedia.org/wiki/John_von_Neumann"
+        },
+        {
+          "name": "Per Brinch Hansen",
+          "link": "https://en.wikipedia.org/wiki/Per_Brinch_Hansen"
+        }
+      ],
+      "timeline": [
+        "1956: GM-NAA I/O is developed, marking the first operating system.",
+        "1961: CTSS (Compatible Time-Sharing System) pioneers time-sharing on computers.",
+        "1969: UNIX is created at Bell Labs, influencing modern OS design with its modularity.",
+        "1971: The concept of UNIX portability is established, allowing it to run on different hardware.",
+        "1984: Apple Macintosh introduces a commercially successful Graphical User Interface (GUI).",
+        "1991: The Linux kernel is released, leading to the development of numerous Linux distributions.",
+        "2000s: Virtualization technologies become widespread for server consolidation and cloud computing.",
+        "2013-2015: Container technologies like Docker gain prominence for lightweight application isolation.",
+        "2020s: AI integration into OS for predictive scheduling, anomaly detection, and enhanced security."
+      ],
+      "relatedFields": [
+        {
+          "name": "Distributed Systems",
+          "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+        },
+        {
+          "name": "Embedded Systems",
+          "link": "https://en.wikipedia.org/wiki/Embedded_system"
+        },
+        {
+          "name": "Computer Architecture",
+          "link": "https://en.wikipedia.org/wiki/Computer_architecture"
+        },
+        {
+          "name": "Cybersecurity",
+          "link": "https://en.wikipedia.org/wiki/Computer_security"
+        },
+        {
+          "name": "Software Engineering",
+          "link": "https://en.wikipedia.org/wiki/Software_engineering"
+        },
+        {
+          "name": "Databases",
+          "link": "https://en.wikipedia.org/wiki/Database"
+        },
+        {
+          "name": "Cloud Computing",
+          "link": "https://en.wikipedia.org/wiki/Cloud_computing"
+        }
+      ],
+      "advancements": [
+        "AI-Powered System Optimization and Adaptive Resource Management.",
+        "Cloud-Native and Hybrid OS Platforms for seamless multi-device access.",
+        "Enhanced Security with Zero-Trust Models and advanced encryption.",
+        "Real-time OS advancements for safety-critical robotic perception.",
+        "Containerization and Orchestration (Docker, Kubernetes) for application deployment.",
+        "Unikernels for resource-constrained embedded systems.",
+        "Improved I/O Efficiency and I/O scheduling algorithms."
+      ],
+      "literature": [
+        {
+          "name": "Operating System Concepts by Silberschatz, Galvin, Gagne",
+          "link": "https://os-book.com/"
+        },
+        {
+          "name": "Modern Operating Systems by Tanenbaum and Bos",
+          "link": "https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003311/9780133591620"
+        },
+        {
+          "name": "Xen and the Art of Virtualization by Barham et al. (ACM SOSP 2003)",
+          "link": "https://www.recurse.com/blog/69-paper-of-the-week-xen-and-the-art-of-virtualization"
+        },
+        {
+          "name": "The UNIX Time-sharing System by Thompson and Ritchie (Communications of the ACM, 1974)",
+          "link": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/retro.pdf"
+        },
+        {
+          "name": "Machine Learning in Wireless Sensor Networks by Alsheikh et al. (IEEE Communications Surveys & Tutorials, 2014)",
+          "link": "https://www.researchgate.net/publication/389396892_Machine_Learning_and_Wireless_Sensor_Networks_A_Comprehensive_Study"
+        },
+        {
+          "name": "USENIX OSDI (Operating Systems Design and Implementation) Conference Proceedings",
+          "link": "https://www.usenix.org/conference/osdi24/technical-sessions"
+        },
+        {
+          "name": "ACM Symposium on Operating Systems Principles (SOSP) Proceedings",
+          "link": "https://www.sosp.org/"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Process Management",
+          "coreConcepts": [
+            "Process Creation and Termination",
+            "CPU Scheduling (algorithms)",
+            "Context Switching (state saving/restoring)",
+            "Process Synchronization (semaphores, mutexes)",
+            "Deadlock Handling (prevention, avoidance, detection)"
+          ],
+          "keyProblems": [
+            "Overhead of context switching",
+            "Complexity of scheduling algorithms",
+            "Deadlocks and livelocks",
+            "Race conditions in shared resources",
+            "Fair resource allocation",
+            "Starvation of processes"
+          ],
+          "applications": [
+            "Running multiple applications simultaneously",
+            "Process isolation for security",
+            "Fair resource utilization",
+            "Smooth switching between tasks (multitasking)",
+            "Background task execution"
+          ],
+          "tools": [
+            "ps (Linux process status)",
+            "top (Linux process monitoring)",
+            "Windows Task Manager",
+            "Process Explorer (Windows)",
+            "Get-Process (PowerShell)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Concurrency Control",
+              "link": "https://en.wikipedia.org/wiki/Concurrency_control"
+            },
+            {
+              "name": "CPU Scheduling",
+              "link": "https://en.wikipedia.org/wiki/Scheduling_(computing)"
+            },
+            {
+              "name": "Operating System Design",
+              "link": "https://en.wikipedia.org/wiki/Operating_system_design"
+            },
+            {
+              "name": "Distributed Systems",
+              "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+            },
+            {
+              "name": "System Programming",
+              "link": "https://en.wikipedia.org/wiki/Systems_programming"
+            }
+          ],
+          "advancements": [
+            "AI-driven process scheduling for optimal resource use.",
+            "Container orchestration (Kubernetes, Docker Swarm) for scalable deployments.",
+            "Microservices architecture influencing process isolation and communication.",
+            "Real-time process scheduling improvements for critical systems.",
+            "Energy-aware scheduling for power efficiency in mobile devices."
+          ],
+          "literature": [
+            {
+              "name": "Operating System And Artificial Intelligence: A Systematic Review (arXiv)",
+              "link": "https://arxiv.org/html/2407.14567v1"
+            },
+            {
+              "name": "ACM Symposium on Operating Systems Principles (SOSP) Proceedings",
+              "link": "https://www.sosp.org/"
+            },
+            {
+              "name": "USENIX Symposium on Operating Systems Design and Implementation (OSDI) Proceedings",
+              "link": "https://www.usenix.org/conference/osdi24/technical-sessions"
+            },
+            {
+              "name": "ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) Proceedings",
+              "link": "https://www.asplos.org/"
+            },
+            {
+              "name": "Operating System Concepts by Silberschatz, Galvin, Gagne (relevant chapters on process management)",
+              "link": "https://os-book.com/"
+            }
+          ]
+        },
+        {
+          "name": "Memory Management",
+          "coreConcepts": [
+            "Memory Hierarchy (cache, main memory, secondary storage)",
+            "Memory Allocation (static, dynamic)",
+            "Virtual Memory (paging, segmentation)",
+            "Memory Protection (access control)",
+            "Shared Memory (inter-process communication)"
+          ],
+          "keyProblems": [
+            "Fragmentation (internal and external)",
+            "Memory leaks and dangling pointers",
+            "Race conditions in shared memory",
+            "Paging and swapping overhead",
+            "Lack of memory protection leading to crashes"
+          ],
+          "applications": [
+            "Allocating memory for processes and OS",
+            "Enabling multitasking and multi-programming",
+            "Running programs larger than physical memory",
+            "Facilitating inter-process communication",
+            "Ensuring system stability and security"
+          ],
+          "tools": [
+            "malloc/free (C/C++ memory allocation)",
+            "Garbage Collection (Java, Python, C#)",
+            "Memory Management Unit (MMU) (hardware)",
+            "Valgrind (memory debugging tool)",
+            "GDB (memory inspection)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Computer Architecture",
+              "link": "https://en.wikipedia.org/wiki/Computer_architecture"
+            },
+            {
+              "name": "Compilers",
+              "link": "https://en.wikipedia.org/wiki/Compiler"
+            },
+            {
+              "name": "Programming Languages",
+              "link": "https://en.wikipedia.org/wiki/Programming_language"
+            },
+            {
+              "name": "Data Structures",
+              "link": "https://en.wikipedia.org/wiki/Data_structure"
+            },
+            {
+              "name": "Operating System Design",
+              "link": "https://en.wikipedia.org/wiki/Operating_system_design"
+            }
+          ],
+          "advancements": [
+            "Non-Uniform Memory Access (NUMA) optimization for multi-core systems.",
+            "Hybrid Memory Architectures (e.g., Hybrid Memory Cube).",
+            "Advanced Page Replacement Algorithms for improved virtual memory performance.",
+            "Memory Safety with Rust in kernel development.",
+            "AI-driven Memory Management for predictive resource allocation."
+          ],
+          "literature": [
+            {
+              "name": "International Symposium on Memory Management (ISMM) Proceedings",
+              "link": "https://www.sigplan.org/Conferences/ISMM/"
+            },
+            {
+              "name": "Operating System Concepts by Silberschatz, Galvin, Gagne (Chapter on Memory Management)",
+              "link": "https://os-book.com/"
+            },
+            {
+              "name": "Modern Operating Systems by Tanenbaum and Bos (Chapter on Memory Management)",
+              "link": "https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003311/9780133591620"
+            },
+            {
+              "name": "Research papers from OSDI/SOSP on memory management",
+              "link": "https://www.sosp.org/"
+            },
+            {
+              "name": "Memory Management Technique in Operating System (ResearchGate PDF)",
+              "link": "https://www.researchgate.net/publication/385738258_Memory_Management_Technique_in_Operating_System"
+            }
+          ]
+        },
+        {
+          "name": "File Systems",
+          "coreConcepts": [
+            "File Organization (directories, files)",
+            "Directory Structure (tree-like hierarchy)",
+            "File Attributes (size, type, permissions, timestamps)",
+            "File Allocation (contiguous, linked, indexed)",
+            "Journaling (data integrity, crash recovery)"
+          ],
+          "keyProblems": [
+            "Data Loss or Corruption (due to crashes, power failures)",
+            "File System Fragmentation (reduced performance)",
+            "Performance Degradation with large number of files/directories",
+            "File Access Issues (permissions, locking)",
+            "Improper Shutdowns causing inconsistencies"
+          ],
+          "applications": [
+            "Data Storage and Retrieval",
+            "Hierarchical Data Organization",
+            "Maintaining Data Integrity and Consistency",
+            "Network File Sharing (NFS, SMB)",
+            "Cloud Storage Integration"
+          ],
+          "tools": [
+            "ZFS (file system)",
+            "Btrfs (file system)",
+            "Ext4 (Linux file system)",
+            "NTFS (Windows file system)",
+            "HDFS (Hadoop Distributed File System)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Data Storage",
+              "link": "https://en.wikipedia.org/wiki/Data_storage"
+            },
+            {
+              "name": "Distributed Systems",
+              "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+            },
+            {
+              "name": "Cloud Computing",
+              "link": "https://en.wikipedia.org/wiki/Cloud_computing"
+            },
+            {
+              "name": "Data Management",
+              "link": "https://en.wikipedia.org/wiki/Data_management"
+            },
+            {
+              "name": "Operating System Design",
+              "link": "https://en.wikipedia.org/wiki/Operating_system_design"
+            }
+          ],
+          "advancements": [
+            "Next-generation file systems (Btrfs, ZFS) with advanced features.",
+            "Persistent Memory File Systems for faster data access.",
+            "Object Storage Integration for scalable cloud storage.",
+            "Cloud-Native File Systems optimized for cloud environments.",
+            "Erasure Coding for enhanced data redundancy and fault tolerance."
+          ],
+          "literature": [
+            {
+              "name": "Operating System Concepts by Silberschatz, Galvin, Gagne (Chapter on File Systems)",
+              "link": "https://os-book.com/"
+            },
+            {
+              "name": "Modern Operating Systems by Tanenbaum and Bos (Chapter on File Systems)",
+              "link": "https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003311/9780133591620"
+            },
+            {
+              "name": "The Evolution of File Systems: Beyond Ext4 (Alibaba Cloud Tech News)",
+              "link": "https://www.alibabacloud.com/tech-news/a/data_storage/gufvwilth5-the-evolution-of-file-systems-beyond-ext4"
+            },
+            {
+              "name": "USENIX File and Storage Technologies (FAST) Conference Proceedings",
+              "link": "https://www.usenix.org/conference/fast"
+            },
+            {
+              "name": "ACM Symposium on Operating Systems Principles (SOSP) Proceedings (relevant papers on file systems)",
+              "link": "https://www.sosp.org/"
+            }
+          ]
+        },
+        {
+          "name": "Kernel Design",
+          "coreConcepts": [
+            "Resource Management (CPU, memory, I/O)",
+            "Abstraction Layer (hardware virtualization)",
+            "System Calls (user-kernel interface)",
+            "Privileged Mode/User Mode (security model)",
+            "Interrupt Handling and Device Drivers"
+          ],
+          "keyProblems": [
+            "Stability Issues (crashes, kernel panics)",
+            "Security Vulnerabilities (exploits, rootkits)",
+            "Maintenance Complexity (large codebase, dependencies)",
+            "Limited Modularity (monolithic kernels)",
+            "Debugging Challenges in privileged mode"
+          ],
+          "applications": [
+            "Desktop Operating Systems (e.g., Linux, Windows, macOS)",
+            "Server Operating Systems (e.g., Linux, Windows Server)",
+            "Mobile Operating Systems (e.g., Android, iOS)",
+            "Embedded Systems (e.g., RTOS kernels)",
+            "Virtual Machine Monitors (Hypervisors)"
+          ],
+          "tools": [
+            "Linux Kernel (open-source kernel)",
+            "MINIX 3 (microkernel for education)",
+            "C (primary language for kernel development)",
+            "Rust (increasingly used for kernel components)",
+            "GDB (GNU Debugger for kernel debugging)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Operating Systems",
+              "link": "https://en.wikipedia.org/wiki/Operating_system"
+            },
+            {
+              "name": "Computer Architecture",
+              "link": "https://en.wikipedia.org/wiki/Computer_architecture"
+            },
+            {
+              "name": "Compilers",
+              "link": "https://en.wikipedia.org/wiki/Compiler"
+            },
+            {
+              "name": "System Programming",
+              "link": "https://en.wikipedia.org/wiki/Systems_programming"
+            },
+            {
+              "name": "Cybersecurity",
+              "link": "https://en.wikipedia.org/wiki/Computer_security"
+            }
+          ],
+          "advancements": [
+            "Secure Kernel-Driver Interfaces for enhanced isolation.",
+            "Hardware-Assisted Isolation mechanisms (e.g., MPKs, MTE, PAC).",
+            "Rust Integration in Kernels for improved memory safety.",
+            "Fused-Kernel OS Design for heterogeneous computing platforms.",
+            "AI-driven Kernel Optimization for adaptive performance and resource management."
+          ],
+          "literature": [
+            {
+              "name": "Linux Kernel Development by Robert Love",
+              "link": "https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468"
+            },
+            {
+              "name": "The UNIX Time-sharing System by Thompson and Ritchie (Communications of the ACM, 1974)",
+              "link": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/retro.pdf"
+            },
+            {
+              "name": "Evolving Operating Systems Towards Secure Kernel-Driver Interfaces (HotOS 2023)",
+              "link": "https://sigops.org/s/conferences/hotos/2023/papers/burtsev.pdf"
+            },
+            {
+              "name": "Stramash: A Fused-Kernel Design Operating System for Cache-Coherent, Heterogeneous-ISA Platforms (ASPLOS 2025)",
+              "link": "https://www.ssrg.ece.vt.edu/papers/asplos25.pdf"
+            },
+            {
+              "name": "ACM Symposium on Operating Systems Principles (SOSP) Proceedings (relevant papers on kernel design)",
+              "link": "https://www.sosp.org/"
+            }
+          ]
+        },
+        {
+          "name": "Real-time Operating Systems (RTOS)",
+          "coreConcepts": [
+            "Determinism (predictable timing)",
+            "Predictable Timing (hard/soft real-time)",
+            "Task Prioritization (priority-based scheduling)",
+            "Low Latency (fast response to events)",
+            "Resource Partitioning (isolation of critical tasks)"
+          ],
+          "keyProblems": [
+            "Meeting Strict Deadlines (missed deadlines can be catastrophic)",
+            "Resource Constraints (limited memory, CPU)",
+            "Scheduling Complexity (managing priorities, deadlines)",
+            "Debugging Timing Issues (non-deterministic behavior)",
+            "Security and Safety Compliance (e.g., for automotive, medical)"
+          ],
+          "applications": [
+            "Industrial Automation (robotics, control systems)",
+            "Automotive Systems (ADAS, autonomous driving)",
+            "Medical Devices (pacemakers, imaging)",
+            "Aerospace and Defense (flight control, avionics)",
+            "Consumer Electronics (smart appliances, wearables)"
+          ],
+          "tools": [
+            "FreeRTOS (open-source RTOS)",
+            "VxWorks (commercial RTOS)",
+            "QNX (commercial RTOS)",
+            "Zephyr (open-source RTOS for IoT)",
+            "C/C++ (primary programming languages)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Embedded Systems",
+              "link": "https://en.wikipedia.org/wiki/Embedded_system"
+            },
+            {
+              "name": "Control Systems",
+              "link": "https://en.wikipedia.org/wiki/Control_system"
+            },
+            {
+              "name": "Cyber-Physical Systems",
+              "link": "https://en.wikipedia.org/wiki/Cyber-physical_system"
+            },
+            {
+              "name": "Internet of Things (IoT)",
+              "link": "https://en.wikipedia.org/wiki/Internet_of_things"
+            },
+            {
+              "name": "Safety-Critical Systems",
+              "link": "https://en.wikipedia.org/wiki/Safety-critical_system"
+            }
+          ],
+          "advancements": [
+            "Formal Verification techniques for ensuring correctness and safety.",
+            "Adaptive Scheduling Algorithms for dynamic real-time environments.",
+            "Mixed-Criticality Systems supporting diverse real-time requirements.",
+            "AI/ML Integration in RTOS for predictive maintenance and optimization.",
+            "Hardware-Software Co-design for optimizing real-time performance."
+          ],
+          "literature": [
+            {
+              "name": "Real-Time Systems by Jane W.S. Liu",
+              "link": "https://books.google.com/books/about/Real_Time_Systems.html?id=855QAAAAMAAJ"
+            },
+            {
+              "name": "Embedded RTOS Design: Insights and Implementation by Colin Walls",
+              "link": "https://www.oreilly.com/library/view/embedded-rtos-design/9780128228524/"
+            },
+            {
+              "name": "IEEE Real-Time Systems Symposium (RTSS) Proceedings",
+              "link": "https://www.aconf.org/conf_216431.html"
+            },
+            {
+              "name": "Euromicro Conference on Real-Time Systems (ECRTS) Proceedings",
+              "link": "https://www.ecrts.org/"
+            },
+            {
+              "name": "Innovations in Real-Time Operating Systems (RTOS) for Safety-Critical Embedded Systems (ResearchGate PDF)",
+              "link": "https://www.researchgate.net/publication/391589850_Innovations_in_Real-Time_Operating_Systems_RTOS_for_Safety-Critical_Embedded_Systems"
+            }
+          ]
+        },
+        {
+          "name": "Distributed Operating Systems",
+          "coreConcepts": [
+            "Transparency (access, location, concurrency, failure transparency)",
+            "Concurrency Control (managing simultaneous access)",
+            "Fault Tolerance (handling node failures)",
+            "Message Passing (inter-process communication)",
+            "Resource Sharing (printers, files, databases)"
+          ],
+          "keyProblems": [
+            "Data Consistency across distributed nodes",
+            "Network Latency and communication delays",
+            "Fault Tolerance and failure detection",
+            "Security and Authorization in a distributed environment",
+            "Load Balancing and resource distribution"
+          ],
+          "applications": [
+            "Cloud Computing Platforms (AWS, Azure, Google Cloud)",
+            "Social Media Platforms (Facebook, Twitter)",
+            "Online Marketplaces (Amazon, eBay)",
+            "Financial Systems (stock exchanges, banking)",
+            "Distributed Databases (Cassandra, MongoDB)"
+          ],
+          "tools": [
+            "Apache Kafka (distributed streaming platform)",
+            "Kubernetes (container orchestration for distributed apps)",
+            "Apache ZooKeeper (distributed coordination service)",
+            "gRPC (high-performance RPC framework)",
+            "Docker Swarm (native Docker clustering)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Parallel Computing",
+              "link": "https://en.wikipedia.org/wiki/Parallel_computing"
+            },
+            {
+              "name": "Cloud Computing",
+              "link": "https://en.wikipedia.org/wiki/Cloud_computing"
+            },
+            {
+              "name": "Computer Networks",
+              "link": "https://en.wikipedia.org/wiki/Computer_network"
+            },
+            {
+              "name": "Distributed Databases",
+              "link": "https://en.wikipedia.org/wiki/Distributed_database"
+            },
+            {
+              "name": "Concurrency Control",
+              "link": "https://en.wikipedia.org/wiki/Concurrency_control"
+            }
+          ],
+          "advancements": [
+            "Serverless Computing and Function-as-a-Service (FaaS).",
+            "Blockchain for distributed trust and immutability.",
+            "Cloud-Native Architectures and Microservices.",
+            "Distributed Machine Learning frameworks.",
+            "Edge Computing Integration for low-latency distributed systems."
+          ],
+          "literature": [
+            {
+              "name": "Distributed Systems: Principles and Paradigms by Tanenbaum and Van Steen",
+              "link": "https://books.google.com/books/about/Distributed_Systems.html?id=LYQpAQAAMAAJ"
+            },
+            {
+              "name": "International Conference on Parallel and Distributed Information Systems Proceedings",
+              "link": "https://scispace.com/conferences/international-conference-on-parallel-and-distributed-1g9x7dba"
+            },
+            {
+              "name": "ACM Symposium on Operating Systems Principles (SOSP) Proceedings (relevant papers on distributed systems)",
+              "link": "https://www.sosp.org/"
+            },
+            {
+              "name": "USENIX Symposium on Operating Systems Design and Implementation (OSDI) Proceedings (relevant papers on distributed systems)",
+              "link": "https://www.usenix.org/conference/osdi24/technical-sessions"
+            },
+            {
+              "name": "IEEE International Conference on Distributed Computing Systems (ICDCS) Proceedings",
+              "link": "https://www.computer.org/csdl/proceedings/icdcs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Computer Networks",
+      "coreConcepts": [
+        "OSI Model (7-layer abstraction)",
+        "TCP/IP Protocol Suite (packetization, addressing)",
+        "Network Topology (physical/logical arrangement)",
+        "IP Addressing (unique device identification)",
+        "Routing (packet forwarding between networks)",
+        "Network Protocols (rules for communication)",
+        "Network Security (firewalls, encryption)"
+      ],
+      "keyProblems": [
+        "Network Reliability and Congestion Control",
+        "Security Vulnerabilities (DDoS, Man-in-the-middle attacks)",
+        "Scalability and Capacity Concerns in large networks",
+        "Evolving Infrastructure Demands (IPv6, 5G, future technologies)",
+        "Energy Consumption in network devices",
+        "Performance Degradation and Latency",
+        "Configuration Conflicts and Management Complexity"
+      ],
+      "applications": [
+        "Global Internet Connectivity",
+        "World Wide Web (WWW)",
+        "Email and Messaging Services",
+        "Online Streaming and Gaming",
+        "Cloud Services and Data Centers",
+        "Voice over IP (VoIP) and Video Conferencing",
+        "Internet of Things (IoT) Connectivity"
+      ],
+      "tools": [
+        "Wireshark (packet analyzer)",
+        "tcpdump (command-line packet analyzer)",
+        "ns-3 (network simulator)",
+        "Cisco Packet Tracer (network simulator)",
+        "OpenDaylight (SDN controller)",
+        "Open vSwitch (virtual network switch)",
+        "Nmap (network scanner)",
+        "iPerf (network bandwidth testing tool)",
+        "Traceroute (network path diagnosis)",
+        "Ping (network connectivity tool)"
+      ],
+      "pioneers": [
+        {
+          "name": "Vinton Cerf",
+          "link": "https://en.wikipedia.org/wiki/Vint_Cerf"
+        },
+        {
+          "name": "Robert Kahn",
+          "link": "https://en.wikipedia.org/wiki/Robert_Kahn_(computer_scientist)"
+        },
+        {
+          "name": "Paul Baran",
+          "link": "https://en.wikipedia.org/wiki/Paul_Baran"
+        },
+        {
+          "name": "Donald Davies",
+          "link": "https://en.wikipedia.org/wiki/Donald_Davies"
+        },
+        {
+          "name": "Robert Metcalfe",
+          "link": "https://en.wikipedia.org/wiki/Robert_Metcalfe"
+        },
+        {
+          "name": "Tim Berners-Lee",
+          "link": "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+        },
+        {
+          "name": "Ray Tomlinson",
+          "link": "https://en.wikipedia.org/wiki/Ray_Tomlinson"
+        }
+      ],
+      "timeline": [
+        "1969: ARPANET, the first operational packet switching network, is established.",
+        "1973: Ethernet, a key local area networking technology, is developed by Robert Metcalfe.",
+        "1974: The TCP/IP protocol suite is formally defined, becoming the foundation of the Internet.",
+        "1983: ARPANET transitions to TCP/IP, leading to the rapid growth of interconnected networks.",
+        "1990s: The World Wide Web (WWW) is launched, making information widely accessible over the Internet.",
+        "1997: Wi-Fi (IEEE 802.11 standard) is introduced, enabling wireless local area networks.",
+        "2013-2015: Software-Defined Networking (SDN) and Network Function Virtualization (NFV) gain traction.",
+        "2020s: AI-enhanced networking and the development of 5G/6G technologies reshape network capabilities."
+      ],
+      "relatedFields": [
+        {
+          "name": "Distributed Systems",
+          "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+        },
+        {
+          "name": "Computer Architecture",
+          "link": "https://en.wikipedia.org/wiki/Computer_architecture"
+        },
+        {
+          "name": "Cybersecurity",
+          "link": "https://en.wikipedia.org/wiki/Computer_security"
+        },
+        {
+          "name": "Telecommunications",
+          "link": "https://en.wikipedia.org/wiki/Telecommunication"
+        },
+        {
+          "name": "Cloud Computing",
+          "link": "https://en.wikipedia.org/wiki/Cloud_computing"
+        },
+        {
+          "name": "Artificial Intelligence",
+          "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+        },
+        {
+          "name": "Machine Learning",
+          "link": "https://en.wikipedia.org/wiki/Machine_learning"
+        }
+      ],
+      "advancements": [
+        "AI/ML Integration for traffic optimization and predictive analytics.",
+        "Software-Defined Networking (SDN) and Network Function Virtualization (NFV).",
+        "Multi-Access Edge Computing (MEC) for low latency and high bandwidth applications.",
+        "Quantum Networking for highly secure communication.",
+        "Zero-Trust Security Models and Blockchain for network trust.",
+        "WiFi 7 for unparalleled speed and capacity.",
+        "5G/6G Network Evolution and related technologies (e.g., Federated Learning)."
+      ],
+      "literature": [
+        {
+          "name": "Computer Networking: A Top-Down Approach by Kurose and Ross",
+          "link": "https://www.amazon.com/Computer-Networking-Top-Down-Approach-Featuring/dp/0201976994"
+        },
+        {
+          "name": "Multi-Access Edge Computing: A Survey by Filali et al. (IEEE Access, 2020)",
+          "link": "https://www.researchgate.net/publication/346440504_Multi-Access_Edge_Computing_A_Survey"
+        },
+        {
+          "name": "Network Function Virtualization: State-of-the-Art and Research Challenges by Mijumbi et al. (IEEE Communications Surveys & Tutorials, 2016)",
+          "link": "https://www.researchgate.net/publication/281524200_Network_Function_Virtualization_State-of-the-Art_and_Research_Challenges"
+        },
+        {
+          "name": "A Survey of Software-Defined Networking: Past, Present, and Future of Programmable Networks by Nunes et al. (IEEE Communications Surveys & Tutorials, 2014)",
+          "link": "https://www.researchgate.net/publication/260064541_A_Survey_of_Software-Defined_Networking_Past_Present_and_Future_of_Programmable_Networks"
+        },
+        {
+          "name": "ACM SIGCOMM Conference Proceedings",
+          "link": "https://www.sigcomm.org/events/sigcomm-conference"
+        },
+        {
+          "name": "USENIX NSDI (Networked Systems Design and Implementation) Conference Proceedings",
+          "link": "https://www.usenix.org/conference/nsdi24/technical-sessions"
+        },
+        {
+          "name": "IEEE INFOCOM Conference Proceedings",
+          "link": "https://www.scimagojr.com/journalsearch.php?q=18204&tip=sid&clean=0"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Network Protocol Design",
+          "coreConcepts": [
+            "Protocol Stacks (layered architecture)",
+            "Layering (OSI Model, TCP/IP)",
+            "Packetization (data encapsulation)",
+            "Addressing (IP addresses, MAC addresses)",
+            "Communication Rules (syntax, semantics, timing)"
+          ],
+          "keyProblems": [
+            "Interoperability between different protocols and vendors",
+            "Scalability for increasing network traffic",
+            "Security Vulnerabilities (e.g., protocol flaws)",
+            "Performance Bottlenecks and latency",
+            "Standardization Challenges and slow adoption"
+          ],
+          "applications": [
+            "Web Browse (HTTP/HTTPS)",
+            "Email (SMTP, IMAP, POP3)",
+            "File Transfer (FTP, SFTP)",
+            "Remote Access (SSH, Telnet)",
+            "Network Management (SNMP)"
+          ],
+          "tools": [
+            "Wireshark (packet analysis)",
+            "ns-3 (network simulator)",
+            "Scapy (packet manipulation)",
+            "Network Diagramming Tools (e.g., Visio)",
+            "RFC Editor (official protocol specifications)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Communication Protocol",
+              "link": "https://en.wikipedia.org/wiki/Communication_protocol"
+            },
+            {
+              "name": "Computer Networks",
+              "link": "https://en.wikipedia.org/wiki/Computer_network"
+            },
+            {
+              "name": "Data Communications",
+              "link": "https://en.wikipedia.org/wiki/Data_transmission"
+            },
+            {
+              "name": "Cryptography",
+              "link": "https://en.wikipedia.org/wiki/Cryptography"
+            },
+            {
+              "name": "Network Security",
+              "link": "https://en.wikipedia.org/wiki/Computer_security"
+            }
+          ],
+          "advancements": [
+            "HTTP/3 and QUIC for faster web performance.",
+            "Wi-Fi 7 (802.11be) for higher speeds and lower latency.",
+            "Time-Sensitive Networking (TSN) for industrial automation.",
+            "IPv6+ (Segment Routing over IPv6) for advanced routing.",
+            "Zero Trust Network Access (ZTNA) for enhanced security."
+          ],
+          "literature": [
+            {
+              "name": "IEEE International Conference on Network Protocols (ICNP) Proceedings",
+              "link": "https://research.com/conference/31st-ieee-international-conference-on-network-protocols"
+            },
+            {
+              "name": "Computer Networking: A Top-Down Approach by Kurose and Ross (Chapter on Application Layer/Protocols)",
+              "link": "https://www.amazon.com/Computer-Networking-Top-Down-Approach-Featuring/dp/0201976994"
+            },
+            {
+              "name": "RFCs (Request for Comments) - official Internet standards documents",
+              "link": "https://www.rfc-editor.org/"
+            },
+            {
+              "name": "ACM SIGCOMM Conference Proceedings (relevant papers on protocol design)",
+              "link": "https://www.sigcomm.org/events/sigcomm-conference"
+            },
+            {
+              "name": "IEEE INFOCOM Conference Proceedings (relevant papers on protocol design)",
+              "link": "https://www.scimagojr.com/journalsearch.php?q=18204&tip=sid&clean=0"
+            }
+          ]
+        },
+        {
+          "name": "Routing and Switching",
+          "coreConcepts": [
+            "Packet Forwarding (moving data across networks)",
+            "Routing Algorithms (e.g., Dijkstra, Bellman-Ford)",
+            "Switching (Layer 2 and Layer 3)",
+            "Routing Protocols (e.g., OSPF, BGP)",
+            "Network Segmentation (VLANs, subnets)"
+          ],
+          "keyProblems": [
+            "Routing Loops and blackholes",
+            "Network Congestion and performance degradation",
+            "Security Vulnerabilities in routing protocols",
+            "Configuration Errors and human mistakes",
+            "Scalability Challenges in large-scale networks"
+          ],
+          "applications": [
+            "Enterprise Networks (LANs, WANs)",
+            "Data Centers (spine-leaf architectures)",
+            "Internet Service Provider (ISP) Infrastructure",
+            "Cloud Networking (virtual routers/switches)",
+            "Network Security Enforcement (ACLs, firewalls)"
+          ],
+          "tools": [
+            "Cisco Routers/Switches",
+            "Juniper Routers/Switches",
+            "OpenFlow (for SDN-based routing/switching)",
+            "BGP/OSPF Implementations (software)",
+            "Network Monitoring Tools (e.g., SNMP, NetFlow)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Computer Networks",
+              "link": "https://en.wikipedia.org/wiki/Computer_network"
+            },
+            {
+              "name": "Network Architecture",
+              "link": "https://en.wikipedia.org/wiki/Network_architecture"
+            },
+            {
+              "name": "Network Protocols",
+              "link": "https://en.wikipedia.org/wiki/Communication_protocol"
+            },
+            {
+              "name": "Data Communications",
+              "link": "https://en.wikipedia.org/wiki/Data_transmission"
+            },
+            {
+              "name": "Distributed Systems",
+              "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+            }
+          ],
+          "advancements": [
+            "High-Speed Ethernet (e.g., 400GbE, 800GbE) for increased bandwidth.",
+            "Software-Defined Networking (SDN) for programmable routing.",
+            "Network Function Virtualization (NFV) for virtualized network devices.",
+            "AI/ML for intelligent routing decisions and traffic management.",
+            "Disaggregated Networking for flexible hardware/software choices."
+          ],
+          "literature": [
+            {
+              "name": "IEEE International Conference on High Performance Switching and Routing (HPSR) Proceedings",
+              "link": "https://hpsr2024.ieee-hpsr.org/"
+            },
+            {
+              "name": "Computer Networking: A Top-Down Approach by Kurose and Ross (Chapter on Network Layer/Routing)",
+              "link": "https://www.amazon.com/Computer-Networking-Top-Down-Approach-Featuring/dp/0201976994"
+            },
+            {
+              "name": "ACM SIGCOMM Conference Proceedings (relevant papers on routing/switching)",
+              "link": "https://www.sigcomm.org/events/sigcomm-conference"
+            },
+            {
+              "name": "USENIX NSDI (Networked Systems Design and Implementation) Conference Proceedings (relevant papers on routing/switching)",
+              "link": "https://www.usenix.org/conference/nsdi24/technical-sessions"
+            },
+            {
+              "name": "RFCs (Request for Comments) related to routing protocols (e.g., OSPF, BGP)",
+              "link": "https://www.rfc-editor.org/"
+            }
+          ]
+        },
+        {
+          "name": "Network Security",
+          "coreConcepts": [
+            "Confidentiality (preventing unauthorized disclosure)",
+            "Integrity (preventing unauthorized modification)",
+            "Availability (ensuring access to services)",
+            "Access Control (restricting resource access)",
+            "Encryption (data protection)"
+          ],
+          "keyProblems": [
+            "Cyberattacks (malware, ransomware, phishing)",
+            "Unauthorized Access and privilege escalation",
+            "Data Breaches and loss of sensitive information",
+            "Distributed Denial of Service (DDoS) attacks",
+            "Insider Threats and malicious activities"
+          ],
+          "applications": [
+            "Firewalls (network perimeter defense)",
+            "Intrusion Detection/Prevention Systems (IDS/IPS)",
+            "Virtual Private Networks (VPNs) for secure remote access",
+            "Access Control Systems (authentication, authorization)",
+            "Email Security (spam filters, encryption)"
+          ],
+          "tools": [
+            "Firewalls (e.g., pfSense, Cisco ASA)",
+            "Antivirus Software (e.g., Norton, McAfee)",
+            "Wireshark (for security analysis)",
+            "Nmap (network scanning and vulnerability detection)",
+            "VPN Software (e.g., OpenVPN, NordVPN)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Information Security",
+              "link": "https://en.wikipedia.org/wiki/Information_security"
+            },
+            {
+              "name": "Cryptography",
+              "link": "https://en.wikipedia.org/wiki/Cryptography"
+            },
+            {
+              "name": "Cybersecurity",
+              "link": "https://en.wikipedia.org/wiki/Computer_security"
+            },
+            {
+              "name": "Computer Forensics",
+              "link": "https://en.wikipedia.org/wiki/Digital_forensics"
+            },
+            {
+              "name": "Risk Management",
+              "link": "https://en.wikipedia.org/wiki/Risk_management"
+            }
+          ],
+          "advancements": [
+            "Zero Trust Network Access (ZTNA) for granular access control.",
+            "AI-Driven Security (threat detection, anomaly detection, automated response).",
+            "Quantum-Resistant Cryptography for future-proofing security.",
+            "Secure Access Service Edge (SASE) for integrated security and networking.",
+            "Behavioral Analytics for identifying abnormal user/network behavior."
+          ],
+          "literature": [
+            {
+              "name": "IEEE Conference on Communications and Network Security (CNS) Proceedings",
+              "link": "https://cns2025.ieee-cns.org/"
+            },
+            {
+              "name": "ACM Conference on Computer and Communications Security (CCS) Proceedings",
+              "link": "https://www.sigsac.org/ccs/"
+            },
+            {
+              "name": "Network Security Essentials: Applications and Standards by William Stallings",
+              "link": "https://books.google.com/books/about/Network_Security_Essentials.html?id=Pgg-Es2j3UEC"
+            },
+            {
+              "name": "USENIX Security Symposium Proceedings",
+              "link": "https://www.usenix.org/conference/usenixsecurity"
+            },
+            {
+              "name": "RFCs (Request for Comments) related to security protocols (e.g., TLS, IPsec)",
+              "link": "https://www.rfc-editor.org/"
+            }
+          ]
+        },
+        {
+          "name": "Wireless and Mobile Networking",
+          "coreConcepts": [
+            "Radio Access Network (RAN)",
+            "Mobility Management (handover, roaming)",
+            "Wireless Protocols (Wi-Fi, Bluetooth, cellular)",
+            "Spectrum Management (frequency allocation)",
+            "Quality of Service (QoS) in wireless environments"
+          ],
+          "keyProblems": [
+            "Signal Interference and attenuation",
+            "Coverage Dead Zones and limited range",
+            "Security Vulnerabilities (e.g., eavesdropping, jamming)",
+            "Network Congestion and limited bandwidth",
+            "Battery Life Optimization for mobile devices"
+          ],
+          "applications": [
+            "Mobile Internet Access (smartphones, tablets)",
+            "Internet of Things (IoT) Connectivity",
+            "Smart Homes and Cities",
+            "Mobile Commerce and Banking",
+            "Location-Based Services (GPS, mapping)"
+          ],
+          "tools": [
+            "Wireshark (wireless packet capture)",
+            "NetSpot (Wi-Fi site survey)",
+            "ns-3 (wireless network simulator)",
+            "OMNeT++ (discrete event simulator)",
+            "Kismet (wireless network analyzer)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Telecommunications",
+              "link": "https://en.wikipedia.org/wiki/Telecommunication"
+            },
+            {
+              "name": "Mobile Computing",
+              "link": "https://en.wikipedia.org/wiki/Mobile_computing"
+            },
+            {
+              "name": "Internet of Things (IoT)",
+              "link": "https://en.wikipedia.org/wiki/Internet_of_things"
+            },
+            {
+              "name": "Signal Processing",
+              "link": "https://en.wikipedia.org/wiki/Signal_processing"
+            },
+            {
+              "name": "Antenna (radio)",
+              "link": "https://en.wikipedia.org/wiki/Antenna_(radio)"
+            }
+          ],
+          "advancements": [
+            "5G and 6G Network Evolution for higher speeds and lower latency.",
+            "AI-Native Wireless Networks for intelligent resource management.",
+            "Open Radio Access Networks (Open RAN) for disaggregated infrastructure.",
+            "Satellite Communication Integration for global connectivity.",
+            "Dynamic Spectrum Sharing for efficient spectrum utilization."
+          ],
+          "literature": [
+            {
+              "name": "Mobile Communications by Jochen Schiller",
+              "link": "https://books.google.com/books/about/Mobile_Communications.html?id=JCsfAQAAIAAJ"
+            },
+            {
+              "name": "IEEE Wireless Communications and Networking Conference (WCNC) Proceedings",
+              "link": "http://wcnc2026.ieee-wcnc.org/group/21"
+            },
+            {
+              "name": "ACM MobiCom (International Conference on Mobile Computing and Networking) Proceedings",
+              "link": "https://www.sigmobile.org/mobicom/"
+            },
+            {
+              "name": "Machine Learning and Wireless Sensor Networks: A Comprehensive Study (ResearchGate PDF)",
+              "link": "https://www.researchgate.net/publication/389396892_Machine_Learning_and_Wireless_Sensor_Networks_A_Comprehensive_Study"
+            },
+            {
+              "name": "IEEE Transactions on Mobile Computing",
+              "link": "https://www.computer.org/csdl/journal/tmc"
+            }
+          ]
+        },
+        {
+          "name": "Software-Defined Networking (SDN)",
+          "coreConcepts": [
+            "Control Plane/Data Plane Separation",
+            "Centralized Control (SDN controller)",
+            "Network Programmability (APIs)",
+            "Abstraction of network devices",
+            "Network Virtualization"
+          ],
+          "keyProblems": [
+            "Security Vulnerabilities (controller attacks)",
+            "Fault Tolerance and resilience of controllers",
+            "Interoperability with legacy networks",
+            "Scalability of SDN controllers for large networks",
+            "Policy Enforcement Complexity"
+          ],
+          "applications": [
+            "Data Center Networking",
+            "Wide Area Networks (SD-WAN)",
+            "Cloud Networking (virtual networks)",
+            "Network Security (dynamic policy enforcement)",
+            "Traffic Engineering and optimization"
+          ],
+          "tools": [
+            "OpenFlow (protocol)",
+            "OpenDaylight (SDN controller framework)",
+            "ONOS (Open Network Operating System)",
+            "Cisco ACI (Application Centric Infrastructure)",
+            "VMware NSX (network virtualization platform)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Network Function Virtualization (NFV)",
+              "link": "https://en.wikipedia.org/wiki/Network_function_virtualization"
+            },
+            {
+              "name": "Cloud Computing",
+              "link": "https://en.wikipedia.org/wiki/Cloud_computing"
+            },
+            {
+              "name": "Network Virtualization",
+              "link": "https://en.wikipedia.org/wiki/Network_virtualization"
+            },
+            {
+              "name": "Programmable Networks",
+              "link": "https://en.wikipedia.org/wiki/Programmable_network"
+            },
+            {
+              "name": "Network Orchestration",
+              "link": "https://en.wikipedia.org/wiki/Network_orchestration"
+            }
+          ],
+          "advancements": [
+            "AI/ML Integration for network optimization and automation.",
+            "Integration with 5G/6G Networks for dynamic resource allocation.",
+            "Edge Computing Integration for localized SDN control.",
+            "Intent-Based Networking (IBN) for declarative network management.",
+            "Hybrid SDN Deployments combining traditional and SDN elements."
+          ],
+          "literature": [
+            {
+              "name": "IEEE Conference on Network Functions Virtualization and Software-Defined Networking (NFV-SDN) Proceedings",
+              "link": "http://www.wikicfp.com/cfp/call?conference=SDN"
+            },
+            {
+              "name": "A Survey of Software-Defined Networking: Past, Present, and Future of Programmable Networks by Nunes et al. (IEEE Communications Surveys & Tutorials, 2014)",
+              "link": "https://www.researchgate.net/publication/260064541_A_Survey_of_Software-Defined_Networking_Past_Present_and_Future_of_Programmable_Networks"
+            },
+            {
+              "name": "ACM SIGCOMM Conference Proceedings (relevant papers on SDN)",
+              "link": "https://www.sigcomm.org/events/sigcomm-conference"
+            },
+            {
+              "name": "USENIX NSDI (Networked Systems Design and Implementation) Conference Proceedings (relevant papers on SDN)",
+              "link": "https://www.usenix.org/conference/nsdi24/technical-sessions"
+            },
+            {
+              "name": "Open Networking Foundation (ONF) Publications",
+              "link": "https://opennetworking.org/"
+            }
+          ]
+        },
+        {
+          "name": "Cloud Networking",
+          "coreConcepts": [
+            "Virtual Private Clouds (VPCs)",
+            "Software-Defined Wide Area Networking (SD-WAN)",
+            "Network Virtualization (virtual switches, routers)",
+            "Cloud Load Balancing (distributing traffic)",
+            "Content Delivery Networks (CDNs)"
+          ],
+          "keyProblems": [
+            "Cost Management and unexpected expenses",
+            "Security and Compliance in multi-tenant environments",
+            "Vendor Lock-in and limited portability",
+            "Performance Latency across cloud regions",
+            "Hybrid Cloud Complexity (managing on-prem and cloud)"
+          ],
+          "applications": [
+            "Hybrid Cloud Deployments",
+            "Multi-Cloud Architectures",
+            "Disaster Recovery and business continuity",
+            "Global Content Delivery for web applications",
+            "Serverless Computing and Function-as-a-Service (FaaS)"
+          ],
+          "tools": [
+            "AWS VPC (Amazon Web Services Virtual Private Cloud)",
+            "Azure Virtual Network (Microsoft Azure)",
+            "Google Cloud VPC (Google Cloud Platform)",
+            "VMware NSX (network virtualization)",
+            "Cloudflare (CDN and security services)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Cloud Computing",
+              "link": "https://en.wikipedia.org/wiki/Cloud_computing"
+            },
+            {
+              "name": "Network Virtualization",
+              "link": "https://en.wikipedia.org/wiki/Network_virtualization"
+            },
+            {
+              "name": "Software-Defined Networking (SDN)",
+              "link": "https://en.wikipedia.org/wiki/Software-defined_networking"
+            },
+            {
+              "name": "Distributed Systems",
+              "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+            },
+            {
+              "name": "Data Center",
+              "link": "https://en.wikipedia.org/wiki/Data_center"
+            }
+          ],
+          "advancements": [
+            "Edge Computing Integration for low-latency cloud services.",
+            "AI/ML for Network Optimization and automation in the cloud.",
+            "Serverless Networking for on-demand network resource provisioning.",
+            "Multi-Cloud and Hybrid Cloud Strategies for flexible deployments.",
+            "Sustainable Cloud Networking focusing on energy efficiency."
+          ],
+          "literature": [
+            {
+              "name": "IEEE International Conference on Cloud Computing (IEEE Cloud) Proceedings",
+              "link": "https://www.ieeecloud.org/"
+            },
+            {
+              "name": "IEEE International Conference on Cloud Computing and Services (JCC) Proceedings",
+              "link": "https://conf.researchr.org/track/cisose-2025/jcc-2025"
+            },
+            {
+              "name": "A View of Cloud Computing by Armbrust et al. (Communications of the ACM, 2010)",
+              "link": "https://cacm.acm.org/practice/a-view-of-cloud-computing/"
+            },
+            {
+              "name": "Cloud Computing: Principles and Paradigms by Rajkumar Buyya et al.",
+              "link": "https://books.google.com/books?id=S1NvRRd77rQC"
+            },
+            {
+              "name": "ACM Symposium on Cloud Computing (SoCC) Proceedings",
+              "link": "https://dblp.org/db/conf/cloud/index"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

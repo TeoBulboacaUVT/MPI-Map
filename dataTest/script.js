@@ -16,50 +16,12 @@ async function loadAllDomains() {
     ];
     const domainFiles = domainNames.map(name => `${name}.json`);
     const domainDataArr = await Promise.all(domainFiles.map(f => fetch(f).then(r => r.json())));
-    renderSpiderMap(domainDataArr);
+    renderLeafletConstellation(domainDataArr);
     renderInfoPanel({ name: 'Computer Science', coreConcepts: [], keyProblems: [], applications: [], tools: [], pioneers: [], timeline: [], subfields: [], relatedFields: [], advancements: [], literature: [] });
 }
 
-let activeDomainIndex = null;
-let activeSubfieldIndex = null;
-let _spiderNodePositions = null;
-
-function getSeededRandom(seed) {
-    // Mulberry32 PRNG
-    let t = seed + 0x6D2B79F5;
-    return function() {
-        t += 0x6D2B79F5;
-        let r = Math.imul(t ^ t >>> 15, 1 | t);
-        r ^= r + Math.imul(r ^ r >>> 7, 61 | r);
-        return ((r ^ r >>> 14) >>> 0) / 4294967296;
-    };
-}
-
-function getSpiderNodePositions(domains) {
-    if (_spiderNodePositions) return _spiderNodePositions;
-    // Use a fixed seed for stable layout
-    const rand = getSeededRandom(42);
-    const n = domains.length;
-    const radiusX = 60; // wide ellipse
-    const radiusY = 28; // wide ellipse
-    const nodeRadius = 7;
-    const angleStep = 2 * Math.PI / n;
-    const positions = [];
-    for (let i = 0; i < n; i++) {
-        const angleJitter = (rand() - 0.5) * 0.22;
-        const distJitter = 1 + (rand() - 0.5) * 0.18;
-        const angle = i * angleStep - Math.PI / 2 + angleJitter;
-        const pos = [
-            radiusX * Math.cos(angle) * distJitter,
-            radiusY * Math.sin(angle) * distJitter
-        ];
-        positions.push({ pos, angle });
-    }
-    _spiderNodePositions = positions;
-    return positions;
-}
-
-function renderSpiderMap(domains) {
+// --- LEAFLET CONSTELLATION RENDERER ---
+function renderLeafletConstellation(domains) {
     // Only create the map once, just clear layers on redraw
     let map = window._leaflet_map;
     let firstRender = false;
@@ -69,7 +31,8 @@ function renderSpiderMap(domains) {
             zoom: 3,
             minZoom: 2,
             maxZoom: 8,
-            zoomControl: false
+            zoomControl: false,
+            attributionControl: false
         });
         window._leaflet_map = map;
         firstRender = true;
@@ -83,13 +46,20 @@ function renderSpiderMap(domains) {
     // Central node: Computer Science
     const center = [0, 0];
     const mainRadius = 4;
-    const mainPoly = L.circle(center, { radius: mainRadius, color: '#4fc3f7', fillOpacity: 0.7, weight: 2 }).addTo(map);
-    mainPoly.bindTooltip('Computer Science', { permanent: true, direction: 'center', className: 'domain-label', opacity: 0.95 });
-    mainPoly.on('click', () => {
+    const mainCircle = L.circle(center, {
+        radius: mainRadius,
+        color: '#fff',
+        fillColor: '#fff',
+        fillOpacity: 0.95,
+        weight: 3,
+        className: 'glow-center'
+    }).addTo(map);
+    mainCircle.bindTooltip('Computer Science', { permanent: true, direction: 'center', className: 'domain-label', opacity: 0.98 });
+    mainCircle.on('click', () => {
         renderInfoPanel({ name: 'Computer Science', coreConcepts: [], keyProblems: [], applications: [], tools: [], pioneers: [], timeline: [], subfields: [], relatedFields: [], advancements: [], literature: [] });
         activeDomainIndex = null;
         activeSubfieldIndex = null;
-        renderSpiderMap(domains);
+        renderLeafletConstellation(domains);
     });
 
     // Arrange domains in a randomized ellipse
@@ -100,40 +70,33 @@ function renderSpiderMap(domains) {
         const domain = domains[i];
         // Rotate domain positions 90deg right: swap X and Y, flip new X
         const domainPos = [pos[1], -pos[0]];
-        // Draw a polygon for each domain
-        const sides = 12;
-        const polyPoints = [];
-        for (let j = 0; j < sides; j++) {
-            const theta = angle + 2 * Math.PI * j / sides;
-            polyPoints.push([
-                domainPos[0] + nodeRadius * Math.sin(theta),
-                domainPos[1] + nodeRadius * Math.cos(theta)
-            ]);
-        }
-        const color = '#4fc3f7';
-        const poly = L.polygon(polyPoints, {
-            color,
-            weight: 2,
-            fillOpacity: 0.5
+        const color = getDomainColor(i);
+        // Draw domain node as a glowing circle
+        const domainCircle = L.circle(domainPos, {
+            radius: nodeRadius,
+            color: color,
+            fillColor: color,
+            fillOpacity: 0.85,
+            weight: 3,
+            className: 'glow-domain'
         }).addTo(map);
-        poly.bindTooltip(domain.name, { permanent: true, direction: 'center', className: 'domain-label', opacity: 0.95 });
-        poly.on('click', (e) => {
+        domainCircle.bindTooltip(domain.name, { permanent: true, direction: 'center', className: 'domain-label', opacity: 0.98 });
+        domainCircle.on('click', (e) => {
             L.DomEvent.stopPropagation(e);
             renderInfoPanel(domain);
             activeDomainIndex = i;
             activeSubfieldIndex = null;
-            renderSpiderMap(domains);
+            renderLeafletConstellation(domains);
         });
-        // Draw a line from center to node
-        L.polyline([[0,0], domainPos], { color: '#4fc3f7', weight: 1, opacity: 0.5, dashArray: '4, 8' }).addTo(map);
+        // Draw a glowing line from center to domain
+        L.polyline([center, domainPos], { color: color, weight: 2, opacity: 0.5, dashArray: '4, 8', className: 'glow-line' }).addTo(map);
 
-        // --- Render subfields as polygons (60% of parent domain size) ---
+        // --- Render subfields as circles (60% of parent domain size) ---
         if (Array.isArray(domain.subfields) && domain.subfields.length > 0) {
             const subfieldCount = domain.subfields.length;
             const subfieldBaseDist = 18;
             const subfieldSpread = 5;
-            const subfieldPolyRadius = nodeRadius * 0.6;
-            const subfieldSides = 8;
+            const subfieldRadius = nodeRadius * 0.6;
             const dx = domainPos[0] - center[0];
             const dy = domainPos[1] - center[1];
             const outwardAngle = Math.atan2(dy, dx);
@@ -148,42 +111,35 @@ function renderSpiderMap(domains) {
                     domainPos[1] + dist * Math.sin(outwardAngle) + (offset * subfieldSpread + spreadJitter) * Math.sin(perpAngle)
                 ];
                 const subColor = getSubColor(color, k, subfieldCount);
-                // Draw polygon for subfield
-                const subPolyPoints = [];
-                for (let m = 0; m < subfieldSides; m++) {
-                    const t = outwardAngle + 2 * Math.PI * m / subfieldSides;
-                    subPolyPoints.push([
-                        subPos[0] + subfieldPolyRadius * Math.sin(t),
-                        subPos[1] + subfieldPolyRadius * Math.cos(t)
-                    ]);
-                }
-                // Label logic for subfields
-                let showSubLabel = false;
-                if (activeDomainIndex === i && activeSubfieldIndex === null) showSubLabel = true; // show all subfield labels on domain click
-                if (activeDomainIndex === i && activeSubfieldIndex === k) showSubLabel = true; // show only this subfield label on subfield click
-                const subPoly = L.polygon(subPolyPoints, {
+                // Draw subfield node as a glowing circle
+                const subCircle = L.circle(subPos, {
+                    radius: subfieldRadius,
                     color: subColor,
+                    fillColor: subColor,
+                    fillOpacity: 0.85,
                     weight: 2,
-                    fillOpacity: 0.7
+                    className: 'glow-subfield'
                 }).addTo(map);
-                subPoly.bindTooltip(domain.subfields[k].name, { permanent: showSubLabel, direction: 'top', className: 'subfield-label', opacity: 0.95 });
-                subPoly.on('click', (e) => {
+                let showSubLabel = false;
+                if (activeDomainIndex === i && activeSubfieldIndex === null) showSubLabel = true;
+                if (activeDomainIndex === i && activeSubfieldIndex === k) showSubLabel = true;
+                subCircle.bindTooltip(domain.subfields[k].name, { permanent: showSubLabel, direction: 'top', className: 'subfield-label', opacity: 0.98 });
+                subCircle.on('click', (e) => {
                     L.DomEvent.stopPropagation(e);
                     renderInfoPanel(domain.subfields[k]);
                     activeDomainIndex = i;
                     activeSubfieldIndex = k;
-                    renderSpiderMap(domains);
+                    renderLeafletConstellation(domains);
                 });
-                // Draw a line from domain node to subfield
-                L.polyline([domainPos, subPos], { color: subColor, weight: 1, opacity: 0.5, dashArray: '2, 6' }).addTo(map);
+                // Draw a glowing line from domain to subfield
+                L.polyline([domainPos, subPos], { color: subColor, weight: 2, opacity: 0.5, dashArray: '2, 6', className: 'glow-line' }).addTo(map);
 
-                // --- Render subsubfields as polygons (50% of subfield size) ---
+                // --- Render subsubfields as circles (50% of subfield size) ---
                 if (Array.isArray(domain.subfields[k].subsubfields) && domain.subfields[k].subsubfields.length > 0) {
                     const subsubCount = domain.subfields[k].subsubfields.length;
                     const subsubBaseDist = 7;
                     const subsubSpread = 2.2;
-                    const subsubPolyRadius = subfieldPolyRadius * 0.5;
-                    const subsubSides = 6;
+                    const subsubRadius = subfieldRadius * 0.5;
                     for (let s = 0; s < subsubCount; s++) {
                         const rand2 = getSeededRandom(i * 10000 + k * 100 + s);
                         const subsubOffset = (s - (subsubCount - 1) / 2);
@@ -193,33 +149,27 @@ function renderSpiderMap(domains) {
                             subPos[0] + subsubDist * Math.cos(outwardAngle) + (subsubOffset * subsubSpread + subsubJitter) * Math.cos(perpAngle),
                             subPos[1] + subsubDist * Math.sin(outwardAngle) + (subsubOffset * subsubSpread + subsubJitter) * Math.sin(perpAngle)
                         ];
-                        // Label logic for subsubfields
                         let showSubsubLabel = false;
-                        if (activeDomainIndex === i && activeSubfieldIndex === k) showSubsubLabel = true; // show only for selected subfield
-                        // Draw polygon for subsubfield
-                        const subsubPolyPoints = [];
-                        for (let n = 0; n < subsubSides; n++) {
-                            const t2 = outwardAngle + 2 * Math.PI * n / subsubSides;
-                            subsubPolyPoints.push([
-                                subsubPos[0] + subsubPolyRadius * Math.sin(t2),
-                                subsubPos[1] + subsubPolyRadius * Math.cos(t2)
-                            ]);
-                        }
-                        const subsubPoly = L.polygon(subsubPolyPoints, {
+                        if (activeDomainIndex === i && activeSubfieldIndex === k) showSubsubLabel = true;
+                        // Draw subsubfield node as a glowing circle
+                        const subsubCircle = L.circle(subsubPos, {
+                            radius: subsubRadius,
                             color: subColor,
+                            fillColor: subColor,
+                            fillOpacity: 0.95,
                             weight: 2,
-                            fillOpacity: 0.85
+                            className: 'glow-subsubfield'
                         }).addTo(map);
-                        subsubPoly.bindTooltip(domain.subfields[k].subsubfields[s].name, { permanent: showSubsubLabel, direction: 'top', className: 'subsubfield-label', opacity: 0.95 });
-                        subsubPoly.on('click', (e) => {
+                        subsubCircle.bindTooltip(domain.subfields[k].subsubfields[s].name, { permanent: showSubsubLabel, direction: 'top', className: 'subsubfield-label', opacity: 0.98 });
+                        subsubCircle.on('click', (e) => {
                             L.DomEvent.stopPropagation(e);
                             renderInfoPanel(domain.subfields[k].subsubfields[s]);
                             activeDomainIndex = i;
                             activeSubfieldIndex = k;
-                            renderSpiderMap(domains);
+                            renderLeafletConstellation(domains);
                         });
-                        // Draw a line from subfield to subsubfield
-                        L.polyline([subPos, subsubPos], { color: subColor, weight: 1, opacity: 0.4, dashArray: '1, 4' }).addTo(map);
+                        // Draw a glowing line from subfield to subsubfield
+                        L.polyline([subPos, subsubPos], { color: subColor, weight: 2, opacity: 0.4, dashArray: '1, 4', className: 'glow-line' }).addTo(map);
                     }
                 }
             }
@@ -234,8 +184,23 @@ function renderSpiderMap(domains) {
         activeDomainIndex = null;
         activeSubfieldIndex = null;
         renderInfoPanel({ name: 'Computer Science', coreConcepts: [], keyProblems: [], applications: [], tools: [], pioneers: [], timeline: [], subfields: [], relatedFields: [], advancements: [], literature: [] });
-        renderSpiderMap(domains);
+        renderLeafletConstellation(domains);
     });
+}
+
+// 4. Color utility for lighter shades
+function lightenColor(hex, lum) {
+  // Convert hex to RGB
+  hex = hex.replace('#', '');
+  let r = parseInt(hex.substring(0,2),16);
+  let g = parseInt(hex.substring(2,4),16);
+  let b = parseInt(hex.substring(4,6),16);
+  // Apply luminance
+  r = Math.round(Math.min(255, r + (255 - r) * lum));
+  g = Math.round(Math.min(255, g + (255 - g) * lum));
+  b = Math.round(Math.min(255, b + (255 - b) * lum));
+  // Convert back to hex
+  return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 }
 
 // Utility: Convert hex color to HSL
@@ -290,6 +255,39 @@ function getSubColor(base, offset, total) {
     return hslToHex(hsl.h, s, l);
 }
 
+// Utility: evenly distribute nodes in a circle/ellipse
+function getSpiderNodePositions(domains) {
+    const n = domains.length;
+    const radiusX = 35;
+    const radiusY = 22;
+    const positions = [];
+    for (let i = 0; i < n; i++) {
+        const angle = (2 * Math.PI * i) / n - Math.PI / 2;
+        const x = radiusX * Math.cos(angle);
+        const y = radiusY * Math.sin(angle);
+        positions.push({ pos: [x, y], angle });
+    }
+    return positions;
+}
+
+// Utility: get a distinct color for each domain
+function getDomainColor(i) {
+    // 12 visually distinct hues
+    const hues = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330];
+    const h = hues[i % hues.length];
+    return `hsl(${h}, 80%, 55%)`;
+}
+
+// Utility: seeded random for reproducible jitter
+function getSeededRandom(seed) {
+    let s = seed % 2147483647;
+    if (s <= 0) s += 2147483646;
+    return function() {
+        s = (s * 16807) % 2147483647;
+        return (s - 1) / 2147483646;
+    };
+}
+
 function renderInfoPanel(field) {
     const panel = document.getElementById('infoPanel');
     // Render array of {name, link} as hyperlinks in a bulleted list
@@ -341,4 +339,6 @@ function renderInfoPanel(field) {
     panel.innerHTML = html;
 }
 
-window.addEventListener('DOMContentLoaded', loadAllDomains);
+window.addEventListener('DOMContentLoaded', () => {
+    loadAllDomains();
+});

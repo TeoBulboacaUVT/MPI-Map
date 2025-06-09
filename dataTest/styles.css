@@ -9,9 +9,10 @@
 }
 
 body {
-    background: #000;
+    background: radial-gradient(ellipse at center, #181c2a 0%, #0a0c18 100%);
     color: #fff;
-    min-height: 100vh;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
     overflow: hidden;
 }
 
@@ -25,6 +26,39 @@ body {
     width: 80%;
     height: 100vh;
     background: #111;
+}
+
+#canvas {
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  box-shadow: 0 0 32px #000a;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.7;
+  animation: twinkle 2.5s infinite alternate ease-in-out;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+.glow {
+  box-shadow: 0 0 16px 8px var(--star-color, #fff), 0 0 64px 16px var(--star-color, #fff2);
+}
+
+.label {
+  position: absolute;
+  color: #fff;
+  font-size: 1rem;
+  text-shadow: 0 0 8px #000, 0 0 2px #000;
+  pointer-events: none;
+  white-space: nowrap;
 }
 
 .info-panel {
@@ -193,3 +227,13 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+/* Color classes for each domain (example) */
+.star-domain-0 { --star-color: #ff6f61; }
+.star-domain-1 { --star-color: #6ec6ff; }
+.star-domain-2 { --star-color: #ffd54f; }
+.star-domain-3 { --star-color: #81c784; }
+.star-domain-4 { --star-color: #ba68c8; }
+.star-domain-5 { --star-color: #f06292; }
+
+/* ...add more as needed... */

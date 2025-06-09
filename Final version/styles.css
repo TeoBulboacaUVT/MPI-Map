@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #181a1b;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: #181a1b;
+}
+.map-section {
+    flex: 3 1 0;
+    width: 75%;
+    height: 100%;
+    border-right: 1px solid #232526;
+}
+.info-panel {
+    flex: 1 1 0;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 32px 24px;
+    background: #232526;
+    border-left: 1px solid #232526;
+    overflow-y: auto;
+    color: #e0e0e0;
+}
+#map {
+    width: 100%;
+    height: 100%;
+    background: #111;
+}
+h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+p {
+    color: #b0b0b0;
+    font-size: 1em;
+    margin-top: 0;
+}
+.leaflet-tooltip.center-label {
+    background: rgba(30,30,30,0.95);
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+/* Hide Leaflet attribution for a cleaner look (optional) */
+.leaflet-control-attribution {
+    display: none;
+}

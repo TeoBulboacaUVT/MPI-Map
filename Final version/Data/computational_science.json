@@ -1,13 +1,520 @@
 {
   "name": "Computational Science",
-  "coreConcepts": ["Concept A", "Concept B", "Concept C"],
-  "keyProblems": ["Problem X", "Problem Y"],
-  "applications": ["Application 1", "Application 2"],
-  "tools": ["Tool Alpha", "Tool Beta"],
-  "pioneers": [{"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"}],
-  "timeline": ["Milestone 1", "Milestone 2"],
-  "subfields": [],
-  "relatedFields": [{"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"}],
-  "advancements": ["Advancement 1", "Advancement 2"],
-  "literature": [{"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"}]
+  "coreConcepts": [
+    "Numerical methods and algorithms",
+    "High-performance computing (HPC)",
+    "Modeling and simulation",
+    "Parallel and distributed computing",
+    "Scientific visualization",
+    "Uncertainty quantification",
+    "Data-driven science",
+    "Computational experiments"
+  ],
+  "keyProblems": [
+    "Scalability of algorithms for large-scale simulations",
+    "Efficient use of supercomputers and cloud resources",
+    "Numerical stability and accuracy",
+    "Model validation and verification",
+    "Handling massive scientific datasets",
+    "Interdisciplinary integration of models",
+    "Reproducibility of computational results",
+    "Optimization of computational workflows"
+  ],
+  "applications": [
+    "Climate modeling and weather prediction",
+    "Computational fluid dynamics (CFD)",
+    "Molecular dynamics and materials science",
+    "Astrophysics and cosmological simulations",
+    "Bioinformatics and systems biology",
+    "Engineering design and optimization",
+    "Financial modeling and risk analysis",
+    "Earthquake and disaster simulation"
+  ],
+  "tools": [
+    "MATLAB",
+    "Python (NumPy, SciPy, Dask, PyTorch)",
+    "Fortran",
+    "C/C++",
+    "MPI (Message Passing Interface)",
+    "OpenMP",
+    "HPC clusters and supercomputers",
+    "Visualization tools (ParaView, VisIt)"
+  ],
+  "pioneers": [
+    {"name": "John von Neumann", "link": "https://en.wikipedia.org/wiki/John_von_Neumann"},
+    {"name": "Stanislaw Ulam", "link": "https://en.wikipedia.org/wiki/Stanislaw_Ulam"},
+    {"name": "Katherine Johnson", "link": "https://en.wikipedia.org/wiki/Katherine_Johnson"},
+    {"name": "Jack Dongarra", "link": "https://en.wikipedia.org/wiki/Jack_Dongarra"},
+    {"name": "Gene H. Golub", "link": "https://en.wikipedia.org/wiki/Gene_H._Golub"}
+  ],
+  "timeline": [
+    "1940s: Early digital computers used for scientific calculations (ENIAC, MANIAC)",
+    "1950s: Monte Carlo methods and numerical weather prediction developed",
+    "1970s: Emergence of supercomputing and parallel processing",
+    "1980s: Finite element and finite difference methods widely adopted",
+    "1990s: Growth of computational chemistry and biology",
+    "2000s: Petascale computing and grid/cloud computing",
+    "2010s: Exascale initiatives and data-driven science"
+  ],
+  "subfields": [
+    {
+      "name": "Numerical Analysis",
+      "coreConcepts": [
+        "Numerical integration and differentiation",
+        "Linear and nonlinear systems",
+        "Eigenvalue problems",
+        "Error analysis",
+        "Stability and convergence"
+      ],
+      "keyProblems": [
+        "Round-off and truncation errors",
+        "Efficient algorithms for large systems",
+        "Adaptive methods for complex domains",
+        "Sparse matrix computations"
+      ],
+      "applications": [
+        "Engineering simulations",
+        "Physics modeling",
+        "Optimization problems",
+        "Signal processing"
+      ],
+      "tools": [
+        "MATLAB",
+        "NumPy/SciPy",
+        "LAPACK",
+        "PETSc"
+      ],
+      "pioneers": [
+        {"name": "Gene H. Golub", "link": "https://en.wikipedia.org/wiki/Gene_H._Golub"},
+        {"name": "James H. Wilkinson", "link": "https://en.wikipedia.org/wiki/James_H._Wilkinson"}
+      ],
+      "timeline": [
+        "1940s: Development of numerical linear algebra algorithms",
+        "1970s: Fast Fourier Transform (FFT) revolutionizes signal processing"
+      ],
+      "relatedFields": [
+        {"name": "Applied Mathematics", "link": "https://en.wikipedia.org/wiki/Applied_mathematics"},
+        {"name": "Computer Science", "link": "https://en.wikipedia.org/wiki/Computer_science"}
+      ],
+      "advancements": [
+        "Sparse matrix solvers",
+        "Multigrid methods",
+        "Automatic differentiation"
+      ],
+      "literature": [
+        {"name": "Matrix Computations by Gene H. Golub and Charles F. Van Loan", "link": "https://jhupbooks.press.jhu.edu/title/matrix-computations"},
+        {"name": "Numerical Recipes", "link": "https://numerical.recipes/"}
+      ],
+      "subsubfields": [
+        {
+          "name": "Root Finding Algorithms",
+          "coreConcepts": ["Bisection method", "Newton-Raphson method", "Secant method", "Fixed-point iteration"],
+          "keyProblems": ["Convergence speed", "Multiple roots", "Stability of iterations", "Nonlinear equations"],
+          "applications": ["Solving nonlinear equations in engineering", "Physics simulations", "Optimization routines"],
+          "tools": ["MATLAB fzero", "SciPy optimize.root"],
+          "relatedFields": [
+            {"name": "Mathematical Analysis", "link": "https://en.wikipedia.org/wiki/Mathematical_analysis"}
+          ]
+        },
+        {
+          "name": "Numerical Linear Algebra",
+          "coreConcepts": ["Matrix factorizations", "Eigenvalue computation", "Iterative solvers", "Sparse matrices"],
+          "keyProblems": ["Scalability for large systems", "Numerical stability", "Efficient storage"],
+          "applications": ["Finite element analysis", "Quantum mechanics", "Machine learning"],
+          "tools": ["LAPACK", "BLAS", "PETSc"],
+          "relatedFields": [
+            {"name": "Linear Algebra", "link": "https://en.wikipedia.org/wiki/Linear_algebra"}
+          ]
+        },
+        {
+          "name": "Numerical Integration",
+          "coreConcepts": ["Quadrature rules", "Monte Carlo integration", "Adaptive integration", "Gaussian quadrature"],
+          "keyProblems": ["High-dimensional integration", "Error estimation", "Oscillatory integrands"],
+          "applications": ["Computational physics", "Engineering simulations", "Financial modeling"],
+          "tools": ["MATLAB integral", "SciPy integrate.quad"],
+          "relatedFields": [
+            {"name": "Calculus", "link": "https://en.wikipedia.org/wiki/Calculus"}
+          ]
+        },
+        {
+          "name": "Numerical Differentiation",
+          "coreConcepts": ["Finite difference methods", "Automatic differentiation", "Error analysis", "Stability"],
+          "keyProblems": ["Truncation error", "Noise amplification", "Step size selection"],
+          "applications": ["Gradient-based optimization", "Sensitivity analysis", "Physical modeling"],
+          "tools": ["NumPy gradient", "JAX autodiff"],
+          "relatedFields": [
+            {"name": "Differential Equations", "link": "https://en.wikipedia.org/wiki/Differential_equation"}
+          ]
+        },
+        {
+          "name": "Ordinary Differential Equations (ODEs)",
+          "coreConcepts": ["Initial value problems", "Boundary value problems", "Runge-Kutta methods", "Stiff equations"],
+          "keyProblems": ["Stability of solvers", "Adaptive step size", "Stiffness"],
+          "applications": ["Population dynamics", "Mechanical systems", "Electrical circuits"],
+          "tools": ["MATLAB ode45", "SciPy integrate.odeint"],
+          "relatedFields": [
+            {"name": "Dynamical Systems", "link": "https://en.wikipedia.org/wiki/Dynamical_system"}
+          ]
+        },
+        {
+          "name": "Partial Differential Equations (PDEs)",
+          "coreConcepts": ["Finite difference methods", "Finite element methods", "Spectral methods", "Mesh generation"],
+          "keyProblems": ["Discretization error", "Boundary conditions", "Computational cost"],
+          "applications": ["Heat transfer", "Fluid dynamics", "Electromagnetics"],
+          "tools": ["COMSOL Multiphysics", "FEniCS"],
+          "relatedFields": [
+            {"name": "Mathematical Physics", "link": "https://en.wikipedia.org/wiki/Mathematical_physics"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "High-Performance Computing (HPC)",
+      "coreConcepts": [
+        "Parallel programming models",
+        "Distributed computing",
+        "Load balancing",
+        "Scalability",
+        "Performance optimization"
+      ],
+      "keyProblems": [
+        "Efficient inter-process communication",
+        "Fault tolerance",
+        "Energy efficiency",
+        "Resource scheduling"
+      ],
+      "applications": [
+        "Weather and climate modeling",
+        "Genomics and proteomics",
+        "Large-scale simulations in physics and engineering"
+      ],
+      "tools": [
+        "MPI",
+        "OpenMP",
+        "CUDA",
+        "Slurm",
+        "PBS/Torque"
+      ],
+      "pioneers": [
+        {"name": "Jack Dongarra", "link": "https://en.wikipedia.org/wiki/Jack_Dongarra"},
+        {"name": "Thomas Sterling", "link": "https://en.wikipedia.org/wiki/Thomas_Sterling_(scientist)"}
+      ],
+      "timeline": [
+        "1990s: MPI standardization",
+        "2000s: Rise of GPU computing"
+      ],
+      "relatedFields": [
+        {"name": "Computer Engineering", "link": "https://en.wikipedia.org/wiki/Computer_engineering"},
+        {"name": "Distributed Computing", "link": "https://en.wikipedia.org/wiki/Distributed_computing"}
+      ],
+      "advancements": [
+        "Exascale computing",
+        "Hybrid CPU/GPU architectures"
+      ],
+      "literature": [
+        {"name": "Introduction to High Performance Computing for Scientists and Engineers by Georg Hager and Gerhard Wellein", "link": "https://www.crcpress.com/Introduction-to-High-Performance-Computing-for-Scientists-and-Engineers/Hager-Wellein/p/book/9781138035454"}
+      ],
+      "subsubfields": [
+        {
+          "name": "Shared Memory Parallelism",
+          "coreConcepts": ["Threads", "OpenMP", "Synchronization", "Race conditions"],
+          "keyProblems": ["Scalability limits", "False sharing", "Load imbalance", "Debugging parallel code"],
+          "applications": ["Multicore CPU programming", "Scientific simulations", "Image processing"],
+          "tools": ["OpenMP", "Pthreads"],
+          "relatedFields": [
+            {"name": "Parallel Computing", "link": "https://en.wikipedia.org/wiki/Parallel_computing"}
+          ]
+        },
+        {
+          "name": "Distributed Memory Parallelism",
+          "coreConcepts": ["MPI", "Message passing", "Cluster computing", "Network latency"],
+          "keyProblems": ["Communication overhead", "Fault tolerance", "Data partitioning", "Synchronization"],
+          "applications": ["Supercomputing", "Large-scale simulations", "Weather modeling"],
+          "tools": ["MPI", "OpenMPI", "MPICH"],
+          "relatedFields": [
+            {"name": "Distributed Computing", "link": "https://en.wikipedia.org/wiki/Distributed_computing"}
+          ]
+        },
+        {
+          "name": "GPU Computing",
+          "coreConcepts": ["CUDA", "SIMD", "Massively parallel processing", "Memory hierarchy"],
+          "keyProblems": ["Memory bandwidth", "Kernel optimization", "Portability", "Programming complexity"],
+          "applications": ["Molecular dynamics", "Deep learning", "Computational physics"],
+          "tools": ["CUDA", "OpenCL", "cuDNN"],
+          "relatedFields": [
+            {"name": "Graphics Processing Unit", "link": "https://en.wikipedia.org/wiki/Graphics_processing_unit"}
+          ]
+        },
+        {
+          "name": "Cloud and Grid Computing",
+          "coreConcepts": ["Virtualization", "Resource allocation", "Elastic scaling", "Job scheduling"],
+          "keyProblems": ["Security", "Data transfer bottlenecks", "Cost optimization", "Heterogeneity"],
+          "applications": ["On-demand HPC", "Big data analytics", "Collaborative science"],
+          "tools": ["AWS EC2", "Google Cloud Platform", "Globus Toolkit"],
+          "relatedFields": [
+            {"name": "Cloud Computing", "link": "https://en.wikipedia.org/wiki/Cloud_computing"}
+          ]
+        },
+        {
+          "name": "Performance Analysis and Optimization",
+          "coreConcepts": ["Profiling", "Bottleneck identification", "Scalability analysis", "Vectorization"],
+          "keyProblems": ["Load imbalance", "Cache misses", "I/O bottlenecks", "Parallel efficiency"],
+          "applications": ["Code optimization", "Resource allocation", "Energy efficiency"],
+          "tools": ["gprof", "Intel VTune", "TAU"],
+          "relatedFields": [
+            {"name": "Performance Engineering", "link": "https://en.wikipedia.org/wiki/Performance_engineering"}
+          ]
+        },
+        {
+          "name": "Fault Tolerance and Reliability",
+          "coreConcepts": ["Checkpointing", "Redundancy", "Error detection", "Recovery protocols"],
+          "keyProblems": ["Minimizing overhead", "Scalable recovery", "Data consistency", "Hardware failures"],
+          "applications": ["Long-running simulations", "Mission-critical computing", "Scientific workflows"],
+          "tools": ["BLCR", "FT-MPI", "SCR"],
+          "relatedFields": [
+            {"name": "Fault Tolerance", "link": "https://en.wikipedia.org/wiki/Fault_tolerance"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Modeling and Simulation",
+      "coreConcepts": [
+        "Mathematical modeling",
+        "Discrete and continuous simulation",
+        "Agent-based modeling",
+        "Stochastic simulation",
+        "Sensitivity analysis"
+      ],
+      "keyProblems": [
+        "Model validation and verification",
+        "Parameter estimation",
+        "Computational cost of complex models",
+        "Uncertainty quantification"
+      ],
+      "applications": [
+        "Epidemiological modeling",
+        "Materials science",
+        "Systems biology"
+      ],
+      "tools": [
+        "Simulink",
+        "AnyLogic",
+        "NetLogo",
+        "COMSOL Multiphysics"
+      ],
+      "pioneers": [
+        {"name": "Jay W. Forrester", "link": "https://en.wikipedia.org/wiki/Jay_Wright_Forrester"},
+        {"name": "Robert E. Kalman", "link": "https://en.wikipedia.org/wiki/Rudolf_E._Kálmán"}
+      ],
+      "timeline": [
+        "1960s: System dynamics and simulation languages developed",
+        "2000s: Agent-based modeling becomes mainstream"
+      ],
+      "relatedFields": [
+        {"name": "Systems Science", "link": "https://en.wikipedia.org/wiki/Systems_science"},
+        {"name": "Applied Mathematics", "link": "https://en.wikipedia.org/wiki/Applied_mathematics"}
+      ],
+      "advancements": [
+        "Hybrid simulation methods",
+        "Real-time simulation"
+      ],
+      "literature": [
+        {"name": "Simulation Modeling and Analysis by Averill M. Law", "link": "https://www.mheducation.com/highered/product/simulation-modeling-analysis-law/M9781260239427.html"}
+      ],
+      "subsubfields": [
+        {
+          "name": "System Dynamics",
+          "coreConcepts": ["Feedback loops", "Stock and flow diagrams", "Differential equations", "Causal loop diagrams"],
+          "keyProblems": ["Model calibration", "Nonlinear feedback", "Long-term prediction", "Parameter sensitivity"],
+          "applications": ["Population growth", "Resource management", "Economic modeling"],
+          "tools": ["Vensim", "Stella"],
+          "relatedFields": [
+            {"name": "Control Theory", "link": "https://en.wikipedia.org/wiki/Control_theory"}
+          ]
+        },
+        {
+          "name": "Agent-Based Modeling",
+          "coreConcepts": ["Autonomous agents", "Emergent behavior", "Rule-based systems", "Multi-agent systems"],
+          "keyProblems": ["Scalability", "Agent interaction complexity", "Validation of emergent phenomena", "Computational cost"],
+          "applications": ["Epidemiology", "Social systems", "Ecological modeling"],
+          "tools": ["NetLogo", "Repast"],
+          "relatedFields": [
+            {"name": "Complex Systems", "link": "https://en.wikipedia.org/wiki/Complex_systems"}
+          ]
+        },
+        {
+          "name": "Monte Carlo Simulation",
+          "coreConcepts": ["Random sampling", "Probability distributions", "Stochastic processes", "Variance reduction"],
+          "keyProblems": ["Convergence speed", "Random number generation", "Uncertainty quantification", "Computational efficiency"],
+          "applications": ["Financial modeling", "Nuclear physics", "Risk analysis"],
+          "tools": ["MATLAB", "Python (NumPy, random)", "Crystal Ball"],
+          "relatedFields": [
+            {"name": "Probability Theory", "link": "https://en.wikipedia.org/wiki/Probability_theory"}
+          ]
+        },
+        {
+          "name": "Finite Element Analysis (FEA)",
+          "coreConcepts": ["Mesh generation", "Element types", "Boundary conditions", "Numerical solvers"],
+          "keyProblems": ["Mesh quality", "Convergence", "Computational cost", "Nonlinear materials"],
+          "applications": ["Structural engineering", "Biomechanics", "Thermal analysis"],
+          "tools": ["ANSYS", "Abaqus", "COMSOL"],
+          "relatedFields": [
+            {"name": "Solid Mechanics", "link": "https://en.wikipedia.org/wiki/Solid_mechanics"}
+          ]
+        },
+        {
+          "name": "Discrete Event Simulation",
+          "coreConcepts": ["Event scheduling", "State transitions", "Queueing theory", "Random processes"],
+          "keyProblems": ["Event synchronization", "Scalability", "Statistical analysis", "Model validation"],
+          "applications": ["Manufacturing systems", "Computer networks", "Logistics"],
+          "tools": ["Simul8", "Arena Simulation"],
+          "relatedFields": [
+            {"name": "Operations Research", "link": "https://en.wikipedia.org/wiki/Operations_research"}
+          ]
+        },
+        {
+          "name": "Stochastic Simulation",
+          "coreConcepts": ["Random processes", "Markov chains", "Stochastic differential equations", "Noise modeling"],
+          "keyProblems": ["Sampling efficiency", "Variance reduction", "Long-term behavior", "Parameter estimation"],
+          "applications": ["Chemical kinetics", "Population dynamics", "Financial engineering"],
+          "tools": ["Gillespie algorithm", "StochPy"],
+          "relatedFields": [
+            {"name": "Stochastic Processes", "link": "https://en.wikipedia.org/wiki/Stochastic_process"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Parallel and Distributed Computing",
+      "coreConcepts": [
+        "Parallel algorithms",
+        "Distributed systems",
+        "Synchronization and communication",
+        "Scalability",
+        "Fault tolerance"
+      ],
+      "keyProblems": [
+        "Load balancing",
+        "Deadlock and race conditions",
+        "Network latency",
+        "Data consistency",
+        "Resource allocation"
+      ],
+      "applications": [
+        "Big data analytics",
+        "Scientific simulations",
+        "Cloud computing",
+        "Internet of Things (IoT)",
+        "Blockchain technologies"
+      ],
+      "tools": [
+        "MPI",
+        "OpenMP",
+        "Apache Hadoop",
+        "Spark",
+        "ZeroMQ"
+      ],
+      "pioneers": [
+        {"name": "Leslie Lamport", "link": "https://en.wikipedia.org/wiki/Leslie_Lamport"},
+        {"name": "Barbara Liskov", "link": "https://en.wikipedia.org/wiki/Barbara_Liskov"}
+      ],
+      "timeline": [
+        "1970s: Early distributed operating systems",
+        "1980s: Message passing and parallel programming models",
+        "2000s: Rise of cloud and grid computing"
+      ],
+      "relatedFields": [
+        {"name": "Computer Networks", "link": "https://en.wikipedia.org/wiki/Computer_network"},
+        {"name": "Operating Systems", "link": "https://en.wikipedia.org/wiki/Operating_system"}
+      ],
+      "advancements": [
+        "Serverless computing",
+        "Edge computing",
+        "Quantum distributed algorithms"
+      ],
+      "literature": [
+        {"name": "Distributed Systems: Principles and Paradigms by Andrew S. Tanenbaum and Maarten van Steen", "link": "https://www.pearson.com/en-us/subject-catalog/p/distributed-systems-principles-and-paradigms/P200000003281/9780132392273"}
+      ],
+      "subsubfields": [
+        {
+          "name": "Parallel Algorithms",
+          "coreConcepts": ["Divide and conquer", "Parallel sorting", "Prefix sums", "Parallel graph algorithms"],
+          "keyProblems": ["Work and span analysis", "Synchronization overhead", "Scalability"],
+          "applications": ["Matrix multiplication", "Graph processing", "Scientific computing"],
+          "tools": ["OpenMP", "MPI"],
+          "relatedFields": [
+            {"name": "Algorithm Design", "link": "https://en.wikipedia.org/wiki/Algorithm"}
+          ]
+        },
+        {
+          "name": "Distributed Algorithms",
+          "coreConcepts": ["Consensus protocols", "Leader election", "Distributed hash tables", "Fault tolerance"],
+          "keyProblems": ["Network partitions", "Byzantine failures", "Message ordering"],
+          "applications": ["Blockchain", "Distributed databases", "Cloud storage"],
+          "tools": ["Paxos", "Raft"],
+          "relatedFields": [
+            {"name": "Distributed Computing", "link": "https://en.wikipedia.org/wiki/Distributed_computing"}
+          ]
+        },
+        {
+          "name": "Synchronization and Concurrency",
+          "coreConcepts": ["Locks", "Semaphores", "Monitors", "Atomic operations"],
+          "keyProblems": ["Deadlock", "Starvation", "Priority inversion"],
+          "applications": ["Multithreaded applications", "Database systems", "Operating systems"],
+          "tools": ["Pthreads", "Java concurrency"],
+          "relatedFields": [
+            {"name": "Operating Systems", "link": "https://en.wikipedia.org/wiki/Operating_system"}
+          ]
+        },
+        {
+          "name": "Cloud Computing",
+          "coreConcepts": ["Virtualization", "Elastic scaling", "Resource provisioning", "Service models (IaaS, PaaS, SaaS)"],
+          "keyProblems": ["Multi-tenancy", "Security", "Cost optimization"],
+          "applications": ["Web hosting", "Big data analytics", "On-demand computing"],
+          "tools": ["AWS", "Azure", "Google Cloud"],
+          "relatedFields": [
+            {"name": "Cloud Computing", "link": "https://en.wikipedia.org/wiki/Cloud_computing"}
+          ]
+        },
+        {
+          "name": "Big Data Frameworks",
+          "coreConcepts": ["MapReduce", "Distributed file systems", "Stream processing", "Data sharding"],
+          "keyProblems": ["Data locality", "Fault tolerance", "Scalability"],
+          "applications": ["Data mining", "Machine learning pipelines", "Real-time analytics"],
+          "tools": ["Hadoop", "Spark", "Kafka"],
+          "relatedFields": [
+            {"name": "Data Engineering", "link": "https://en.wikipedia.org/wiki/Data_engineering"}
+          ]
+        },
+        {
+          "name": "Edge and Fog Computing",
+          "coreConcepts": ["Edge devices", "Latency reduction", "Distributed intelligence", "Resource constraints"],
+          "keyProblems": ["Heterogeneity", "Security", "Data aggregation"],
+          "applications": ["IoT", "Smart cities", "Autonomous vehicles"],
+          "tools": ["EdgeX Foundry", "Azure IoT"],
+          "relatedFields": [
+            {"name": "Internet of Things", "link": "https://en.wikipedia.org/wiki/Internet_of_things"}
+          ]
+        }
+      ]
+    }
+  ],
+  "relatedFields": [
+    {"name": "Applied Mathematics", "link": "https://en.wikipedia.org/wiki/Applied_mathematics"},
+    {"name": "Physics", "link": "https://en.wikipedia.org/wiki/Physics"},
+    {"name": "Engineering", "link": "https://en.wikipedia.org/wiki/Engineering"},
+    {"name": "Computer Science", "link": "https://en.wikipedia.org/wiki/Computer_science"}
+  ],
+  "advancements": [
+    "Exascale computing and quantum simulation",
+    "AI-driven scientific discovery",
+    "Cloud-based scientific computing",
+    "Automated model discovery and optimization"
+  ],
+  "literature": [
+    {"name": "Computational Science: An Introduction by Frank T. Smith and John M. Boyle", "link": "https://global.oup.com/academic/product/computational-science-9780199655461"},
+    {"name": "A First Course in Computational Physics by Paul L. DeVries and Javier E. Hasbun", "link": "https://www.springer.com/gp/book/9783319277191"},
+    {"name": "SIAM Journal on Scientific Computing", "link": "https://www.siam.org/publications/journals/siam-journal-on-scientific-computing-sisc"}
+  ]
 }

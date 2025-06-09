@@ -180,8 +180,78 @@ async function renderCSMap() {
     
     // Load data
     const clusterData = await loadClusterData();
+    // --- ROBUST NON-OVERLAPPING SAFE ZONE SYSTEM ---
+    // Try to place all primary nodes so that their safe zones never overlap. If not possible, reduce radius and retry.
+    function findNonOverlappingPositions(clusterCount, mapCenter, initialRadius, minRadius, maxAttempts) {
+        // Increase initial and minimum radius by 50% for more spread
+        let radius = initialRadius * 1.5;
+        const minRadiusScaled = minRadius * 1.5;
+        let positions = [];
+        let safeZones = [];
+        let attempt = 0;
+        while (radius >= minRadiusScaled) {
+            positions = [];
+            safeZones = [];
+            let failed = false;
+            for (let i = 0; i < clusterCount; i++) {
+                let x, y, tries = 0, found = false;
+                while (tries < maxAttempts) {
+                    x = radius + 40 + Math.random() * (1000 - 2 * (radius + 40));
+                    y = radius + 40 + Math.random() * (1000 - 2 * (radius + 40));
+                    // Keep away from center
+                    if (Math.hypot(x - mapCenter[0], y - mapCenter[1]) < radius + 10) {
+                        tries++;
+                        continue;
+                    }
+                    // Check overlap with all previous
+                    let overlap = false;
+                    for (const [ox, oy] of safeZones) {
+                        if (Math.hypot(x - ox, y - oy) < 2.1 * radius) {
+                            overlap = true;
+                            break;
+                        }
+                    }
+                    if (!overlap) {
+                        found = true;
+                        break;
+                    }
+                    tries++;
+                }
+                if (!found) {
+                    failed = true;
+                    break;
+                }
+                positions.push([x, y]);
+                safeZones.push([x, y]);
+            }
+            if (!failed) {
+                return { positions, radius };
+            }
+            radius -= 18; // Reduce radius and try again
+            attempt++;
+        }
+        // Fallback: just space them in a circle (should never happen)
+        const fallback = [];
+        for (let i = 0; i < clusterCount; i++) {
+            const angle = (2 * Math.PI * i) / clusterCount;
+            fallback.push([
+                mapCenter[0] + (initialRadius * 1.2 * 1.5) * Math.cos(angle),
+                mapCenter[1] + (initialRadius * 1.2 * 1.5) * Math.sin(angle)
+            ]);
+        }
+        return { positions: fallback, radius: initialRadius * 1.5 };
+    }
+
+    // Use robust placement for primary nodes
     const clusterCount = clusterData.length;
     const mapCenter = [500, 500];
+    const initialSafeZoneRadius = 210;
+    const minSafeZoneRadius = 120;
+    const maxTriesPerNode = 700;
+    const { positions: domainPositions, radius: safeZoneRadius } = findNonOverlappingPositions(
+        clusterCount, mapCenter, initialSafeZoneRadius, minSafeZoneRadius, maxTriesPerNode
+    );
+    const domainSafeZones = [...domainPositions];
     
     // Create central node
     allNodes.root = createNode(mapCenter, { 
@@ -213,22 +283,12 @@ async function renderCSMap() {
         }
     });
     
-    // Calculate cluster positions in a circle
-    const clusterRadius = 350;
-    const clusterCenters = [];
-    for (let i = 0; i < clusterCount; i++) {
-        const angle = (2 * Math.PI / clusterCount) * i - Math.PI / 2;
-        const x = mapCenter[0] + clusterRadius * Math.cos(angle);
-        const y = mapCenter[1] + clusterRadius * Math.sin(angle);
-        clusterCenters.push([x, y]);
-    }
-    
     // Create domain clusters
     for (let i = 0; i < clusterCount; i++) {
         const domain = clusterData[i];
         const color = clusterColors[i % clusterColors.length];
-        const domainCenter = clusterCenters[i];
-        
+        const domainCenter = domainPositions[i];
+
         // Draw connection line from center to domain
         L.polyline([mapCenter, domainCenter], {
             color: color,
@@ -236,7 +296,7 @@ async function renderCSMap() {
             opacity: 0.7,
             dashArray: '4,6'
         }).addTo(map);
-        
+
         // Create domain node
         const domainNode = createNode(domainCenter, domain, {
             radius: 8,
@@ -255,13 +315,27 @@ async function renderCSMap() {
             e.originalEvent.stopPropagation(); // Prevent map click
             resetAllLabels();
             renderInfoPanel(this.dataRef, false);
-            
             // Show subfields of this domain
             if (domain.subfields && domain.subfields.length) {
                 const subfieldNodes = allNodes.subfields.filter(n => 
                     n.dataRef.parentDomain === domain.name
                 );
                 subfieldNodes.forEach(node => {
+                    node.bindTooltip(node.dataRef.name || node.dataRef, {
+                        permanent: true,
+                        direction: 'top',
+                        className: 'child-label'
+                    }).openTooltip();
+                });
+                // Show all tertiary (subsubfield) labels for this domain
+                const subsubfieldNodes = allNodes.subsubfields.filter(n => {
+                    // Find subsubfields whose parentSubfield is a subfield of this domain
+                    return domain.subfields.some(sf => {
+                        const sfName = typeof sf === 'string' ? sf : sf.name;
+                        return n.dataRef.parentSubfield === sfName;
+                    });
+                });
+                subsubfieldNodes.forEach(node => {
                     node.bindTooltip(node.dataRef.name || node.dataRef, {
                         permanent: true,
                         direction: 'top',
@@ -280,15 +354,20 @@ async function renderCSMap() {
         // Create subfields if they exist
         if (domain.subfields && domain.subfields.length) {
             const subfieldCount = domain.subfields.length;
-            
+            const subfieldPositions = [];
+            // Place subfields closer to primary node, with more randomness (reduce distance)
+            for (let j = 0; j < subfieldCount; j++) {
+                let angle = Math.random() * 2 * Math.PI;
+                // Reduce the multiplier to bring subfields closer to their domain node
+                let radius = safeZoneRadius * 0.18 + Math.random() * safeZoneRadius * 0.10;
+                let x = domainCenter[0] + radius * Math.cos(angle);
+                let y = domainCenter[1] + radius * Math.sin(angle);
+                subfieldPositions.push([x, y]);
+            }
             for (let j = 0; j < subfieldCount; j++) {
                 const subfield = domain.subfields[j];
                 const subfieldName = typeof subfield === 'string' ? subfield : subfield.name;
-                
-                // Calculate position around domain center
-                const angle = (2 * Math.PI / subfieldCount) * j;
-                const x = domainCenter[0] + 110 * Math.cos(angle);
-                const y = domainCenter[1] + 110 * Math.sin(angle);
+                const [x, y] = subfieldPositions[j];
                 
                 // Create subfield data object
                 const subfieldData = typeof subfield === 'string' ? 
@@ -317,54 +396,59 @@ async function renderCSMap() {
                     e.originalEvent.stopPropagation();
                     resetAllLabels();
                     renderInfoPanel(this.dataRef, false);
-                    // Show subsubfields of this subfield if they exist
-                    if (subfield.subsubfields && subfield.subsubfields.length) {
-                        const subsubfieldNodes = allNodes.subsubfields.filter(n => 
-                            n.dataRef.parentSubfield === subfieldName
-                        );
-                        // Show all subsubfield labels
-                        subsubfieldNodes.forEach(node => {
-                            node.bindTooltip(node.dataRef.name || node.dataRef, {
-                                permanent: true,
-                                direction: 'top',
-                                className: 'child-label'
-                            }).openTooltip();
-                        });
-                        // Keep parent label visible
-                        this.bindTooltip(this.dataRef.name || this.dataRef, {
+                    // Always show this subfield's label
+                    this.bindTooltip(this.dataRef.name || this.dataRef, {
+                        permanent: true,
+                        direction: 'top',
+                        className: 'child-label'
+                    }).openTooltip();
+                    // Always show parent domain label
+                    const parentDomainNode = allNodes.domains.find(n => n.dataRef.name === domain.name);
+                    if (parentDomainNode) {
+                        parentDomainNode.bindTooltip(parentDomainNode.dataRef.name, {
+                            permanent: true,
+                            direction: 'top',
+                            className: 'center-label'
+                        }).openTooltip();
+                    }
+                    // Show all subsubfield labels for this subfield (immediately, not in setTimeout)
+                    const subsubfieldNodes = allNodes.subsubfields.filter(n => n.dataRef.parentSubfield === subfieldName);
+                    subsubfieldNodes.forEach(node => {
+                        node.bindTooltip(node.dataRef.name || node.dataRef, {
                             permanent: true,
                             direction: 'top',
                             className: 'child-label'
                         }).openTooltip();
-                        // Also keep domain label visible
-                        const parentDomainNode = allNodes.domains.find(n => n.dataRef.name === domain.name);
-                        if (parentDomainNode) {
-                            parentDomainNode.bindTooltip(parentDomainNode.dataRef.name, {
-                                permanent: true,
-                                direction: 'top',
-                                className: 'center-label'
-                            }).openTooltip();
-                        }
-                    }
+                    });
                 });
                 
                 // Create subsubfields if they exist
                 if (subfield.subsubfields && subfield.subsubfields.length) {
                     const subsubfieldCount = subfield.subsubfields.length;
-                    
+                    const subsubfieldPositions = [];
+                    // Place subsubfields much closer to subfield, with more randomness
+                    for (let k = 0; k < subsubfieldCount; k++) {
+                        let angle = Math.random() * 2 * Math.PI;
+                        let radius = 22 + Math.random() * 14;
+                        let x2 = x + radius * Math.cos(angle);
+                        let y2 = y + radius * Math.sin(angle);
+                        // Ensure subsubfield stays within the domain's safe zone
+                        if (Math.hypot(x2 - domainCenter[0], y2 - domainCenter[1]) > safeZoneRadius - 18) {
+                            let scale = (safeZoneRadius - 18) / Math.hypot(x2 - domainCenter[0], y2 - domainCenter[1]);
+                            x2 = domainCenter[0] + (x2 - domainCenter[0]) * scale;
+                            y2 = domainCenter[1] + (y2 - domainCenter[1]) * scale;
+                        }
+                        subsubfieldPositions.push([x2, y2]);
+                    }
                     for (let k = 0; k < subsubfieldCount; k++) {
                         const subsubfield = subfield.subsubfields[k];
                         const subsubfieldName = typeof subsubfield === 'string' ? subsubfield : subsubfield.name;
-                        
-                        // Calculate position around subfield
-                        const angle = (2 * Math.PI / subsubfieldCount) * k;
-                        const x2 = x + 32 * Math.cos(angle);
-                        const y2 = y + 32 * Math.sin(angle);
+                        const [x2, y2] = subsubfieldPositions[k];
                         
                         // Create subsubfield data object
                         const subsubfieldData = typeof subsubfield === 'string' ? 
                             { name: subsubfield, parentSubfield: subfieldName } : 
-                            { ...subsubfield, parentSubfield: subfieldName };
+                            { ...subsubfield, parentSubField: subfieldName };
                         
                         // Create subsubfield node
                         const subsubfieldNode = createNode([x2, y2], subsubfieldData, {

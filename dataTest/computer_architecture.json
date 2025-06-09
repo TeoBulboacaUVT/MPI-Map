@@ -1,0 +1,13 @@
+{
+  "name": "Computer Architecture",
+  "coreConcepts": ["Concept A", "Concept B", "Concept C"],
+  "keyProblems": ["Problem X", "Problem Y"],
+  "applications": ["Application 1", "Application 2"],
+  "tools": ["Tool Alpha", "Tool Beta"],
+  "pioneers": [{"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"}],
+  "timeline": ["Milestone 1", "Milestone 2"],
+  "subfields": [],
+  "relatedFields": [{"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"}],
+  "advancements": ["Advancement 1", "Advancement 2"],
+  "literature": [{"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"}]
+}

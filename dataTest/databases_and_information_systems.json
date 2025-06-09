@@ -1,0 +1,1331 @@
+{
+  "name": "Databases and Information Retrieval",
+  "coreConcepts": [
+    "Data modeling and schema design",
+    "Query languages and optimization",
+    "Transaction management and concurrency control",
+    "Data storage and indexing",
+    "Information retrieval models",
+    "Ranking and relevance",
+    "Distributed databases",
+    "Data warehousing and OLAP",
+    "NoSQL databases",
+    "Text processing and analysis"
+  ],
+  "keyProblems": [
+    "Scalability and performance for massive datasets",
+    "Data consistency and integrity in distributed systems",
+    "Handling unstructured and semi-structured data",
+    "Efficient query processing over diverse data types",
+    "Relevance ranking for complex information needs",
+    "Data security and privacy concerns",
+    "Real-time data processing and analytics",
+    "Integration of heterogeneous data sources",
+    "Managing data evolution and schema changes",
+    "Explainability and interpretability of search results"
+  ],
+  "applications": [
+    "E-commerce websites and online retail",
+    "Social media platforms",
+    "Enterprise resource planning (ERP) systems",
+    "Customer relationship management (CRM) systems",
+    "Search engines (Google, Bing)",
+    "Digital libraries and archives",
+    "Recommendation systems",
+    "Geographic information systems (GIS)",
+    "Scientific data management",
+    "Business intelligence and analytics"
+  ],
+  "tools": [
+    "SQL (Structured Query Language)",
+    "MySQL",
+    "PostgreSQL",
+    "Oracle Database",
+    "MongoDB",
+    "Apache Solr",
+    "Elasticsearch",
+    "Apache Hadoop",
+    "Apache Spark",
+    "Python (with database connectors)"
+  ],
+  "pioneers": [
+    {
+      "name": "Edgar F. Codd",
+      "link": "https://en.wikipedia.org/wiki/Edgar_F._Codd"
+    },
+    {
+      "name": "Charles Bachman",
+      "link": "https://en.wikipedia.org/wiki/Charles_W._Bachman"
+    },
+    {
+      "name": "Ted Nelson",
+      "link": "https://en.wikipedia.org/wiki/Ted_Nelson"
+    },
+    {
+      "name": "Gerard Salton",
+      "link": "https://en.wikipedia.org/wiki/Gerard_Salton"
+    },
+    {
+      "name": "Michael Stonebraker",
+      "link": "https://en.wikipedia.org/wiki/Michael_Stonebraker"
+    },
+    {
+      "name": "Jim Gray",
+      "link": "https://en.wikipedia.org/wiki/Jim_Gray_(computer_scientist)"
+    },
+    {
+      "name": "Donald Knuth",
+      "link": "https://en.wikipedia.org/wiki/Donald_Knuth"
+    },
+    {
+      "name": "Jeffrey Ullman",
+      "link": "https://en.wikipedia.org/wiki/Jeffrey_Ullman"
+    }
+  ],
+  "timeline": [
+    "1960s: Emergence of hierarchical and network databases.",
+    "1970: Edgar Codd publishes 'A Relational Model of Data for Large Shared Data Banks'.",
+    "1970s: Development of System R and INGRES, early relational database prototypes.",
+    "1980s: SQL becomes an industry standard for relational databases.",
+    "1990s: Rise of the World Wide Web and increased need for information retrieval.",
+    "2000s: Growth of Big Data and distributed database systems.",
+    "2000s: Development of NoSQL databases for scalability and flexibility.",
+    "2010s: Cloud-based databases and managed database services proliferate.",
+    "2010s: Machine learning applied to information retrieval and database optimization."
+  ],
+  "subfields": [
+    {
+      "name": "Relational Databases",
+      "coreConcepts": [
+        "Relational model",
+        "Normalization",
+        "SQL queries",
+        "ACID properties",
+        "Indexing strategies"
+      ],
+      "keyProblems": [
+        "Scalability for very large datasets",
+        "Object-relational impedance mismatch",
+        "Complex join performance",
+        "Schema evolution in large systems"
+      ],
+      "applications": [
+        "Financial systems",
+        "Inventory management",
+        "Customer databases",
+        "Human resources systems"
+      ],
+      "tools": [
+        "MySQL",
+        "PostgreSQL",
+        "Oracle Database",
+        "SQL Server",
+        "SQLite"
+      ],
+      "pioneers": [
+        {
+          "name": "Edgar F. Codd",
+          "link": "https://en.wikipedia.org/wiki/Edgar_F._Codd"
+        },
+        {
+          "name": "Donald Chamberlin",
+          "link": "https://en.wikipedia.org/wiki/Donald_D._Chamberlin"
+        },
+        {
+          "name": "Raymond F. Boyce",
+          "link": "https://en.wikipedia.org/wiki/Raymond_F._Boyce"
+        },
+        {
+          "name": "Michael Stonebraker",
+          "link": "https://en.wikipedia.org/wiki/Michael_Stonebraker"
+        }
+      ],
+      "timeline": [
+        "1970: Codd's relational model paper published.",
+        "1974: SQUARE and SEQUEL (SQL precursors) developed.",
+        "1979: Oracle introduces the first commercial SQL RDBMS.",
+        "1986: SQL becomes an ANSI standard.",
+        "Early 2000s: Open-source relational databases gain popularity."
+      ],
+      "relatedFields": [
+        {
+          "name": "Data Warehousing",
+          "link": "https://en.wikipedia.org/wiki/Data_warehouse"
+        },
+        {
+          "name": "Distributed Systems",
+          "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+        },
+        {
+          "name": "Operating Systems",
+          "link": "https://en.wikipedia.org/wiki/Operating_system"
+        },
+        {
+          "name": "Data Mining",
+          "link": "https://en.wikipedia.org/wiki/Data_mining"
+        }
+      ],
+      "advancements": [
+        "Column-oriented relational databases for analytics",
+        "In-memory relational databases for high performance",
+        "Advanced query optimizers using AI/ML",
+        "New indexing structures for complex data types"
+      ],
+      "literature": [
+        {
+          "name": "A Relational Model of Data for Large Shared Data Banks - E. F. Codd",
+          "link": "https://www.seas.upenn.edu/~zives/03f/cis550/codd.pdf"
+        },
+        {
+          "name": "Database System Concepts - Silberschatz, Korth, Sudarshan",
+          "link": "https://www.db-book.com/"
+        },
+        {
+          "name": "Readings in Database Systems (The Red Book) - Joseph Hellerstein, Michael Stonebraker",
+          "link": "https://redbook.cs.berkeley.edu/"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "SQL Query Optimization",
+          "coreConcepts": [
+            "Execution plans",
+            "Index selection",
+            "Join algorithms",
+            "Cost-based optimization"
+          ],
+          "keyProblems": [
+            "Estimating query costs accurately",
+            "Handling complex subqueries",
+            "Adapting to data distribution changes",
+            "Optimizing across distributed nodes"
+          ],
+          "applications": [
+            "Improving application performance",
+            "Reducing database load",
+            "Efficient data analytics",
+            "Real-time reporting"
+          ],
+          "tools": [
+            "EXPLAIN (SQL command)",
+            "Database profilers",
+            "Query tuners",
+            "Performance monitoring tools"
+          ],
+          "relatedFields": [
+            {
+              "name": "Compilers",
+              "link": "https://en.wikipedia.org/wiki/Compiler"
+            },
+            {
+              "name": "Algorithms",
+              "link": "https://en.wikipedia.org/wiki/Algorithm"
+            },
+            {
+              "name": "Operating Systems",
+              "link": "https://en.wikipedia.org/wiki/Operating_system"
+            },
+            {
+              "name": "Distributed Systems",
+              "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+            },
+            {
+              "name": "Machine Learning",
+              "link": "https://en.wikipedia.org/wiki/Machine_learning"
+            }
+          ],
+          "advancements": [
+            "AI-powered query optimizers",
+            "Adaptive query processing",
+            "Workload-driven optimization",
+            "Automatic indexing recommendations"
+          ],
+          "literature": [
+            {
+              "name": "An Overview of Query Optimization in Relational Systems - Surajit Chaudhuri",
+              "link": "https://web.stanford.edu/class/cs345d-01/rl/chaudhuri98.pdf"
+            },
+            {
+              "name": "The Volcano Optimizer Generator - Goetz Graefe",
+              "link": "https://15799.courses.cs.cmu.edu/spring2025/papers/04-volcano/graefe-icde1993.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Transaction Management",
+          "coreConcepts": [
+            "ACID properties",
+            "Concurrency control (locks, timestamps)",
+            "Recovery mechanisms",
+            "Isolation levels"
+          ],
+          "keyProblems": [
+            "Ensuring serializability in concurrent access",
+            "Deadlock detection and resolution",
+            "Efficient crash recovery",
+            "Managing distributed transactions"
+          ],
+          "applications": [
+            "Online transaction processing (OLTP)",
+            "Banking systems",
+            "E-commerce order processing",
+            "Airline reservation systems"
+          ],
+          "tools": [
+            "Two-phase locking",
+            "Multi-version concurrency control (MVCC)",
+            "Write-Ahead Logging (WAL)",
+            "Distributed transaction coordinators"
+          ],
+          "relatedFields": [
+            {
+              "name": "Distributed Systems",
+              "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+            },
+            {
+              "name": "Operating Systems",
+              "link": "https://en.wikipedia.org/wiki/Operating_system"
+            },
+            {
+              "name": "Concurrency",
+              "link": "https://en.wikipedia.org/wiki/Concurrency_(computer_science)"
+            },
+            {
+              "name": "Fault Tolerance",
+              "link": "https://en.wikipedia.org/wiki/Fault_tolerance"
+            }
+          ],
+          "advancements": [
+            "New concurrency control protocols for distributed systems",
+            "Transactional memory for shared-memory systems",
+            "Blockchain-based transaction models",
+            "Optimistic concurrency control variants"
+          ],
+          "literature": [
+            {
+              "name": "Principles of Database Management - Jeffrey D. Ullman",
+              "link": "https://www.db.bme.hu/databases/principles-of-database-and-knowledge-base-systems-volume-1-1.pdf"
+            },
+            {
+              "name": "Concurrency Control and Recovery in Database Systems - Philip A. Bernstein et al.",
+              "link": "https://courses.cs.washington.edu/courses/cse490h/11wi/CSE490H_files/CSE550BHG-Ch7.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NoSQL Databases",
+      "coreConcepts": [
+        "Schema-less design",
+        "Eventual consistency",
+        "Key-value stores",
+        "Document databases",
+        "Column-family databases",
+        "Graph databases"
+      ],
+      "keyProblems": [
+        "Data consistency management",
+        "Complex querying across data types",
+        "Lack of standardized query languages",
+        "Data migration between NoSQL types"
+      ],
+      "applications": [
+        "Real-time web applications",
+        "Big data analytics",
+        "Content management systems",
+        "Social networks",
+        "Internet of Things (IoT)"
+      ],
+      "tools": [
+        "MongoDB",
+        "Cassandra",
+        "Redis",
+        "Neo4j",
+        "Couchbase"
+      ],
+      "pioneers": [
+        {
+          "name": "Eric Brewer",
+          "link": "https://en.wikipedia.org/wiki/Eric_Brewer_(scientist)"
+        },
+        {
+          "name": "Werner Vogels",
+          "link": "https://en.wikipedia.org/wiki/Werner_Vogels"
+        },
+        {
+          "name": "Jeff Dean",
+          "link": "https://en.wikipedia.org/wiki/Jeff_Dean_(computer_scientist)"
+        }
+      ],
+      "timeline": [
+        "Late 2000s: Term 'NoSQL' coined.",
+        "2008: Cassandra developed at Facebook, open-sourced.",
+        "2009: MongoDB released.",
+        "2010s: Rapid adoption in web-scale applications.",
+        "2010s: Emergence of polyglot persistence strategies."
+      ],
+      "relatedFields": [
+        {
+          "name": "Distributed Systems",
+          "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+        },
+        {
+          "name": "Big Data",
+          "link": "https://en.wikipedia.org/wiki/Big_data"
+        },
+        {
+          "name": "Cloud Computing",
+          "link": "https://en.wikipedia.org/wiki/Cloud_computing"
+        },
+        {
+          "name": "Web Development",
+          "link": "https://en.wikipedia.org/wiki/Web_development"
+        }
+      ],
+      "advancements": [
+        "Multi-model databases combining NoSQL paradigms",
+        "New consistency models for distributed environments",
+        "Improved tooling for schema evolution in NoSQL",
+        "Serverless NoSQL database services"
+      ],
+      "literature": [
+        {
+          "name": "Building Scalable Web Sites - Michael T. Nygard",
+          "link": "https://ir.uenr.edu.gh/fetch.php/Resources/A05154/BuildingScalableWebSitesBuildingScalingAndOptimizingTheNextGenerationOfWebApplications.pdf"
+        },
+        {
+          "name": "Designing Data-Intensive Applications - Martin Kleppmann",
+          "link": "https://dataintensive.net/"
+        },
+        {
+          "name": "NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence - Pramod J. Sadalage, Martin Fowler",
+          "link": "https://martinfowler.com/books/nosql.html"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Document Databases",
+          "coreConcepts": [
+            "JSON/BSON documents",
+            "Flexible schema",
+            "Nested data structures",
+            "Indexing documents"
+          ],
+          "keyProblems": [
+            "Complex joins across collections",
+            "Data validation without strict schema",
+            "Performance for very large documents",
+            "Concurrency control for document updates"
+          ],
+          "applications": [
+            "Content management",
+            "Catalogs and product information",
+            "User profiles",
+            "Mobile application backends"
+          ],
+          "tools": [
+            "MongoDB",
+            "CouchDB",
+            "RavenDB",
+            "Firebase Firestore"
+          ],
+          "relatedFields": [
+            {
+              "name": "JSON",
+              "link": "https://en.wikipedia.org/wiki/JSON"
+            },
+            {
+              "name": "XML",
+              "link": "https://en.wikipedia.org/wiki/XML"
+            },
+            {
+              "name": "Web Development",
+              "link": "https://en.wikipedia.org/wiki/Web_development"
+            },
+            {
+              "name": "RESTful APIs",
+              "link": "https://en.wikipedia.org/wiki/Representational_state_transfer"
+            }
+          ],
+          "advancements": [
+            "Support for ACID transactions on documents",
+            "Document-oriented query languages",
+            "Cloud-native document databases",
+            "Full-text search capabilities"
+          ],
+          "literature": [
+            {
+              "name": "MongoDB: The Definitive Guide - Kristina Chodorow, Michael Dirolf",
+              "link": "https://pepa.holla.cz/wp-content/uploads/2016/07/MongoDB-The-Definitive-Guide.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Graph Databases",
+          "coreConcepts": [
+            "Nodes and edges",
+            "Properties",
+            "Traversals",
+            "Graph algorithms"
+          ],
+          "keyProblems": [
+            "Scaling for super-nodes",
+            "Optimal pathfinding in large graphs",
+            "Schema evolution in graph structures",
+            "Querying highly interconnected data"
+          ],
+          "applications": [
+            "Social networks",
+            "Recommendation engines",
+            "Fraud detection",
+            "Knowledge graphs",
+            "Network management"
+          ],
+          "tools": [
+            "Neo4j",
+            "ArangoDB",
+            "Amazon Neptune",
+            "Gremlin (query language)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Graph Theory",
+              "link": "https://en.wikipedia.org/wiki/Graph_theory"
+            },
+            {
+              "name": "Social Network Analysis",
+              "link": "https://en.wikipedia.org/wiki/Social_network_analysis"
+            },
+            {
+              "name": "Artificial Intelligence",
+              "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+            },
+            {
+              "name": "Data Mining",
+              "link": "https://en.wikipedia.org/wiki/Data_mining"
+            }
+          ],
+          "advancements": [
+            "Integration with machine learning for graph embeddings",
+            "Distributed graph processing frameworks",
+            "New graph query languages (GQL)",
+            "Real-time graph analytics"
+          ],
+          "literature": [
+            {
+              "name": "Graph Databases: New Opportunities for Connected Data - Ian Robinson, Jim Webber, Emil Eifrem",
+              "link": "https://www.oreilly.com/library/view/graph-databases-2nd/9781491930885/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Information Retrieval (IR)",
+      "coreConcepts": [
+        "Indexing and inverted files",
+        "Boolean model",
+        "Vector space model",
+        "Probabilistic models",
+        "Ranking algorithms (e.g., PageRank)",
+        "Relevance feedback",
+        "Text preprocessing"
+      ],
+      "keyProblems": [
+        "Ambiguity and polysemy in natural language",
+        "Relevance assessment subjectivity",
+        "Scalability for web-scale corpora",
+        "Cross-language information retrieval",
+        "Handling multimedia information"
+      ],
+      "applications": [
+        "Web search engines",
+        "Enterprise search",
+        "Digital libraries",
+        "Recommender systems",
+        "E-discovery and legal search"
+      ],
+      "tools": [
+        "Apache Lucene",
+        "Apache Solr",
+        "Elasticsearch",
+        "Whoosh",
+        "NLTK (Natural Language Toolkit)"
+      ],
+      "pioneers": [
+        {
+          "name": "Gerard Salton",
+          "link": "https://en.wikipedia.org/wiki/Gerard_Salton"
+        },
+        {
+          "name": "Karen Spärck Jones",
+          "link": "https://en.wikipedia.org/wiki/Karen_Sp%C3%A4rck_Jones"
+        },
+        {
+          "name": "Eugene Garfield",
+          "link": "https://en.wikipedia.org/wiki/Eugene_Garfield"
+        },
+        {
+          "name": "Vannevar Bush",
+          "link": "https://en.wikipedia.org/wiki/Vannevar_Bush"
+        }
+      ],
+      "timeline": [
+        "1945: Vannevar Bush publishes 'As We May Think', envisioning Memex.",
+        "1960s: Development of early text retrieval systems.",
+        "1970s: Vector space model and probabilistic models introduced.",
+        "1990s: Emergence of the World Wide Web, leading to web search engines.",
+        "1998: Google's PageRank algorithm becomes prominent.",
+        "2000s: Focus on personalized search and contextual relevance."
+      ],
+      "relatedFields": [
+        {
+          "name": "Natural Language Processing",
+          "link": "https://en.wikipedia.org/wiki/Natural_language_processing"
+        },
+        {
+          "name": "Machine Learning",
+          "link": "https://en.wikipedia.org/wiki/Machine_learning"
+        },
+        {
+          "name": "Human-Computer Interaction",
+          "link": "https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction"
+        },
+        {
+          "name": "Statistics",
+          "link": "https://en.wikipedia.org/wiki/Statistics"
+        }
+      ],
+      "advancements": [
+        "Deep learning for ranking and relevance",
+        "Semantic search and knowledge graphs",
+        "Conversational search and voice assistants",
+        "Neural information retrieval models"
+      ],
+      "literature": [
+        {
+          "name": "Introduction to Information Retrieval - Christopher D. Manning, Prabhakar Raghavan, Hinrich Schütze",
+          "link": "https://nlp.stanford.edu/IR-book/"
+        },
+        {
+          "name": "Modern Information Retrieval - Ricardo Baeza-Yates, Berthier Ribeiro-Neto",
+          "link": "https://web.cs.ucla.edu/~miodrag/cs259-security/baeza-yates99modern.pdf"
+        },
+        {
+          "name": "Foundations of Statistical Natural Language Processing - Christopher D. Manning, Hinrich Schütze",
+          "link": "https://nlp.stanford.edu/fsnlp/"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Web Search Engines",
+          "coreConcepts": [
+            "Crawling and indexing the web",
+            "Link analysis (PageRank)",
+            "Query understanding",
+            "Snippet generation"
+          ],
+          "keyProblems": [
+            "Combating web spam",
+            "Real-time indexing of dynamic content",
+            "Personalization and contextual search",
+            "Handling massive scale and continuous updates"
+          ],
+          "applications": [
+            "Google Search",
+            "Bing",
+            "DuckDuckGo",
+            "Enterprise web search"
+          ],
+          "tools": [
+            "Apache Nutch",
+            "Common Crawl",
+            "Search engine APIs",
+            "Web scraping tools"
+          ],
+          "relatedFields": [
+            {
+              "name": "Distributed Systems",
+              "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+            },
+            {
+              "name": "Big Data",
+              "link": "https://en.wikipedia.org/wiki/Big_data"
+            },
+            {
+              "name": "Machine Learning",
+              "link": "https://en.wikipedia.org/wiki/Machine_learning"
+            },
+            {
+              "name": "Computer Networks",
+              "link": "https://en.wikipedia.org/wiki/Computer_network"
+            }
+          ],
+          "advancements": [
+            "Neural matching for query and document relevance",
+            "BERT and other transformer models in ranking",
+            "Multimodal search (image, video, text)",
+            "Federated search across diverse sources"
+          ],
+          "literature": [
+            {
+              "name": "The Anatomy of a Large-Scale Hypertextual Web Search Engine - Sergey Brin, Lawrence Page",
+              "link": "https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Recommender Systems",
+          "coreConcepts": [
+            "Collaborative filtering",
+            "Content-based filtering",
+            "Hybrid approaches",
+            "Matrix factorization",
+            "Evaluation metrics"
+          ],
+          "keyProblems": [
+            "Cold start problem for new items/users",
+            "Scalability for large user/item sets",
+            "Bias in recommendations",
+            "Explainability of recommendations"
+          ],
+          "applications": [
+            "E-commerce product recommendations",
+            "Movie and music streaming services",
+            "News article suggestions",
+            "Social media content feeds"
+          ],
+          "tools": [
+            "Surprise (Python library)",
+            "TensorFlow Recommenders",
+            "Apache Spark MLlib",
+            "LightFM"
+          ],
+          "relatedFields": [
+            {
+              "name": "Machine Learning",
+              "link": "https://en.wikipedia.org/wiki/Machine_learning"
+            },
+            {
+              "name": "Data Mining",
+              "link": "https://en.wikipedia.org/wiki/Data_mining"
+            },
+            {
+              "name": "Statistics",
+              "link": "https://en.wikipedia.org/wiki/Statistics"
+            },
+            {
+              "name": "User Experience Design",
+              "link": "https://en.wikipedia.org/wiki/User_experience_design"
+            }
+          ],
+          "advancements": [
+            "Deep learning for recommendation models",
+            "Graph neural networks in recommenders",
+            "Session-based recommendation algorithms",
+            "Fairness-aware recommendation systems"
+          ],
+          "literature": [
+            {
+              "name": "Recommender Systems Handbook - Francesco Ricci, Lior Rokach, Bracha Shapira",
+              "link": "https://link.springer.com/book/10.1007/978-1-4899-7637-6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Distributed Databases",
+      "coreConcepts": [
+        "Data fragmentation and replication",
+        "Distributed query processing",
+        "Distributed transaction management",
+        "Concurrency control in distributed systems",
+        "CAP theorem",
+        "Sharding"
+      ],
+      "keyProblems": [
+        "Ensuring data consistency across nodes",
+        "Network latency and partitioning",
+        "Distributed deadlock detection",
+        "Complex failure recovery in distributed environments"
+      ],
+      "applications": [
+        "Cloud database services",
+        "Large-scale web applications",
+        "Big data analytics platforms",
+        "Global financial systems"
+      ],
+      "tools": [
+        "Apache Cassandra",
+        "Apache HBase",
+        "Google Spanner",
+        "CockroachDB",
+        "Apache Flink"
+      ],
+      "pioneers": [
+        {
+          "name": "Jim Gray",
+          "link": "https://en.wikipedia.org/wiki/Jim_Gray_(computer_scientist)"
+        },
+        {
+          "name": "Michael Stonebraker",
+          "link": "https://en.wikipedia.org/wiki/Michael_Stonebraker"
+        },
+        {
+          "name": "Leslie Lamport",
+          "link": "https://en.wikipedia.org/wiki/Leslie_Lamport"
+        },
+        {
+          "name": "Eric Brewer",
+          "link": "https://en.wikipedia.org/wiki/Eric_Brewer_(scientist)"
+        }
+      ],
+      "timeline": [
+        "1970s: Early research on distributed database systems.",
+        "1980s: Development of distributed transaction protocols (e.g., Two-Phase Commit).",
+        "2000s: Emergence of highly scalable, eventually consistent systems.",
+        "2010s: Cloud-native distributed databases become mainstream.",
+        "2010s: NewSQL databases attempt to combine SQL and NoSQL benefits."
+      ],
+      "relatedFields": [
+        {
+          "name": "Distributed Systems",
+          "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+        },
+        {
+          "name": "Computer Networks",
+          "link": "https://en.wikipedia.org/wiki/Computer_network"
+        },
+        {
+          "name": "Cloud Computing",
+          "link": "https://en.wikipedia.org/wiki/Cloud_computing"
+        },
+        {
+          "name": "Operating Systems",
+          "link": "https://en.wikipedia.org/wiki/Operating_system"
+        }
+      ],
+      "advancements": [
+        "Globally consistent distributed databases (e.g., Google Spanner)",
+        "New consistency models beyond ACID and BASE",
+        "Serverless database architectures",
+        "Automatic sharding and load balancing"
+      ],
+      "literature": [
+        {
+          "name": "Distributed Systems: Concepts and Design - George Coulouris, Jean Dollimore, Tim Kindberg, Gordon Blair",
+          "link": "https://www.pearson.com/us/higher-education/program/Coulouris-Distributed-Systems-Concepts-and-Design-5th-Edition/PGM9780132143011.html"
+        },
+        {
+          "name": "Database Management Systems - Raghu Ramakrishnan, Johannes Gehrke",
+          "link": "https://pages.cs.wisc.edu/~dbbook/"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "NewSQL Databases",
+          "coreConcepts": [
+            "SQL interface",
+            "Scalability of NoSQL",
+            "ACID properties",
+            "Distributed transactions"
+          ],
+          "keyProblems": [
+            "Achieving high performance with ACID compliance",
+            "Complex consistency guarantees in distributed settings",
+            "Migration from traditional RDBMS",
+            "Overhead of distributed transactions"
+          ],
+          "applications": [
+            "High-throughput OLTP systems",
+            "Financial trading platforms",
+            "Gaming backends",
+            "Real-time analytics with strong consistency"
+          ],
+          "tools": [
+            "CockroachDB",
+            "TiDB",
+            "VoltDB",
+            "Nuodb"
+          ],
+          "relatedFields": [
+            {
+              "name": "Distributed Systems",
+              "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+            },
+            {
+              "name": "Relational Databases",
+              "link": "https://en.wikipedia.org/wiki/Relational_database"
+            },
+            {
+              "name": "NoSQL Databases",
+              "link": "https://en.wikipedia.org/wiki/NoSQL"
+            }
+          ],
+          "advancements": [
+            "Calvin architecture for global serializability",
+            "Hybrid Transactional/Analytical Processing (HTAP)",
+            "Advanced consensus algorithms (e.g., Raft, Paxos)",
+            "Cloud-native NewSQL services"
+          ],
+          "literature": [
+            {
+              "name": "The Case for NewSQL - Matthew Aslett",
+              "link": "https://db.cs.cmu.edu/papers/2016/pavlo-newsql-sigmodrec2016.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Cloud Databases",
+          "coreConcepts": [
+            "Scalability on demand",
+            "Pay-as-you-go pricing",
+            "Managed services",
+            "Global distribution",
+            "Serverless databases"
+          ],
+          "keyProblems": [
+            "Vendor lock-in",
+            "Data sovereignty and compliance",
+            "Cost optimization in the cloud",
+            "Performance tuning for specific cloud offerings"
+          ],
+          "applications": [
+            "Web application backends",
+            "Mobile application backends",
+            "IoT data ingestion",
+            "DevOps and rapid prototyping"
+          ],
+          "tools": [
+            "Amazon Aurora",
+            "Google Cloud Spanner",
+            "Azure Cosmos DB",
+            "DynamoDB",
+            "Snowflake"
+          ],
+          "relatedFields": [
+            {
+              "name": "Cloud Computing",
+              "link": "https://en.wikipedia.org/wiki/Cloud_computing"
+            },
+            {
+              "name": "Distributed Systems",
+              "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+            },
+            {
+              "name": "DevOps",
+              "link": "https://en.wikipedia.org/wiki/DevOps"
+            }
+          ],
+          "advancements": [
+            "Serverless database offerings with auto-scaling",
+            "Global multi-region replication and consistency",
+            "Integrated machine learning features",
+            "Hybrid cloud database deployments"
+          ],
+          "literature": [
+            {
+              "name": "Database Management Systems on the Cloud - Mohammad Reza Mousavi, Siavash Farzi",
+              "link": "https://link.springer.com/chapter/10.1007/978-3-030-49635-4_6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Data Warehousing and OLAP",
+      "coreConcepts": [
+        "Star schema",
+        "Snowflake schema",
+        "Fact tables and dimension tables",
+        "ETL (Extract, Transform, Load)",
+        "OLAP operations (slice, dice, drill down)",
+        "Data cubes"
+      ],
+      "keyProblems": [
+        "Data quality and consistency in ETL process",
+        "Performance for complex analytical queries",
+        "Schema evolution in data warehouses",
+        "Managing large historical datasets"
+      ],
+      "applications": [
+        "Business intelligence dashboards",
+        "Financial reporting and analysis",
+        "Sales and marketing analytics",
+        "Customer behavior analysis"
+      ],
+      "tools": [
+        "SQL Server Analysis Services (SSAS)",
+        "Pentaho Data Integration",
+        "Talend Open Studio",
+        "Redshift",
+        "Snowflake"
+      ],
+      "pioneers": [
+        {
+          "name": "Bill Inmon",
+          "link": "https://en.wikipedia.org/wiki/Bill_Inmon"
+        },
+        {
+          "name": "Ralph Kimball",
+          "link": "https://en.wikipedia.org/wiki/Ralph_Kimball"
+        }
+      ],
+      "timeline": [
+        "1980s: Concept of data warehousing emerges.",
+        "1990s: Bill Inmon defines the data warehouse.",
+        "Mid-1990s: Ralph Kimball introduces dimensional modeling.",
+        "Late 1990s: OLAP tools gain prominence.",
+        "2000s: ETL tools become more sophisticated.",
+        "2010s: Cloud data warehouses become popular."
+      ],
+      "relatedFields": [
+        {
+          "name": "Business Intelligence",
+          "link": "https://en.wikipedia.org/wiki/Business_intelligence"
+        },
+        {
+          "name": "Data Mining",
+          "link": "https://en.wikipedia.org/wiki/Data_mining"
+        },
+        {
+          "name": "Big Data",
+          "link": "https://en.wikipedia.org/wiki/Big_data"
+        },
+        {
+          "name": "Data Visualization",
+          "link": "https://en.wikipedia.org/wiki/Data_visualization"
+        }
+      ],
+      "advancements": [
+        "Cloud-native data warehouses with auto-scaling",
+        "ELT (Extract, Load, Transform) paradigms",
+        "Data lakehouses combining data lakes and warehouses",
+        "Automated data lineage and governance"
+      ],
+      "literature": [
+        {
+          "name": "Building the Data Warehouse - W.H. Inmon",
+          "link": "https://www.wiley.com/en-us/Building+the+Data+Warehouse%2C+4th+Edition-p-9780764599446"
+        },
+        {
+          "name": "The Data Warehouse Toolkit - Ralph Kimball, Margy Ross",
+          "link": "https://www.kimballgroup.com/data-warehouse-books/data-warehouse-toolkit-third-edition/"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "ETL Processes",
+          "coreConcepts": [
+            "Data extraction from sources",
+            "Data transformation and cleansing",
+            "Data loading into data warehouse",
+            "Orchestration and scheduling"
+          ],
+          "keyProblems": [
+            "Handling data quality issues",
+            "Scalability for large data volumes",
+            "Managing complex data transformations",
+            "Ensuring data consistency and lineage"
+          ],
+          "applications": [
+            "Populating data warehouses",
+            "Data migration projects",
+            "Integrating disparate data sources",
+            "Real-time data ingestion"
+          ],
+          "tools": [
+            "Apache NiFi",
+            "Informatica PowerCenter",
+            "Azure Data Factory",
+            "AWS Glue"
+          ],
+          "relatedFields": [
+            {
+              "name": "Data Engineering",
+              "link": "https://en.wikipedia.org/wiki/Data_engineering"
+            },
+            {
+              "name": "Big Data",
+              "link": "https://en.wikipedia.org/wiki/Big_data"
+            },
+            {
+              "name": "Distributed Systems",
+              "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+            }
+          ],
+          "advancements": [
+            "ELT (Extract Load Transform) approach",
+            "Stream processing for real-time ETL",
+            "Cloud-native ETL services",
+            "Data orchestration platforms"
+          ],
+          "literature": [
+            {
+              "name": "Star Schema The Complete Reference - Christopher Adamson",
+              "link": "https://cdn.bookey.app/files/pdf/book/en/mass-effect-by-mac-walters.pdf"
+            }
+          ]
+        },
+        {
+          "name": "OLAP Cubes",
+          "coreConcepts": [
+            "Multidimensional data model",
+            "Aggregations and pre-computation",
+            "Drill-down, roll-up, slice, dice",
+            "Hierarchies and dimensions"
+          ],
+          "keyProblems": [
+            "Cube explosion problem (large sparse cubes)",
+            "Maintaining cube freshness with new data",
+            "Balancing pre-computation and on-the-fly calculation",
+            "Complex query performance on high-dimensional data"
+          ],
+          "applications": [
+            "Interactive business reports",
+            "Ad-hoc analytical queries",
+            "Budgeting and forecasting",
+            "Performance analysis"
+          ],
+          "tools": [
+            "MDX (Multidimensional Expressions)",
+            "Microsoft SQL Server Analysis Services",
+            "Apache Kylin",
+            "IBM Cognos"
+          ],
+          "relatedFields": [
+            {
+              "name": "Business Intelligence",
+              "link": "https://en.wikipedia.org/wiki/Business_intelligence"
+            },
+            {
+              "name": "Data Visualization",
+              "link": "https://en.wikipedia.org/wiki/Data_visualization"
+            },
+            {
+              "name": "Data Analytics",
+              "link": "https://en.wikipedia.org/wiki/Data_analysis"
+            }
+          ],
+          "advancements": [
+            "In-memory OLAP for faster performance",
+            "Hybrid OLAP (ROLAP, MOLAP, HOLAP) advancements",
+            "Integration with machine learning for predictive analytics",
+            "Cloud-based OLAP services"
+          ],
+          "literature": [
+            {
+              "name": "OLAP Solutions: Building Multidimensional Information Systems - Erik Thomsen",
+              "link": "http://nnhoa.free.fr/courses/OLAP/olap-solutions-building-multidimensional-information-systems978047140030125538.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Database Security and Privacy",
+      "coreConcepts": [
+        "Access control and authentication",
+        "Encryption of data at rest and in transit",
+        "Auditing and logging",
+        "Data masking and anonymization",
+        "Privacy-preserving data analysis",
+        "Vulnerability management"
+      ],
+      "keyProblems": [
+        "Insider threats to data",
+        "SQL injection and other web vulnerabilities",
+        "Balancing data utility with privacy concerns",
+        "Compliance with data protection regulations (e.g., GDPR)",
+        "Secure multi-party computation"
+      ],
+      "applications": [
+        "Financial data protection",
+        "Healthcare data privacy",
+        "Government and classified information systems",
+        "User data protection in web applications"
+      ],
+      "tools": [
+        "TLS/SSL",
+        "Firewalls",
+        "Intrusion detection systems (IDS)",
+        "Data encryption tools",
+        "Vulnerability scanners"
+      ],
+      "pioneers": [
+        {
+          "name": "Dorothy Denning",
+          "link": "https://en.wikipedia.org/wiki/Dorothy_Denning"
+        },
+        {
+          "name": "Clifford Cocks",
+          "link": "https://en.wikipedia.org/wiki/Clifford_Cocks"
+        },
+        {
+          "name": "Ralph Merkle",
+          "link": "https://en.wikipedia.org/wiki/Ralph_Merkle"
+        }
+      ],
+      "timeline": [
+        "1970s: Early focus on access control models.",
+        "1980s: Development of relational database security models.",
+        "1990s: Rise of internet, leading to web application security concerns.",
+        "2000s: Emphasis on data privacy regulations and compliance.",
+        "2010s: Advancements in homomorphic encryption and secure multi-party computation."
+      ],
+      "relatedFields": [
+        {
+          "name": "Cryptography",
+          "link": "https://en.wikipedia.org/wiki/Cryptography"
+        },
+        {
+          "name": "Cybersecurity",
+          "link": "https://en.wikipedia.org/wiki/Computer_security"
+        },
+        {
+          "name": "Privacy Enhancing Technologies",
+          "link": "https://en.wikipedia.org/wiki/Privacy-enhancing_technologies"
+        },
+        {
+          "name": "Law and Ethics",
+          "link": "https://en.wikipedia.org/wiki/Computer_law"
+        }
+      ],
+      "advancements": [
+        "Homomorphic encryption for privacy-preserving computation",
+        "Differential privacy for statistical data release",
+        "Blockchain for immutable audit trails",
+        "AI-driven anomaly detection for database attacks"
+      ],
+      "literature": [
+        {
+          "name": "Database Security and Auditing - Hassan A. Afyouni",
+          "link": "https://www.scribd.com/document/395082856/database-security-pdf"
+        },
+        {
+          "name": "The Book of SQL Injection - Marcus J. Ranum",
+          "link": "https://books.google.com/books/about/The_Book_of_SQL_Injection.html?id=cM95fS6XzYEC"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Access Control Models",
+          "coreConcepts": [
+            "Discretionary Access Control (DAC)",
+            "Mandatory Access Control (MAC)",
+            "Role-Based Access Control (RBAC)",
+            "Attribute-Based Access Control (ABAC)"
+          ],
+          "keyProblems": [
+            "Fine-grained access control complexity",
+            "Managing large numbers of roles/users",
+            "Dynamic access control based on context",
+            "Revocation of access rights"
+          ],
+          "applications": [
+            "Operating system security",
+            "Database user permissions",
+            "Cloud resource access management",
+            "Enterprise application security"
+          ],
+          "tools": [
+            "SQL GRANT/REVOKE",
+            "LDAP",
+            "OAuth/OIDC",
+            "Identity and Access Management (IAM) systems"
+          ],
+          "relatedFields": [
+            {
+              "name": "Operating Systems",
+              "link": "https://en.wikipedia.org/wiki/Operating_system"
+            },
+            {
+              "name": "Network Security",
+              "link": "https://en.wikipedia.org/wiki/Network_security"
+            },
+            {
+              "name": "Cryptography",
+              "link": "https://en.wikipedia.org/wiki/Cryptography"
+            }
+          ],
+          "advancements": [
+            "Blockchain-based decentralized access control",
+            "AI-powered anomaly detection in access patterns",
+            "Context-aware access policies",
+            "Attribute-based encryption for fine-grained control"
+          ],
+          "literature": [
+            {
+              "name": "Access Control Systems: Architectures and Models - R. Sandhu, E. J. Coyne, H. L. Feinstein, C. E. Youman",
+              "link": "https://dl.acm.org/doi/10.1145/266021.266023"
+            }
+          ]
+        },
+        {
+          "name": "Privacy-Preserving Data Analysis",
+          "coreConcepts": [
+            "Differential privacy",
+            "Homomorphic encryption",
+            "Secure multi-party computation (MPC)",
+            "K-anonymity, L-diversity, T-closeness",
+            "Federated learning"
+          ],
+          "keyProblems": [
+            "Balancing privacy guarantees and data utility",
+            "Computational overhead of privacy techniques",
+            "Designing robust attacks on anonymized data",
+            "Ensuring regulatory compliance with privacy standards"
+          ],
+          "applications": [
+            "Statistical data release (e.g., census data)",
+            "Collaborative machine learning without data sharing",
+            "Private blockchain applications",
+            "Secure genomic data analysis"
+          ],
+          "tools": [
+            "OpenMined (PySyft)",
+            "IBM HElib",
+            "Google Differential Privacy Library",
+            "FATE (Federated AI Technology Enabler)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Cryptography",
+              "link": "https://en.wikipedia.org/wiki/Cryptography"
+            },
+            {
+              "name": "Machine Learning",
+              "link": "https://en.wikipedia.org/wiki/Machine_learning"
+            },
+            {
+              "name": "Statistics",
+              "link": "https://en.wikipedia.org/wiki/Statistics"
+            },
+            {
+              "name": "Information Theory",
+              "link": "https://en.wikipedia.org/wiki/Information_theory"
+            }
+          ],
+          "advancements": [
+            "Practical implementations of homomorphic encryption",
+            "Federated learning for distributed private training",
+            "Improved differential privacy mechanisms",
+            "Combining techniques for stronger privacy guarantees"
+          ],
+          "literature": [
+            {
+              "name": "The Algorithmic Foundations of Differential Privacy - Cynthia Dwork, Aaron Roth",
+              "link": "https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf"
+            },
+            {
+              "name": "Secure Multi-Party Computation and Secret Sharing - Ronald Cramer, Ivan Damgård, Jesper Buus Nielsen",
+              "link": "https://www.cambridge.org/core/books/secure-multiparty-computation-and-secret-sharing/4C2480B202905CE5370B2609F0C2A67A"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

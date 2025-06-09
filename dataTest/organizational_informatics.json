@@ -1,0 +1,635 @@
+{
+  "name": "Organizational Informatics",
+  "coreConcepts": [
+    "Sociotechnical Systems",
+    "Information as a Social Construct",
+    "Work Practices and Informal Processes",
+    "Technology-in-Use",
+    "Organizational Change and ICT",
+    "Infrastructures and Information Ecosystems",
+    "Ethical, Political, and Power Dimensions",
+    "Interdisciplinarity"
+  ],
+  "keyProblems": [
+    "Misalignment Between Technology and Work Practices",
+    "Resistance to Change",
+    "Lack of User Involvement in Design",
+    "Hidden or Informal Work",
+    "Power Imbalances and Control",
+    "Fragmented Information Systems",
+    "Infrastructural Complexity and Maintenance",
+    "Short-Term Thinking",
+    "Digital Inequality",
+    "Data Ethics and Algorithmic Bias"
+  ],
+  "applications": [
+    "Healthcare Information Systems (EHRs)",
+    "Universities and Education Systems (LMS)",
+    "Enterprise Resource Planning (ERP) in Business",
+    "Government Digital Services (E-Government Portals)",
+    "Remote Work and Collaboration Platforms",
+    "Smart Cities and Urban Informatics",
+    "Nonprofits and NGOs (Donor Management)",
+    "Libraries, Archives, and Cultural Institutions"
+  ],
+  "tools": [
+    "SAP / Oracle ERP",
+    "Moodle / Canvas / Blackboard",
+    "NVivo / Atlas.ti / MAXQDA",
+    "Participatory Design Tools (Figma, Miro)",
+    "Python / R",
+    "SQL",
+    "Power BI / Tableau",
+    "Human-Centered Design (HCD)",
+    "User-Centered Design (UCD)",
+    "Usability Testing"
+  ],
+  "pioneers": [
+    {
+      "name": "Wanda J. Orlikowski",
+      "link": "https://mitsloan.mit.edu/faculty/directory/wanda-j-orlikowski"
+    },
+    {
+      "name": "Geoffrey C. Bowker",
+      "link": "https://www.informatics.uci.edu/people/faculty/bowker/"
+    },
+    {
+      "name": "Susan Leigh Star",
+      "link": "https://en.wikipedia.org/wiki/Susan_Leigh_Star"
+    },
+    {
+      "name": "Claudio Ciborra",
+      "link": "https://en.wikipedia.org/wiki/Claudio_Ciborra"
+    },
+    {
+      "name": "Kjeld Schmidt",
+      "link": "https://www.cbs.dk/en/research/departments/department-of-digitalization/staff/ksd"
+    }
+  ],
+  "timeline": [
+    "1950s–1960s: Early foundations with Management Information Systems (MIS) focusing on automation and efficiency.",
+    "1970s: Birth of socio-technical systems theory emphasizing joint design of technology and social systems.",
+    "1980s: Human-Centered and Participatory Design movements emerge, leading to co-design with users.",
+    "1985–1995: Computer-Supported Cooperative Work (CSCW) and Organizational Informatics are formalized as research fields.",
+    "Late 1990s: Shift to studying information infrastructures, with concepts like invisible work and boundary objects.",
+    "2000s: Massive adoption of ERP systems and globalization, leading to focus on organizational change and user resistance.",
+    "2010s: Rise of platforms, mobility, and datafication, making digital labor and data ethics central concerns.",
+    "2020s: COVID-19 accelerates remote work and digital transformation, focusing research on hybrid collaboration and AI systems."
+  ],
+  "subfields": [
+    {
+      "name": "Information Infrastructure Studies",
+      "coreConcepts": [
+        "Large-scale, often invisible systems",
+        "Interoperability",
+        "Legacy systems",
+        "Institutional routines",
+        "Invisible IT work"
+      ],
+      "keyProblems": [
+        "Managing complex interdependencies",
+        "Addressing legacy system integration",
+        "Making invisible work visible",
+        "Ensuring long-term maintenance and evolution"
+      ],
+      "applications": [
+        "Managing university IT ecosystems",
+        "Healthcare data sharing networks",
+        "Government digital service backbones",
+        "Enterprise-wide data management",
+        "Smart city sensor networks"
+      ],
+      "tools": [
+        "SQL",
+        "Python / R for data analysis",
+        "Network mapping tools",
+        "IT service management platforms",
+        "Enterprise architecture frameworks"
+      ],
+      "pioneers": [
+        {
+          "name": "Geoffrey C. Bowker",
+          "link": "https://www.informatics.uci.edu/people/faculty/bowker/"
+        },
+        {
+          "name": "Susan Leigh Star",
+          "link": "https://en.wikipedia.org/wiki/Susan_Leigh_Star"
+        },
+        {
+          "name": "Ole Hanseth",
+          "link": "https://www.mn.uio.no/ifi/english/people/aca/olehanse/"
+        }
+      ],
+      "timeline": [
+        "Late 1990s: Shift from studying individual systems to information infrastructures.",
+        "1996: Star and Ruhleder introduce 'ecology of infrastructure'.",
+        "2000s: Focus on ERP systems as complex infrastructures.",
+        "2010s: Cloud computing and platformization deepen infrastructure studies.",
+        "2020s: Smart cities emphasize large-scale data infrastructures."
+      ],
+      "relatedFields": [
+        {
+          "name": "Computer Science (Networking)",
+          "link": "https://en.wikipedia.org/wiki/Computer_network"
+        },
+        {
+          "name": "Information Systems",
+          "link": "https://en.wikipedia.org/wiki/Information_system"
+        },
+        {
+          "name": "Science and Technology Studies (STS)",
+          "link": "https://en.wikipedia.org/wiki/Science_and_technology_studies"
+        },
+        {
+          "name": "Organizational Studies",
+          "link": "https://en.wikipedia.org/wiki/Organizational_studies"
+        }
+      ],
+      "advancements": [
+        "Understanding infrastructure as dynamic and evolving, not static.",
+        "Concept of 'infrastructure inversion' – making the invisible visible.",
+        "Recognition of 'invisible work' in maintaining complex systems.",
+        "Application of Actor-Network Theory to infrastructure analysis."
+      ],
+      "literature": [
+        {
+          "name": "Information Infrastructure: The Tragedy of the Common Knowledge – Geoffrey C. Bowker",
+          "link": "https://mitpress.mit.edu/9780262523261/information-infrastructure/"
+        },
+        {
+          "name": "Steps Toward an Ecology of Infrastructure: Design and Access for Large Information Spaces – Star & Ruhleder (1996)",
+          "link": "https://pubsonline.informs.org/doi/abs/10.1287/isre.7.1.5"
+        },
+        {
+          "name": "Social Shaping of Information Infrastructure: On Being Specific about the Technology – Monteiro & Hanseth (1996)",
+          "link": "https://www.researchgate.net/publication/220268596_Social_Shaping_of_Information_Infrastructure_On_Being_Specific_about_the_Technology"
+        }
+      ],
+      "subsubfields": [
+        { "name": "Legacy System Integration" },
+        { "name": "Interoperability Standards" },
+        { "name": "Invisible IT Work" },
+        { "name": "Infrastructure Evolution" }
+      ]
+    },
+    {
+      "name": "Computer-Supported Cooperative Work (CSCW)",
+      "coreConcepts": [
+        "Collaboration and coordination",
+        "Groupware",
+        "Communication tools",
+        "Distributed teams",
+        "Workflow systems"
+      ],
+      "keyProblems": [
+        "Information overload in communication tools",
+        "Managing distributed team coordination",
+        "Supporting informal communication",
+        "Integrating diverse tools for seamless workflows"
+      ],
+      "applications": [
+        "Slack and Microsoft Teams for team communication",
+        "Jira for project management",
+        "Zoom for virtual meetings",
+        "Google Docs for collaborative writing",
+        "SharePoint for document management"
+      ],
+      "tools": [
+        "Microsoft Teams / Slack / Zoom",
+        "Jira / Trello",
+        "Google Workspace / Microsoft 365",
+        "Confluence / SharePoint",
+        "Miro / Mural"
+      ],
+      "pioneers": [
+        {
+          "name": "Kjeld Schmidt",
+          "link": "https://www.cbs.dk/en/research/departments/department-of-digitalization/staff/ksd"
+        },
+        {
+          "name": "Liam Bannon",
+          "link": "https://www.lero.ie/people/liam-bannon"
+        }
+      ],
+      "timeline": [
+        "1980s: Early research on groupware and shared editors.",
+        "1986: First CSCW conference held.",
+        "1992: Schmidt & Bannon publish 'Taking CSCW Seriously'.",
+        "2000s: Emergence of web-based collaboration platforms.",
+        "2010s: Rise of enterprise social networks and real-time communication tools.",
+        "2020s: COVID-19 drives widespread adoption of remote collaboration tools."
+      ],
+      "relatedFields": [
+        {
+          "name": "Human-Computer Interaction (HCI)",
+          "link": "https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction"
+        },
+        {
+          "name": "Organizational Behavior",
+          "link": "https://en.wikipedia.org/wiki/Organizational_behavior"
+        },
+        {
+          "name": "Software Engineering",
+          "link": "https://en.wikipedia.org/wiki/Software_engineering"
+        },
+        {
+          "name": "Sociology of Work",
+          "link": "https://en.wikipedia.org/wiki/Sociology_of_work"
+        }
+      ],
+      "advancements": [
+        "Development of persistent chat and channel-based communication.",
+        "Integration of video conferencing with collaboration platforms.",
+        "Focus on asynchronous and distributed collaboration models.",
+        "Understanding of 'articulation work' in coordinating activities."
+      ],
+      "literature": [
+        {
+          "name": "Taking CSCW Seriously: Supporting Articulation Work – Schmidt & Bannon (1992)",
+          "link": "https://dl.acm.org/doi/abs/10.1145/143457.143477"
+        },
+        {
+          "name": "The Handbook of Computer-Supported Cooperative Work (CSCW) – Beaudouin-Lafon & Schmidt (Eds.)",
+          "link": "https://www.wiley.com/en-us/The+Handbook+of+Computer+Supported+Cooperative+Work+(CSCW)+-p-9781119077673"
+        },
+        {
+          "name": "CSCW (Conference Series)",
+          "link": "https://cscw.acm.org/"
+        }
+      ],
+      "subsubfields": [
+        { "name": "Groupware Design" },
+        { "name": "Remote Collaboration Tools" },
+        { "name": "Workflow Management" },
+        { "name": "Articulation Work" }
+      ]
+    },
+    {
+      "name": "Participatory Design (PD)",
+      "coreConcepts": [
+        "Designing systems with users",
+        "User empowerment",
+        "Co-design",
+        "Ethics in design",
+        "Democratic design processes"
+      ],
+      "keyProblems": [
+        "Ensuring genuine user involvement",
+        "Bridging designer-user communication gaps",
+        "Scaling participatory methods for large systems",
+        "Addressing power imbalances in design processes"
+      ],
+      "applications": [
+        "Developing educational software with teachers and students",
+        "Designing healthcare systems with clinicians and patients",
+        "Creating public services with citizens",
+        "Developing internal enterprise tools with employees"
+      ],
+      "tools": [
+        "Figma / Miro (for collaborative ideation)",
+        "Workshops and co-creation sessions",
+        "Prototyping tools",
+        "Ethnographic field studies",
+        "User journey mapping"
+      ],
+      "pioneers": [
+        {
+          "name": "Kristen Nygaard",
+          "link": "https://en.wikipedia.org/wiki/Kristen_Nygaard"
+        },
+        {
+          "name": "Pelle Ehn",
+          "link": "https://en.wikipedia.org/wiki/Pelle_Ehn"
+        }
+      ],
+      "timeline": [
+        "1970s: Roots in Scandinavian industrial democracy movements.",
+        "1981: Utopia Project, a seminal participatory IT design effort.",
+        "1980s: Growth of participatory design methods in IT development.",
+        "1990s: PD gains recognition in HCI and IS research.",
+        "2000s: Expansion to broader contexts like community-based design.",
+        "2010s: Increased integration with agile and user-centered design methodologies."
+      ],
+      "relatedFields": [
+        {
+          "name": "Human-Computer Interaction (HCI)",
+          "link": "https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction"
+        },
+        {
+          "name": "Interaction Design",
+          "link": "https://en.wikipedia.org/wiki/Interaction_design"
+        },
+        {
+          "name": "Sociology of Work",
+          "link": "https://en.wikipedia.org/wiki/Sociology_of_work"
+        },
+        {
+          "name": "Design Research",
+          "link": "https://en.wikipedia.org/wiki/Design_research"
+        }
+      ],
+      "advancements": [
+        "Shift from user participation to co-creation and co-design.",
+        "Emphasis on ethical considerations and power dynamics in design.",
+        "Development of diverse methods for involving users throughout the design lifecycle.",
+        "Integration of PD principles into agile development methodologies."
+      ],
+      "literature": [
+        {
+          "name": "The Utopia Project (1981)",
+          "link": "https://www.nordicom.gu.se/sites/default/files/publikationer-hela-pdf/organizing_tensions_in_participatory_design.pdf"
+        },
+        {
+          "name": "Design for Participation – Pelle Ehn",
+          "link": "https://dl.acm.org/doi/book/10.5555/54316"
+        },
+        {
+          "name": "PDC (Participatory Design Conference)",
+          "link": "https://pdc.acm.org/"
+        }
+      ],
+      "subsubfields": [
+        { "name": "Co-Design Workshops" },
+        { "name": "User Empowerment Methods" },
+        { "name": "Ethics in Design" },
+        { "name": "Agile Participatory Methods" }
+      ]
+    },
+    {
+      "name": "Socio-Technical Systems Design",
+      "coreConcepts": [
+        "Joint optimization of technical and social systems",
+        "Mutual shaping of technology and people",
+        "Job satisfaction",
+        "Organizational adaptability",
+        "Holistic system design"
+      ],
+      "keyProblems": [
+        "Achieving true joint optimization",
+        "Overcoming technological determinism",
+        "Integrating diverse disciplinary perspectives",
+        "Measuring socio-technical effectiveness"
+      ],
+      "applications": [
+        "Designing manufacturing processes",
+        "Developing healthcare delivery systems",
+        "Implementing ERP systems in organizations",
+        "Designing collaborative workspaces",
+        "Optimizing call center operations"
+      ],
+      "tools": [
+        "Soft Systems Methodology (SSM)",
+        "Organizational charts and process mapping",
+        "Surveys and interviews for social aspects",
+        "System modeling tools",
+        "Simulation software for system dynamics"
+      ],
+      "pioneers": [
+        {
+          "name": "Eric Trist",
+          "link": "https://en.wikipedia.org/wiki/Eric_Trist"
+        },
+        {
+          "name": "Fred Emery",
+          "link": "https://en.wikipedia.org/wiki/Fred_Emery"
+        }
+      ],
+      "timeline": [
+        "1950s: Origins at the Tavistock Institute in the UK.",
+        "1960s: Coal mining studies demonstrate socio-technical principles.",
+        "1970s: Expansion of STS theory into various industries.",
+        "1980s: Application in quality of working life movements.",
+        "1990s: Renewed interest with introduction of complex IT systems.",
+        "2000s: Integration into modern organizational change management."
+      ],
+      "relatedFields": [
+        {
+          "name": "Organizational Psychology",
+          "link": "https://en.wikipedia.org/wiki/Organizational_psychology"
+        },
+        {
+          "name": "Systems Engineering",
+          "link": "https://en.wikipedia.org/wiki/Systems_engineering"
+        },
+        {
+          "name": "Industrial Engineering",
+          "link": "https://en.wikipedia.org/wiki/Industrial_engineering"
+        },
+        {
+          "name": "Management Science",
+          "link": "https://en.wikipedia.org/wiki/Management_science"
+        }
+      ],
+      "advancements": [
+        "Refinement of methods for analyzing interdependent social and technical systems.",
+        "Increased focus on adaptability and resilience in socio-technical designs.",
+        "Application to digital transformation and complex IT implementations.",
+        "Recognition of socio-technical issues in distributed and remote work."
+      ],
+      "literature": [
+        {
+          "name": "Socio-Technical Systems Theory – Eric Trist",
+          "link": "https://www.tavinstitute.org/knowledge/socio-technical-systems-theory/"
+        },
+        {
+          "name": "Soft Systems Methodology – Peter Checkland",
+          "link": "https://en.wikipedia.org/wiki/Soft_systems_methodology"
+        },
+        {
+          "name": "The Tavistock Institute of Human Relations",
+          "link": "https://www.tavinstitute.org/"
+        }
+      ],
+      "subsubfields": [
+        { "name": "Joint Optimization" },
+        { "name": "Organizational Adaptability" },
+        { "name": "Socio-Technical Analysis" },
+        { "name": "Digital Transformation" }
+      ]
+    },
+    {
+      "name": "Digital Work and Remote Collaboration",
+      "coreConcepts": [
+        "Telework",
+        "Hybrid teams",
+        "Digital nomadism",
+        "Technostress",
+        "Workplace surveillance"
+      ],
+      "keyProblems": [
+        "Maintaining team cohesion in distributed settings",
+        "Managing work-life boundaries in remote work",
+        "Addressing technostress and digital fatigue",
+        "Ensuring equitable access and digital inclusion"
+      ],
+      "applications": [
+        "Managing global remote workforces",
+        "Facilitating hybrid office models",
+        "Enabling flexible work arrangements",
+        "Implementing digital collaboration strategies",
+        "Monitoring productivity in remote teams"
+      ],
+      "tools": [
+        "Microsoft Teams / Slack / Zoom",
+        "Asana / Trello (project management)",
+        "VPNs and remote desktop tools",
+        "Headspace / Calm (for well-being)",
+        "Employee monitoring software"
+      ],
+      "pioneers": [
+        {
+          "name": "N. Katherine Hayles",
+          "link": "https://en.wikipedia.org/wiki/N._Katherine_Hayles"
+        },
+        {
+          "name": "Andrew P. Sage",
+          "link": "https://en.wikipedia.org/wiki/Andrew_P._Sage"
+        }
+      ],
+      "timeline": [
+        "1970s: Early concepts of telecommuting emerge.",
+        "1990s: Internet adoption enables more widespread remote work.",
+        "2000s: Growth of offshore outsourcing and distributed teams.",
+        "2010s: Rise of gig economy and digital nomadism.",
+        "2020s: COVID-19 pandemic accelerates global shift to remote and hybrid work."
+      ],
+      "relatedFields": [
+        {
+          "name": "Organizational Psychology",
+          "link": "https://en.wikipedia.org/wiki/Organizational_psychology"
+        },
+        {
+          "name": "Human Resources Management",
+          "link": "https://en.wikipedia.org/wiki/Human_resources_management"
+        },
+        {
+          "name": "Communication Studies",
+          "link": "https://en.wikipedia.org/wiki/Communication_studies"
+        },
+        {
+          "name": "Sociology of Work",
+          "link": "https://en.wikipedia.org/wiki/Sociology_of_work"
+        }
+      ],
+      "advancements": [
+        "Development of sophisticated virtual collaboration platforms.",
+        "Research on best practices for managing hybrid teams.",
+        "Understanding of technostress and strategies for digital well-being.",
+        "Exploration of new forms of digital surveillance in remote work."
+      ],
+      "literature": [
+        {
+          "name": "The Second Machine Age – Erik Brynjolfsson and Andrew McAfee",
+          "link": "https://books.google.com/books/about/The_Second_Machine_Age.html?id=z17uAAAAQBAJ"
+        },
+        {
+          "name": "Remote: Office Not Required – Jason Fried and David Heinemeier Hansson",
+          "link": "https://basecamp.com/books/remote"
+        },
+        {
+          "name": "Workplace Surveillance and Control: An Organizational Informatics Perspective",
+          "link": "https://www.emerald.com/insight/content/doi/10.1108/JCS-03-2021-0016/full/html"
+        }
+      ],
+      "subsubfields": [
+        { "name": "Telework Infrastructure" },
+        { "name": "Hybrid Team Management" },
+        { "name": "Technostress Research" },
+        { "name": "Digital Well-being" }
+      ]
+    },
+    {
+      "name": "Health Informatics (Organizational)",
+      "coreConcepts": [
+        "Electronic Health Records (EHRs)",
+        "Clinician workflow",
+        "Data interoperability in healthcare",
+        "Patient safety through IT",
+        "Organizational impacts of health tech"
+      ],
+      "keyProblems": [
+        "Clinician burnout due to EHRs",
+        "Ensuring data accuracy and integrity",
+        "Achieving seamless interoperability between systems",
+        "Addressing resistance to new health IT",
+        "Balancing data access with patient privacy"
+      ],
+      "applications": [
+        "Implementing Epic or Cerner EHR systems in hospitals",
+        "Designing patient portals for access to health information",
+        "Developing clinical decision support systems",
+        "Managing health information exchanges",
+        "Optimizing hospital logistics through IT"
+      ],
+      "tools": [
+        "Epic / Cerner (EHR systems)",
+        "HL7 (Healthcare interoperability standard)",
+        "Medical imaging systems (PACS)",
+        "Telemedicine platforms",
+        "Clinical analytics dashboards"
+      ],
+      "pioneers": [
+        {
+          "name": "Edward H. Shortliffe",
+          "link": "https://en.wikipedia.org/wiki/Edward_H._Shortliffe"
+        },
+        {
+          "name": "Randy A. Miller",
+          "link": "https://en.wikipedia.org/wiki/Randy_A._Miller"
+        }
+      ],
+      "timeline": [
+        "1960s: Early hospital information systems developed.",
+        "1970s: Initial research into clinical decision support systems.",
+        "1990s: Focus on electronic patient records and data standardization.",
+        "2000s: Widespread adoption of EHRs, driven by government incentives.",
+        "2010s: Emphasis on interoperability and meaningful use of health IT.",
+        "2020s: Telehealth boom and AI integration in healthcare."
+      ],
+      "relatedFields": [
+        {
+          "name": "Medical Informatics",
+          "link": "https://en.wikipedia.org/wiki/Medical_informatics"
+        },
+        {
+          "name": "Public Health",
+          "link": "https://en.wikipedia.org/wiki/Public_health"
+        },
+        {
+          "name": "Patient Safety",
+          "link": "https://en.wikipedia.org/wiki/Patient_safety"
+        },
+        {
+          "name": "Biomedical Engineering",
+          "link": "https://en.wikipedia.org/wiki/Biomedical_engineering"
+        }
+      ],
+      "advancements": [
+        "Improved interoperability standards for health data exchange.",
+        "Development of more intuitive and user-friendly EHR interfaces.",
+        "Leveraging AI for predictive analytics and clinical decision support.",
+        "Expansion of telemedicine and remote patient monitoring solutions."
+      ],
+      "literature": [
+        {
+          "name": "Biomedical Informatics: Computer Applications in Health Care and Biomedicine – Shortliffe & Cimino",
+          "link": "https://www.springer.com/gp/book/9780387289861"
+        },
+        {
+          "name": "Journal of the American Medical Informatics Association (JAMIA)",
+          "link": "https://academic.oup.com/jamia"
+        },
+        {
+          "name": "Applied Clinical Informatics",
+          "link": "https://www.thieme-connect.de/products/ejournals/journal/10.1055/s-002-36427"
+        }
+      ],
+      "subsubfields": [
+        { "name": "EHR Usability" },
+        { "name": "Clinical Workflow Integration" },
+        { "name": "Health Data Interoperability" },
+        { "name": "Telemedicine Systems" }
+      ]
+    }
+  ]
+}

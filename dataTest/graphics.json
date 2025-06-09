@@ -1,0 +1,1693 @@
+{
+  "name": "Computer Graphics",
+  "coreConcepts": [
+    "Rendering pipeline",
+    "Geometric modeling",
+    "Shading and lighting",
+    "Texture mapping",
+    "Animation principles",
+    "Image processing",
+    "Ray tracing",
+    "Rasterization",
+    "Physically based rendering",
+    "Computational geometry"
+  ],
+  "keyProblems": [
+    "Real-time photorealism",
+    "Efficient global illumination",
+    "Scalable scene complexity",
+    "Realistic character animation",
+    "Perceptual realism",
+    "Interactive simulation of natural phenomena",
+    "High-fidelity virtual reality experiences",
+    "Efficient content creation",
+    "Cross-platform compatibility",
+    "Data compression for large 3D models"
+  ],
+  "applications": [
+    "Video games",
+    "Film and animation production",
+    "Architectural visualization",
+    "Product design and engineering",
+    "Medical imaging",
+    "Virtual and augmented reality",
+    "Scientific visualization",
+    "Training and simulation",
+    "Advertising and marketing",
+    "Art and digital media"
+  ],
+  "tools": [
+    "OpenGL",
+    "DirectX",
+    "Unity 3D",
+    "Unreal Engine",
+    "Blender",
+    "Maya",
+    "3ds Max",
+    "Substance Painter",
+    "ZBrush",
+    "Houdini"
+  ],
+  "pioneers": [
+    {
+      "name": "Ivan Sutherland",
+      "link": "https://en.wikipedia.org/wiki/Ivan_Sutherland"
+    },
+    {
+      "name": "Edwin Catmull",
+      "link": "https://en.wikipedia.org/wiki/Edwin_Catmull"
+    },
+    {
+      "name": "James Blinn",
+      "link": "https://en.wikipedia.org/wiki/James_Blinn"
+    },
+    {
+      "name": "Benoît Mandelbrot",
+      "link": "https://en.wikipedia.org/wiki/Beno%C3%AEt_Mandelbrot"
+    },
+    {
+      "name": "Donald P. Greenberg",
+      "link": "https://en.wikipedia.org/wiki/Donald_P._Greenberg"
+    },
+    {
+      "name": "Alvy Ray Smith",
+      "link": "https://en.wikipedia.org/wiki/Alvy_Ray_Smith"
+    },
+    {
+      "name": "Ken Perlin",
+      "link": "https://en.wikipedia.org/wiki/Ken_Perlin"
+    },
+    {
+      "name": "Marc Levoy",
+      "link": "https://en.wikipedia.org/wiki/Marc_Levoy"
+    }
+  ],
+  "timeline": [
+    "1963: Ivan Sutherland develops Sketchpad, a pioneering interactive graphical system.",
+    "1971: Henri Gouraud introduces Gouraud shading for smooth surfaces.",
+    "1974: Edwin Catmull develops Z-buffering for visible surface determination.",
+    "1977: James Blinn introduces environment mapping and bump mapping.",
+    "1980s: Development of ray tracing and radiosity algorithms for global illumination.",
+    "1990s: Emergence of OpenGL and DirectX for real-time 3D graphics.",
+    "2000s: Rise of programmable shaders and GPU acceleration.",
+    "2010s: Advancements in physically based rendering and real-time global illumination.",
+    "2020s: Integration of AI/ML into graphics for content generation and rendering."
+  ],
+  "subfields": [
+    {
+      "name": "Real-time Rendering",
+      "coreConcepts": [
+        "Rasterization pipeline",
+        "Shader programming",
+        "Level of detail (LOD)",
+        "Occlusion culling",
+        "Texture filtering",
+        "Post-processing effects",
+        "Geometric culling"
+      ],
+      "keyProblems": [
+        "Achieving high frame rates for complex scenes",
+        "Minimizing rendering latency in VR/AR",
+        "Efficiently managing memory for large assets",
+        "Balancing visual quality and performance",
+        "Mitigating aliasing artifacts",
+        "Optimizing for diverse hardware architectures",
+        "Real-time global illumination"
+      ],
+      "applications": [
+        "Video games",
+        "Interactive simulations",
+        "Architectural walkthroughs",
+        "Virtual prototyping",
+        "Flight simulators",
+        "Medical training simulations",
+        "Augmented reality applications"
+      ],
+      "tools": [
+        "Unity 3D",
+        "Unreal Engine",
+        "OpenGL",
+        "DirectX",
+        "Vulkan",
+        "GLSL",
+        "HLSL"
+      ],
+      "pioneers": [
+        {
+          "name": "Michael Abrash",
+          "link": "https://en.wikipedia.org/wiki/Michael_Abrash"
+        },
+        {
+          "name": "John Carmack",
+          "link": "https://en.wikipedia.org/wiki/John_Carmack"
+        },
+        {
+          "name": "Tim Sweeney",
+          "link": "https://en.wikipedia.org/wiki/Tim_Sweeney"
+        },
+        {
+          "name": "NVIDIA (company)",
+          "link": "https://en.wikipedia.org/wiki/Nvidia"
+        },
+        {
+          "name": "ATI Technologies (now AMD)",
+          "link": "https://en.wikipedia.org/wiki/ATI_Technologies"
+        }
+      ],
+      "timeline": [
+        "1990s: Fixed-function pipeline GPUs emerge.",
+        "2001: NVIDIA introduces the GeForce 3, featuring programmable shaders.",
+        "2006: DirectX 10 and Shader Model 4.0 bring unified shader architecture.",
+        "2014: Epic Games releases Unreal Engine 4 with physically based rendering.",
+        "2016: Vulkan API released, offering low-overhead GPU access.",
+        "2018: NVIDIA introduces real-time ray tracing with RTX GPUs."
+      ],
+      "relatedFields": [
+        {
+          "name": "Game Development",
+          "link": "https://en.wikipedia.org/wiki/Video_game_development"
+        },
+        {
+          "name": "Computer Architecture",
+          "link": "https://en.wikipedia.org/wiki/Computer_architecture"
+        },
+        {
+          "name": "Operating Systems",
+          "link": "https://en.wikipedia.org/wiki/Operating_system"
+        },
+        {
+          "name": "High-Performance Computing",
+          "link": "https://en.wikipedia.org/wiki/High-performance_computing"
+        }
+      ],
+      "advancements": [
+        "Hardware-accelerated ray tracing in real-time",
+        "Neural rendering for scene representation",
+        "Variable Rate Shading (VRS)",
+        "Mesh Shaders for more flexible geometry processing",
+        "DirectStorage for faster asset loading",
+        "Global Illumination via Lumen and similar technologies",
+        "AI-powered upscaling techniques (DLSS, FSR)"
+      ],
+      "literature": [
+        {
+          "name": "Real-Time Rendering by Tomas Akenine-Möller et al.",
+          "link": "https://www.realtimerendering.com/"
+        },
+        {
+          "name": "GPU Gems series",
+          "link": "https://developer.nvidia.com/gpu-gems"
+        },
+        {
+          "name": "Physically Based Rendering: From Theory to Implementation by Matt Pharr et al.",
+          "link": "https://www.pbrt.org/"
+        },
+        {
+          "name": "ACM SIGGRAPH Conferences",
+          "link": "https://www.siggraph.org/conferences/"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Global Illumination",
+          "coreConcepts": [
+            "Ray tracing",
+            "Path tracing",
+            "Radiosity",
+            "Photon mapping"
+          ],
+          "keyProblems": [
+            "Computational cost",
+            "Noise reduction",
+            "Real-time performance"
+          ],
+          "applications": [
+            "Photorealistic rendering",
+            "Architectural visualization",
+            "Film production"
+          ],
+          "tools": [
+            "OptiX",
+            "V-Ray",
+            "Arnold",
+            "Cycles"
+          ]
+        },
+        {
+          "name": "Shader Programming",
+          "coreConcepts": [
+            "Vertex shaders",
+            "Fragment shaders",
+            "Geometry shaders",
+            "Compute shaders"
+          ],
+          "keyProblems": [
+            "Debugging complex shaders",
+            "Performance optimization",
+            "Cross-platform compatibility"
+          ],
+          "applications": [
+            "Material rendering",
+            "Post-processing effects",
+            "Procedural generation"
+          ],
+          "tools": [
+            "GLSL",
+            "HLSL",
+            "SPIR-V",
+            "ShaderToy"
+          ]
+        },
+        {
+          "name": "Optimization Techniques",
+          "coreConcepts": [
+            "Occlusion culling",
+            "LOD systems",
+            "Instancing",
+            "Frustum culling"
+          ],
+          "keyProblems": [
+            "Balancing quality vs. performance",
+            "Managing large asset sets",
+            "Reducing draw calls"
+          ],
+          "applications": [
+            "High-performance games",
+            "Large-scale simulations",
+            "Interactive visualizations"
+          ],
+          "tools": [
+            "PIX",
+            "RenderDoc",
+            "NVIDIA Nsight",
+            "AMD Radeon GPU Analyzer"
+          ]
+        },
+        {
+          "name": "Physically Based Shading (PBS)",
+          "coreConcepts": [
+            "Energy conservation",
+            "Microfacet theory",
+            "BRDF models",
+            "Metallic workflow"
+          ],
+          "keyProblems": [
+            "Accurate material representation",
+            "Consistency across light sources",
+            "Artistic control vs. physical accuracy"
+          ],
+          "applications": [
+            "Photorealistic rendering",
+            "Game art creation",
+            "VFX production"
+          ],
+          "tools": [
+            "Substance Painter",
+            "Marmoset Toolbag",
+            "Unity Standard Shader",
+            "Unreal Engine Standard Shader"
+          ]
+        },
+        {
+          "name": "Virtual Reality (VR) Rendering",
+          "coreConcepts": [
+            "Stereoscopic rendering",
+            "Low latency",
+            "Head tracking",
+            "Foveated rendering"
+          ],
+          "keyProblems": [
+            "Motion sickness mitigation",
+            "High resolution requirements",
+            "Optimizing for mobile VR"
+          ],
+          "applications": [
+            "VR games",
+            "Medical simulations",
+            "Architectural walkthroughs"
+          ],
+          "tools": [
+            "Oculus SDK",
+            "OpenVR (SteamVR)",
+            "Unity VR Toolkit",
+            "Unreal VR Toolkit"
+          ]
+        },
+        {
+          "name": "Augmented Reality (AR) Rendering",
+          "coreConcepts": [
+            "Camera pose estimation",
+            "Environmental understanding",
+            "Realistic object placement",
+            "Occlusion with real world"
+          ],
+          "keyProblems": [
+            "Accurate tracking in diverse environments",
+            "Realistic light estimation",
+            "Seamless blending of real and virtual"
+          ],
+          "applications": [
+            "Mobile AR games",
+            "AR navigation",
+            "Industrial AR applications"
+          ],
+          "tools": [
+            "ARCore",
+            "ARKit",
+            "Vuforia",
+            "Niantic Lightship"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Geometric Modeling",
+      "coreConcepts": [
+        "Polygonal meshes",
+        "NURBS surfaces",
+        "Subdivision surfaces",
+        "Constructive Solid Geometry (CSG)",
+        "Implicit surfaces",
+        "Procedural modeling",
+        "Point clouds"
+      ],
+      "keyProblems": [
+        "Creating complex organic shapes",
+        "Efficiently representing detailed geometry",
+        "Converting between different representations",
+        "Automated model generation",
+        "Handling large datasets",
+        "Repairing corrupted models",
+        "Interactive deformation and sculpting"
+      ],
+      "applications": [
+        "Character modeling",
+        "Product design",
+        "Architectural modeling",
+        "Medical reconstruction",
+        "3D printing",
+        "Simulation setup",
+        "Virtual world creation"
+      ],
+      "tools": [
+        "Blender",
+        "Maya",
+        "ZBrush",
+        "Substance Modeler",
+        "OpenCASCADE",
+        "Rhino",
+        "Grasshopper"
+      ],
+      "pioneers": [
+        {
+          "name": "Pierre Bézier",
+          "link": "https://en.wikipedia.org/wiki/Pierre_B%C3%A9zier"
+        },
+        {
+          "name": "Paul de Casteljau",
+          "link": "https://en.wikipedia.org/wiki/Paul_de_Casteljau"
+        },
+        {
+          "name": "James Ferguson",
+          "link": "https://en.wikipedia.org/wiki/James_C._Ferguson"
+        },
+        {
+          "name": "Robert Barnhill",
+          "link": "https://en.wikipedia.org/wiki/Robert_E._Barnhill"
+        },
+        {
+          "name": "Malcolm D. Parent",
+          "link": "https://www.siggraph.org/about/awards/achievements/malcolm-d-parent-award/"
+        }
+      ],
+      "timeline": [
+        "1960s: Introduction of Coons patches and Bézier curves.",
+        "1970s: Development of NURBS for free-form surface modeling.",
+        "1980s: Emergence of Constructive Solid Geometry (CSG).",
+        "1990s: Widespread adoption of polygonal modeling.",
+        "2000s: Advancements in subdivision surfaces and sculpting tools.",
+        "2010s: Rise of procedural modeling and photogrammetry."
+      ],
+      "relatedFields": [
+        {
+          "name": "Computational Geometry",
+          "link": "https://en.wikipedia.org/wiki/Computational_geometry"
+        },
+        {
+          "name": "Topology",
+          "link": "https://en.wikipedia.org/wiki/Topology"
+        },
+        {
+          "name": "Numerical Analysis",
+          "link": "https://en.wikipedia.org/wiki/Numerical_analysis"
+        },
+        {
+          "name": "Computer-Aided Design (CAD)",
+          "link": "https://en.wikipedia.org/wiki/Computer-aided_design"
+        }
+      ],
+      "advancements": [
+        "Neural implicit representations for 3D shapes",
+        "Generative AI for 3D model creation",
+        "Photogrammetry and 3D scanning improvements",
+        "Real-time mesh editing and sculpting",
+        "Physics-based deformation and simulation",
+        "Automated retopology and UV mapping",
+        "Volumetric modeling for complex shapes"
+      ],
+      "literature": [
+        {
+          "name": "The NURBS Book by Les Piegl and Wayne Tiller",
+          "link": "https://www.springer.com/book/9783540615455"
+        },
+        {
+          "name": "Digital Geometry Processing by Leif Kobbelt and Mario Botsch et al.",
+          "link": "https://www.cs.cmu.edu/~kmcrane/Publications/KobbeltBotsch_DGP.pdf"
+        },
+        {
+          "name": "Polygon Mesh Processing by Mario Botsch et al.",
+          "link": "https://www.polygonmesh.org/"
+        },
+        {
+          "name": "ACM Transactions on Graphics (TOG)",
+          "link": "https://dl.acm.org/journal/tog"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Mesh Processing",
+          "coreConcepts": [
+            "Mesh simplification",
+            "Mesh smoothing",
+            "Remeshing",
+            "Parameterization"
+          ],
+          "keyProblems": [
+            "Preserving features",
+            "Handling topology changes",
+            "Efficient large mesh processing"
+          ],
+          "applications": [
+            "Game asset optimization",
+            "3D printing preparation",
+            "Data reduction"
+          ],
+          "tools": [
+            "MeshLab",
+            "Blender (modeling tools)",
+            "ZBrush (Dynamesh)",
+            "Instant Meshes"
+          ]
+        },
+        {
+          "name": "Parametric Modeling",
+          "coreConcepts": [
+            "Feature-based modeling",
+            "Constraints",
+            "Design tables",
+            "Associativity"
+          ],
+          "keyProblems": [
+            "Managing complex dependencies",
+            "Robustness of features",
+            "User interface design"
+          ],
+          "applications": [
+            "Product design",
+            "Architectural design",
+            "Mechanical engineering"
+          ],
+          "tools": [
+            "SolidWorks",
+            "Fusion 360",
+            "CATIA",
+            "Rhino (Grasshopper)"
+          ]
+        },
+        {
+          "name": "Procedural Modeling",
+          "coreConcepts": [
+            "Grammars and L-systems",
+            "Noise functions",
+            "Volume rendering",
+            "Fractals"
+          ],
+          "keyProblems": [
+            "Controlling complexity",
+            "Achieving desired aesthetics",
+            "Real-time generation"
+          ],
+          "applications": [
+            "Environment generation",
+            "VFX (destruction, terrain)",
+            "Game level design"
+          ],
+          "tools": [
+            "Houdini",
+            "SideFX Karma",
+            "World Machine",
+            "SpeedTree"
+          ]
+        },
+        {
+          "name": "Sculpting and Deformation",
+          "coreConcepts": [
+            "Subdivision surfaces",
+            "Digital sculpting",
+            "Lattice deformation",
+            "Blend shapes"
+          ],
+          "keyProblems": [
+            "Maintaining mesh quality",
+            "Performance for high polycounts",
+            "Intuitive interaction"
+          ],
+          "applications": [
+            "Character creation",
+            "Concept art",
+            "Medical modeling"
+          ],
+          "tools": [
+            "ZBrush",
+            "Blender (sculpting mode)",
+            "Mudbox",
+            "3D-Coat"
+          ]
+        },
+        {
+          "name": "Reconstruction from Data",
+          "coreConcepts": [
+            "Photogrammetry",
+            "Lidar scanning",
+            "Structured light",
+            "Surface reconstruction algorithms"
+          ],
+          "keyProblems": [
+            "Handling noise and missing data",
+            "Generating watertight models",
+            "Texture projection accuracy"
+          ],
+          "applications": [
+            "Cultural heritage preservation",
+            "Archaeology",
+            "Reverse engineering"
+          ],
+          "tools": [
+            "Agisoft Metashape",
+            "RealityCapture",
+            "Meshroom",
+            "CloudCompare"
+          ]
+        },
+        {
+          "name": "Implicit Modeling",
+          "coreConcepts": [
+            "Signed distance fields (SDFs)",
+            "Level set methods",
+            "Boolean operations",
+            "Metaballs"
+          ],
+          "keyProblems": [
+            "Efficient intersection calculations",
+            "Rendering implicit surfaces",
+            "User-friendly authoring"
+          ],
+          "applications": [
+            "Medical visualization",
+            "Organic shape modeling",
+            "VFX (fluid simulation)"
+          ],
+          "tools": [
+            "OpenVDB",
+            "Mantis",
+            "Infinigen",
+            "Signed Distance Field Editor"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Animation",
+      "coreConcepts": [
+        "Keyframing",
+        "Rigging and skinning",
+        "Motion capture",
+        "Inverse kinematics (IK)",
+        "Forward kinematics (FK)",
+        "Physics-based animation",
+        "Facial animation"
+      ],
+      "keyProblems": [
+        "Achieving realistic character movement",
+        "Automating complex animation sequences",
+        "Retargeting motion capture data",
+        "Simulating realistic cloth and hair",
+        "Real-time crowd simulation",
+        "Intuitive animation controls",
+        "Efficiently managing large animation datasets"
+      ],
+      "applications": [
+        "Film animation",
+        "Video game character animation",
+        "Visual effects (VFX)",
+        "Architectural flythroughs",
+        "Medical procedure visualization",
+        "Training simulations",
+        "Robotics simulation"
+      ],
+      "tools": [
+        "Maya",
+        "Blender",
+        "3ds Max",
+        "MotionBuilder",
+        "Houdini",
+        "Mixamo",
+        "Rokoko Studio"
+      ],
+      "pioneers": [
+        {
+          "name": "Frank Thomas",
+          "link": "https://en.wikipedia.org/wiki/Frank_Thomas_(animator)"
+        },
+        {
+          "name": "Ollie Johnston",
+          "link": "https://en.wikipedia.org/wiki/Ollie_Johnston"
+        },
+        {
+          "name": "Pixar Animation Studios (company)",
+          "link": "https://en.wikipedia.org/wiki/Pixar"
+        },
+        {
+          "name": "Ken Perlin",
+          "link": "https://en.wikipedia.org/wiki/Ken_Perlin"
+        },
+        {
+          "name": "Jessica Hodgins",
+          "link": "https://en.wikipedia.org/wiki/Jessica_Hodgins"
+        }
+      ],
+      "timeline": [
+        "1980s: Early computer animation in films and TV.",
+        "1990s: Development of keyframe animation and rigging techniques.",
+        "1995: Release of 'Toy Story', a landmark in feature-length CGI animation.",
+        "2000s: Widespread adoption of motion capture.",
+        "2010s: Advancements in physics-based character animation and facial rigging.",
+        "2020s: Integration of AI/ML for automated animation and character control."
+      ],
+      "relatedFields": [
+        {
+          "name": "Robotics",
+          "link": "https://en.wikipedia.org/wiki/Robotics"
+        },
+        {
+          "name": "Biomechanics",
+          "link": "https://en.wikipedia.org/wiki/Biomechanics"
+        },
+        {
+          "name": "Artificial Intelligence",
+          "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+        },
+        {
+          "name": "Control Theory",
+          "link": "https://en.wikipedia.org/wiki/Control_theory"
+        }
+      ],
+      "advancements": [
+        "AI-powered motion generation and transfer",
+        "Real-time physics simulation for cloth and fluids",
+        "Deep learning for realistic facial animation",
+        "Procedural animation based on rules and parameters",
+        "Inverse kinematics solvers for complex rigs",
+        "Performance capture for entire body and face",
+        "Rigging automation using machine learning"
+      ],
+      "literature": [
+        {
+          "name": "Computer Animation: Algorithms and Techniques by Rick Parent",
+          "link": "https://www.elsevier.com/books/computer-animation/parent/978-1-55860-264-7"
+        },
+        {
+          "name": "Advanced Character Rigging: The Ultimate Guide by Josh Carey",
+          "link": "https://www.amazon.com/Advanced-Character-Rigging-Ultimate-Guide/dp/0321855909"
+        },
+        {
+          "name": "SIGGRAPH Asia Conferences",
+          "link": "https://www.siggraph.org/conferences/siggraph-asia/"
+        },
+        {
+          "name": "Journal of Graphics Tools (JGT)",
+          "link": "https://www.tandfonline.com/loi/ugrt20"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Character Rigging",
+          "coreConcepts": [
+            "Skeletons and joints",
+            "Skinning and weights",
+            "IK/FK systems",
+            "Blend shapes"
+          ],
+          "keyProblems": [
+            "Deformation artifacts",
+            "Weight painting accuracy",
+            "Rig complexity"
+          ],
+          "applications": [
+            "Game characters",
+            "Film characters",
+            "Virtual avatars"
+          ],
+          "tools": [
+            "Maya (rigging tools)",
+            "Blender (rigging tools)",
+            "Advanced Skeleton",
+            "RBF Manager"
+          ]
+        },
+        {
+          "name": "Motion Capture",
+          "coreConcepts": [
+            "Optical motion capture",
+            "Inertial motion capture",
+            "Facial capture",
+            "Performance capture"
+          ],
+          "keyProblems": [
+            "Data cleaning and filtering",
+            "Retargeting to different rigs",
+            "Occlusion issues"
+          ],
+          "applications": [
+            "Game animation",
+            "Film VFX",
+            "Virtual production"
+          ],
+          "tools": [
+            "OptiTrack",
+            "Vicon",
+            "Xsens",
+            "Perception Neuron"
+          ]
+        },
+        {
+          "name": "Physics-Based Simulation",
+          "coreConcepts": [
+            "Rigid body dynamics",
+            "Soft body dynamics",
+            "Fluid simulation",
+            "Cloth simulation"
+          ],
+          "keyProblems": [
+            "Computational expense",
+            "Stability and robustness",
+            "Controlling artistic direction"
+          ],
+          "applications": [
+            "Destruction effects",
+            "Realistic character interaction",
+            "Environmental phenomena"
+          ],
+          "tools": [
+            "Houdini (Dynamics)",
+            "NVIDIA PhysX",
+            "Blender (physics simulations)",
+            "Maya nCloth"
+          ]
+        },
+        {
+          "name": "Procedural Animation",
+          "coreConcepts": [
+            "Rule-based systems",
+            "Behavioral animation",
+            "Noise-driven animation",
+            "Agent-based simulation"
+          ],
+          "keyProblems": [
+            "Achieving natural motion",
+            "User control and customization",
+            "Scalability for crowds"
+          ],
+          "applications": [
+            "Crowd simulation",
+            "Environmental animation",
+            "Autonomous agents"
+          ],
+          "tools": [
+            "Massive",
+            "Golaem Crowd",
+            "Houdini (agents)",
+            "Unity (dots animation)"
+          ]
+        },
+        {
+          "name": "Facial Animation",
+          "coreConcepts": [
+            "Blend shapes",
+            "Joint-based rigging",
+            "Musculoskeletal models",
+            "Performance capture for faces"
+          ],
+          "keyProblems": [
+            "Achieving expressiveness",
+            "Lip synchronization",
+            "Data-driven facial animation"
+          ],
+          "applications": [
+            "Digital doubles",
+            "Game characters",
+            "Virtual assistants"
+          ],
+          "tools": [
+            "FaceWare Tech",
+            "Unreal MetaHuman Animator",
+            "Maya (Facial rigging tools)",
+            "DeepMotion"
+          ]
+        },
+        {
+          "name": "Camera Animation",
+          "coreConcepts": [
+            "Keyframed camera paths",
+            "Cinematic principles",
+            "Camera rigging",
+            "Virtual cinematography"
+          ],
+          "keyProblems": [
+            "Smooth camera motion",
+            "Achieving dramatic framing",
+            "Simulating real-world camera physics"
+          ],
+          "applications": [
+            "Film previsualization",
+            "Game cinematics",
+            "Virtual production"
+          ],
+          "tools": [
+            "Maya (Sequencer)",
+            "Unreal Engine (Sequencer)",
+            "Blender (Camera tools)",
+            "ShotGrid"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Image Processing and Synthesis",
+      "coreConcepts": [
+        "Image filtering",
+        "Color theory",
+        "Texture synthesis",
+        "Image segmentation",
+        "Image compositing",
+        "Neural style transfer",
+        "Super-resolution"
+      ],
+      "keyProblems": [
+        "Generating realistic textures from limited data",
+        "Removing noise while preserving detail",
+        "Seamlessly blending multiple images",
+        "Real-time image manipulation",
+        "Content-aware image editing",
+        "Upscaling low-resolution images without artifacts",
+        "Automated image enhancement"
+      ],
+      "applications": [
+        "Photo editing software",
+        "Visual effects (VFX) compositing",
+        "Medical image analysis",
+        "Computer vision preprocessing",
+        "Digital art creation",
+        "Image restoration",
+        "Generative art"
+      ],
+      "tools": [
+        "Adobe Photoshop",
+        "GIMP",
+        "OpenCV",
+        "Pytorch",
+        "TensorFlow",
+        "Nuke",
+        "DaVinci Resolve"
+      ],
+      "pioneers": [
+        {
+          "name": "A. K. Jain",
+          "link": "https://en.wikipedia.org/wiki/Anil_K._Jain"
+        },
+        {
+          "name": "Alan Bovik",
+          "link": "https://en.wikipedia.org/wiki/Alan_Bovik"
+        },
+        {
+          "name": "Thomas G. Stockham Jr.",
+          "link": "https://en.wikipedia.org/wiki/Thomas_G._Stockham_Jr."
+        },
+        {
+          "name": "J. D. Foley",
+          "link": "https://en.wikipedia.org/wiki/James_D._Foley"
+        },
+        {
+          "name": "Richard S. Wallace",
+          "link": "https://en.wikipedia.org/wiki/Richard_S._Wallace"
+        }
+      ],
+      "timeline": [
+        "1960s: Early digital image processing for space exploration.",
+        "1970s: Development of fundamental image filtering techniques.",
+        "1980s: Emergence of commercial image editing software.",
+        "1990s: Focus on image compression and wavelet transforms.",
+        "2000s: Advancements in computational photography and HDR imaging.",
+        "2010s: Deep learning revolutionizes image synthesis and manipulation.",
+        "2020s: Generative adversarial networks (GANs) for photorealistic image generation."
+      ],
+      "relatedFields": [
+        {
+          "name": "Computer Vision",
+          "link": "https://en.wikipedia.org/wiki/Computer_vision"
+        },
+        {
+          "name": "Machine Learning",
+          "link": "https://en.wikipedia.org/wiki/Machine_learning"
+        },
+        {
+          "name": "Signal Processing",
+          "link": "https://en.wikipedia.org/wiki/Signal_processing"
+        },
+        {
+          "name": "Photography",
+          "link": "https://en.wikipedia.org/wiki/Photography"
+        }
+      ],
+      "advancements": [
+        "Generative Adversarial Networks (GANs) for image synthesis",
+        "Diffusion models for image generation and editing",
+        "Neural style transfer for artistic effects",
+        "AI-powered image restoration and super-resolution",
+        "Content-aware fill and inpainting",
+        "Neural radiance fields (NeRF) for novel view synthesis",
+        "Real-time video stylization"
+      ],
+      "literature": [
+        {
+          "name": "Digital Image Processing by Rafael C. Gonzalez and Richard E. Woods",
+          "link": "https://www.pearson.com/us/higher-education/program/Gonzalez-Digital-Image-Processing-4th-Edition/PGM207798.html"
+        },
+        {
+          "name": "Computer Vision: Algorithms and Applications by Richard Szeliski",
+          "link": "http://szeliski.org/Book/"
+        },
+        {
+          "name": "The Handbook of Image and Video Processing by Al Bovik",
+          "link": "https://www.sciencedirect.com/book/9780123919266/the-handbook-of-image-and-video-processing"
+        },
+        {
+          "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
+          "link": "https://www.computer.org/csdl/journal/tp"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Image Filtering",
+          "coreConcepts": [
+            "Convolution",
+            "Kernels",
+            "Low-pass filters",
+            "High-pass filters"
+          ],
+          "keyProblems": [
+            "Noise reduction",
+            "Edge detection accuracy",
+            "Blurring effects"
+          ],
+          "applications": [
+            "Image enhancement",
+            "Feature extraction",
+            "Medical imaging"
+          ],
+          "tools": [
+            "OpenCV",
+            "SciPy (image processing)",
+            "Pillow",
+            "MATLAB Image Processing Toolbox"
+          ]
+        },
+        {
+          "name": "Image Compositing",
+          "coreConcepts": [
+            "Alpha blending",
+            "Matting and keying",
+            "Color matching",
+            "Layer-based editing"
+          ],
+          "keyProblems": [
+            "Seamless integration of elements",
+            "Realistic lighting consistency",
+            "Handling complex edges"
+          ],
+          "applications": [
+            "Visual effects",
+            "Photo manipulation",
+            "Advertising imagery"
+          ],
+          "tools": [
+            "Adobe Photoshop",
+            "Nuke",
+            "After Effects",
+            "GIMP"
+          ]
+        },
+        {
+          "name": "Texture Synthesis",
+          "coreConcepts": [
+            "Example-based synthesis",
+            "Procedural texture generation",
+            "Neural texture synthesis",
+            "Patch-based synthesis"
+          ],
+          "keyProblems": [
+            "Generating diverse and realistic textures",
+            "Avoiding repetitive patterns",
+            "Computational efficiency"
+          ],
+          "applications": [
+            "Game environment design",
+            "3D model texturing",
+            "Digital art"
+          ],
+          "tools": [
+            "Substance Designer",
+            "Quixel Mixer",
+            "Blender (node editor)",
+            "Generative Adversarial Networks (GANs)"
+          ]
+        },
+        {
+          "name": "Image Style Transfer",
+          "coreConcepts": [
+            "Content loss",
+            "Style loss",
+            "Neural networks",
+            "Gram matrix"
+          ],
+          "keyProblems": [
+            "Preserving content fidelity",
+            "Transferring complex styles",
+            "Real-time performance"
+          ],
+          "applications": [
+            "Artistic image creation",
+            "Video stylization",
+            "Personalized photo filters"
+          ],
+          "tools": [
+            "TensorFlow (neural style transfer)",
+            "PyTorch (neural style transfer)",
+            "DeepDream Generator",
+            "RunwayML"
+          ]
+        },
+        {
+          "name": "Super-Resolution",
+          "coreConcepts": [
+            "Single-image SR",
+            "Multi-image SR",
+            "Deep learning for SR",
+            "Perceptual loss"
+          ],
+          "keyProblems": [
+            "Recovering fine details",
+            "Avoiding artifacts",
+            "Real-time upscaling"
+          ],
+          "applications": [
+            "Image and video enhancement",
+            "Medical imaging",
+            "Surveillance footage analysis"
+          ],
+          "tools": [
+            "NVIDIA DLSS",
+            "AMD FSR",
+            "Topaz Gigapixel AI",
+            "ESRGAN"
+          ]
+        },
+        {
+          "name": "Neural Radiance Fields (NeRF)",
+          "coreConcepts": [
+            "Volumetric rendering",
+            "Implicit scene representation",
+            "Multi-layer perceptrons",
+            "Novel view synthesis"
+          ],
+          "keyProblems": [
+            "Training time and data requirements",
+            "Rendering speed for complex scenes",
+            "Editing NeRF representations"
+          ],
+          "applications": [
+            "3D scene reconstruction",
+            "Virtual tourism",
+            "Content creation for VR/AR"
+          ],
+          "tools": [
+            "Instant-NGP",
+            "Colmap",
+            "NeRF Studio",
+            "Gaussian Splatting"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Human-Computer Interaction (HCI) in Graphics",
+      "coreConcepts": [
+        "User interface design",
+        "Usability",
+        "Interaction techniques",
+        "Perception and cognition",
+        "Haptic feedback",
+        "Multimodal interaction",
+        "Ergonomics"
+      ],
+      "keyProblems": [
+        "Designing intuitive 3D interaction methods",
+        "Minimizing cognitive load in complex graphical interfaces",
+        "Developing effective input devices for 3D environments",
+        "Addressing cybersickness in VR",
+        "Enabling natural and expressive 3D manipulation",
+        "Evaluating user experience in immersive environments",
+        "Personalizing graphical interfaces"
+      ],
+      "applications": [
+        "CAD software interfaces",
+        "Video game controls",
+        "Virtual reality locomotion methods",
+        "Augmented reality interaction",
+        "Medical visualization systems",
+        "Scientific data exploration interfaces",
+        "Creative design tools"
+      ],
+      "tools": [
+        "Unity UI",
+        "Unreal Motion Graphics (UMG)",
+        "OpenXR",
+        "Sketch",
+        "Figma",
+        "User testing methodologies",
+        "Eye-tracking devices"
+      ],
+      "pioneers": [
+        {
+          "name": "Ben Shneiderman",
+          "link": "https://en.wikipedia.org/wiki/Ben_Shneiderman"
+        },
+        {
+          "name": "Don Norman",
+          "link": "https://en.wikipedia.org/wiki/Don_Norman"
+        },
+        {
+          "name": "Stuart K. Card",
+          "link": "https://en.wikipedia.org/wiki/Stuart_K._Card"
+        },
+        {
+          "name": "Jef Raskin",
+          "link": "https://en.wikipedia.org/wiki/Jef_Raskin"
+        },
+        {
+          "name": "Elizabeth D. Mynatt",
+          "link": "https://en.wikipedia.org/wiki/Elizabeth_D._Mynatt"
+        }
+      ],
+      "timeline": [
+        "1960s: Early interactive graphics systems like Sketchpad.",
+        "1980s: Development of WIMP (Windows, Icons, Menus, Pointer) interfaces.",
+        "1990s: Focus on 3D interaction techniques and virtual environments.",
+        "2000s: Rise of tangible and multi-touch interfaces.",
+        "2010s: Commercialization of VR and AR leading to new interaction paradigms.",
+        "2020s: Exploration of natural language processing and AI for graphical interaction."
+      ],
+      "relatedFields": [
+        {
+          "name": "Cognitive Psychology",
+          "link": "https://en.wikipedia.org/wiki/Cognitive_psychology"
+        },
+        {
+          "name": "Ergonomics",
+          "link": "https://en.wikipedia.org/wiki/Ergonomics"
+        },
+        {
+          "name": "User Experience (UX) Design",
+          "link": "https://en.wikipedia.org/wiki/User_experience_design"
+        },
+        {
+          "name": "Industrial Design",
+          "link": "https://en.wikipedia.org/wiki/Industrial_design"
+        }
+      ],
+      "advancements": [
+        "Hand tracking and gesture recognition for controller-less interaction",
+        "Eye-tracking for foveated rendering and gaze-based interaction",
+        "Brain-computer interfaces (BCIs) for direct control",
+        "Haptic feedback for enhanced tactile experiences",
+        "Adaptive user interfaces based on user behavior",
+        "Speech recognition and natural language interfaces for graphics",
+        "Augmented reality for context-aware interaction"
+      ],
+      "literature": [
+        {
+          "name": "The Design of Everyday Things by Don Norman",
+          "link": "https://www.jnd.org/books/design-of-everyday-things-revised-expanded-edition/"
+        },
+        {
+          "name": "About Face: The Essentials of Interaction Design by Alan Cooper et al.",
+          "link": "https://www.oreilly.com/library/view/about-face-4th/9781118766578/"
+        },
+        {
+          "name": "ResearchGate (HCI in Graphics)",
+          "link": "https://www.researchgate.net/topic/Human-Computer-Interaction-in-Computer-Graphics"
+        },
+        {
+          "name": "ACM CHI Conference on Human Factors in Computing Systems",
+          "link": "https://chi.acm.org/"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "3D User Interfaces",
+          "coreConcepts": [
+            "Navigation in 3D spaces",
+            "Selection and manipulation of 3D objects",
+            "Widgets for 3D environments",
+            "Immersive displays"
+          ],
+          "keyProblems": [
+            "Spatial disorientation",
+            "Precise 3D manipulation",
+            "Scalability of interfaces"
+          ],
+          "applications": [
+            "VR/AR applications",
+            "3D modeling software",
+            "Scientific visualization"
+          ],
+          "tools": [
+            "OpenXR",
+            "Unity (XR Interaction Toolkit)",
+            "Unreal Engine (VR/AR templates)",
+            "Leap Motion"
+          ]
+        },
+        {
+          "name": "Input Devices for Graphics",
+          "coreConcepts": [
+            "Mouse and keyboard extensions",
+            "Game controllers",
+            "Haptic devices",
+            "Gesture recognition devices"
+          ],
+          "keyProblems": [
+            "Mapping physical actions to virtual actions",
+            "Latency in input",
+            "Ergonomics for prolonged use"
+          ],
+          "applications": [
+            "Professional design workstations",
+            "Gaming peripherals",
+            "Surgical simulators"
+          ],
+          "tools": [
+            "Wacom tablets",
+            "3Dconnexion SpaceMouse",
+            "Sensel Morph",
+            "Haptic gloves"
+          ]
+        },
+        {
+          "name": "Perceptual Issues in Graphics",
+          "coreConcepts": [
+            "Visual perception",
+            "Depth perception",
+            "Motion sickness",
+            "Presence and immersion"
+          ],
+          "keyProblems": [
+            "Reducing visual discomfort",
+            "Enhancing realism and immersion",
+            "Understanding human response to graphics"
+          ],
+          "applications": [
+            "VR experience design",
+            "Flight simulators",
+            "Medical diagnostics visualization"
+          ],
+          "tools": [
+            "Eye tracking",
+            "Biofeedback sensors",
+            "Usability testing",
+            "User surveys"
+          ]
+        },
+        {
+          "name": "Tangible and Embodied Interaction",
+          "coreConcepts": [
+            "Physical objects as interfaces",
+            "Direct manipulation",
+            "Embodied cognition",
+            "Augmented paper"
+          ],
+          "keyProblems": [
+            "Tracking physical objects accurately",
+            "Designing intuitive mappings",
+            "Scalability of physical interfaces"
+          ],
+          "applications": [
+            "Interactive museum exhibits",
+            "Design studios",
+            "Educational tools"
+          ],
+          "tools": [
+            "RFID tags",
+            "Computer vision for object tracking",
+            "Projection mapping",
+            "Arduino/Raspberry Pi"
+          ]
+        },
+        {
+          "name": "Accessibility in Graphics",
+          "coreConcepts": [
+            "Visual impairments",
+            "Motor impairments",
+            "Cognitive load",
+            "Assistive technologies"
+          ],
+          "keyProblems": [
+            "Making graphical content accessible to all users",
+            "Designing alternative input methods",
+            "Providing descriptive audio and tactile feedback"
+          ],
+          "applications": [
+            "Accessible games",
+            "Assistive design software",
+            "Inclusive virtual environments"
+          ],
+          "tools": [
+            "Screen readers",
+            "Alternative input devices",
+            "Color blindness simulators",
+            "WCAG guidelines"
+          ]
+        },
+        {
+          "name": "Collaborative Graphics",
+          "coreConcepts": [
+            "Shared virtual spaces",
+            "Multi-user interaction",
+            "Real-time collaboration",
+            "Distributed graphics systems"
+          ],
+          "keyProblems": [
+            "Synchronization across users",
+            "Conflict resolution in shared editing",
+            "Network latency for real-time collaboration"
+          ],
+          "applications": [
+            "Collaborative design platforms",
+            "Multiplayer VR games",
+            "Remote work in virtual environments"
+          ],
+          "tools": [
+            "Unity (multiplayer networking)",
+            "Unreal Engine (networking)",
+            "Photon Engine",
+            "SpatialOS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Scientific Visualization",
+      "coreConcepts": [
+        "Data mapping",
+        "Volume rendering",
+        "Flow visualization",
+        "Information visualization",
+        "Uncertainty visualization",
+        "Multivariate visualization",
+        "Isosurfacing"
+      ],
+      "keyProblems": [
+        "Representing complex, high-dimensional datasets",
+        "Maintaining data accuracy and integrity visually",
+        "Enabling interactive exploration of large datasets",
+        "Addressing visual clutter and occlusion",
+        "Communicating uncertainty effectively",
+        "Designing intuitive mappings for abstract data",
+        "Integrating computation and visualization"
+      ],
+      "applications": [
+        "Medical imaging (MRI, CT)",
+        "Computational Fluid Dynamics (CFD) analysis",
+        "Climate modeling visualization",
+        "Molecular dynamics simulation",
+        "Geological data exploration",
+        "Astronomy data visualization",
+        "Engineering simulation results"
+      ],
+      "tools": [
+        "ParaView",
+        "VisIt",
+        "VTK (Visualization Toolkit)",
+        "OpenVDB",
+        "Matplotlib",
+        "Plotly",
+        "Tableau"
+      ],
+      "pioneers": [
+        {
+          "name": "Loren Carpenter",
+          "link": "https://en.wikipedia.org/wiki/Loren_Carpenter"
+        },
+        {
+          "name": "Charles M. Wittenbrink",
+          "link": "https://scholar.google.com/citations?user=dFk5x5YAAAAJ&hl=en"
+        },
+        {
+          "name": "Hans-Joachim Schlechtweg",
+          "link": "https://www.informatik.uni-trier.de/~ley/pers/h/Schlechtweg:Hans-Joachim"
+        },
+        {
+          "name": "Terry S. Yoo",
+          "link": "https://www.nist.gov/people/terry-s-yoo"
+        },
+        {
+          "name": "Pak Chung Wong",
+          "link": "https://scholar.google.com/citations?user=iT0nO2YAAAAJ&hl=en"
+        }
+      ],
+      "timeline": [
+        "1987: Formation of the National Science Foundation (NSF) report 'Visualization in Scientific Computing'.",
+        "1990s: Development of standardized visualization toolkits like VTK.",
+        "2000s: Focus on large-scale data visualization and parallel rendering.",
+        "2010s: Integration of machine learning for data analysis and visualization.",
+        "2020s: Immersive analytics in VR/AR for scientific data exploration."
+      ],
+      "relatedFields": [
+        {
+          "name": "Data Science",
+          "link": "https://en.wikipedia.org/wiki/Data_science"
+        },
+        {
+          "name": "Computational Science",
+          "link": "https://en.wikipedia.org/wiki/Computational_science"
+        },
+        {
+          "name": "Statistics",
+          "link": "https://en.wikipedia.org/wiki/Statistics"
+        },
+        {
+          "name": "Domain Sciences (e.g., Biology, Physics)",
+          "link": "https://en.wikipedia.org/wiki/Natural_science"
+        }
+      ],
+      "advancements": [
+        "AI-driven visual encoding and insight extraction",
+        "Interactive large-scale volume rendering",
+        "Immersive visualization in virtual and augmented reality",
+        "Web-based visualization platforms for collaborative analysis",
+        "Uncertainty visualization techniques for data validity",
+        "Storytelling with data visualization for broader audiences",
+        "Real-time visualization of streaming data"
+      ],
+      "literature": [
+        {
+          "name": "Visualization Handbook by Charles D. Hansen and Chris Johnson",
+          "link": "https://www.sciencedirect.com/book/9780123847521/visualization-handbook"
+        },
+        {
+          "name": "Interactive Data Visualization: Foundations, Techniques, and Applications by Matthew Ward et al.",
+          "link": "https://www.routledge.com/Interactive-Data-Visualization-Foundations-Techniques-and-Applications/Ward-Grinstein-Keim/p/book/9781482257373"
+        },
+        {
+          "name": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+          "link": "https://www.computer.org/csdl/journal/tg"
+        },
+        {
+          "name": "Eurographics Conference on Visualization (EuroVis)",
+          "link": "https://www.eurovis.org/"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Volume Visualization",
+          "coreConcepts": [
+            "Ray casting",
+            "Texture mapping for volumes",
+            "Transfer functions",
+            "Isosurfacing"
+          ],
+          "keyProblems": [
+            "Computational cost",
+            "Opacity mapping",
+            "Handling large volumes"
+          ],
+          "applications": [
+            "Medical CT/MRI scans",
+            "Geophysical data",
+            "Fluid simulations"
+          ],
+          "tools": [
+            "VTK",
+            "OpenVDB",
+            "ParaView (volume rendering)",
+            "3D Slicer"
+          ]
+        },
+        {
+          "name": "Flow Visualization",
+          "coreConcepts": [
+            "Vector field visualization",
+            "Streamlines and pathlines",
+            "Glyphs",
+            "Topology-based visualization"
+          ],
+          "keyProblems": [
+            "Clutter reduction",
+            "Representing 3D flow",
+            "Interactive exploration"
+          ],
+          "applications": [
+            "CFD analysis",
+            "Weather forecasting",
+            "Oceanography"
+          ],
+          "tools": [
+            "VisIt (flow visualization)",
+            "ParaView (flow visualization)",
+            "Tecplot",
+            "FieldView"
+          ]
+        },
+        {
+          "name": "Information Visualization",
+          "coreConcepts": [
+            "Treemaps",
+            "Network graphs",
+            "Parallel coordinates",
+            "Scatter plots"
+          ],
+          "keyProblems": [
+            "Representing abstract data",
+            "Scalability for large datasets",
+            "Ensuring readability and insight"
+          ],
+          "applications": [
+            "Business intelligence",
+            "Social network analysis",
+            "Financial data analysis"
+          ],
+          "tools": [
+            "Tableau",
+            "D3.js",
+            "Plotly",
+            "Gephi"
+          ]
+        },
+        {
+          "name": "Uncertainty Visualization",
+          "coreConcepts": [
+            "Visualizing error margins",
+            "Probabilistic representations",
+            "Ensemble visualization",
+            "Perceptual encoding of uncertainty"
+          ],
+          "keyProblems": [
+            "Effective communication of uncertainty",
+            "Avoiding misinterpretation",
+            "Integrating with existing visualizations"
+          ],
+          "applications": [
+            "Climate model predictions",
+            "Medical diagnoses",
+            "Geological surveys"
+          ],
+          "tools": [
+            "Custom visualization libraries",
+            "Statistical software (R, Python with libraries)",
+            "Specialized visualization tools"
+          ]
+        },
+        {
+          "name": "Medical Visualization",
+          "coreConcepts": [
+            "Volume rendering of medical scans",
+            "Segmentation of anatomical structures",
+            "Surgical planning visualization",
+            "Virtual dissection"
+          ],
+          "keyProblems": [
+            "Accuracy and precision",
+            "Real-time interaction with large datasets",
+            "Integration with surgical tools"
+          ],
+          "applications": [
+            "Surgical training",
+            "Diagnosis support",
+            "Patient education"
+          ],
+          "tools": [
+            "3D Slicer",
+            "OsiriX",
+            "ITK-SNAP",
+            "Mimics"
+          ]
+        },
+        {
+          "name": "High-Dimensional Data Visualization",
+          "coreConcepts": [
+            "Dimensionality reduction (PCA, t-SNE)",
+            "Parallel coordinates",
+            "Glyph-based visualization",
+            "Scatter plot matrices"
+          ],
+          "keyProblems": [
+            "Avoiding visual clutter",
+            "Identifying hidden patterns",
+            "Interpreting complex projections"
+          ],
+          "applications": [
+            "Genomics data analysis",
+            "Machine learning model interpretation",
+            "Financial market analysis"
+          ],
+          "tools": [
+            "Plotly",
+            "TensorFlow Projector",
+            "Orange",
+            "Elke"
+          ]
+        }
+      ]
+    }
+  ]
+}

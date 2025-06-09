@@ -1,13 +1,311 @@
 {
   "name": "Human-Computer Interaction",
-  "coreConcepts": ["Concept A", "Concept B", "Concept C"],
-  "keyProblems": ["Problem X", "Problem Y"],
-  "applications": ["Application 1", "Application 2"],
-  "tools": ["Tool Alpha", "Tool Beta"],
-  "pioneers": [{"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"}],
-  "timeline": ["Milestone 1", "Milestone 2"],
-  "subfields": [],
-  "relatedFields": [{"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"}],
-  "advancements": ["Advancement 1", "Advancement 2"],
-  "literature": [{"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"}]
+  "coreConcepts": [
+    "Usability -- the capacity of a system to provide a condition for its users to perform the tasks safely, effectively, and efficiently while enjoying the experience",
+    "User-centered Design -- a framework of processes in which usability goals, user characteristics, environment, tasks and workflow of a product, service or brand are given extensive attention at each stage of the design process. This attention includes testing which is conducted during each stage of design and development from the envisioned requirements, through pre-production models to post production.",
+    "Feedback -- the system's response to a user's action, providing information about what has been done and what has been accomplished. This communication helps users understand the result of their actions and whether their intended goals have been achieved",
+    "Affordances --  the properties of an object or interface that suggest how it can be used. In HCI, affordances are cues that help users understand what actions are possible with a digital interface or a physical object.",
+    "Consistency -- the principle that similar operations and elements should behave similarly within and across interfaces. This predictability helps users build mental models and reduces the learning curve when interacting with new systems.",
+    "Learnability -- how easy it is for users to accomplish basic tasks the first time they encounter the interface and how quickly they can reach proficiency.",
+    "Error Prevention & Handling -- design strategies that aim to reduce the likelihood of user errors and to make errors easy to recover from if they occur.",
+    "Accessibility -- the design of interfaces that ensure people of all abilities, including those with disabilities, can perceive, understand, navigate, and interact with digital systems effectively."
+  ],
+  "keyProblems": [
+    "Usability and Learnability: Designing interfaces that are easy to learn and use for diverse users.",
+    "Accessibility: Ensuring interfaces are usable by people with disabilities (e.g., visual, motor, cognitive impairments).",
+    "User Diversity: Accounting for differences in users\u2019 age, culture, language, expertise, and preferences.",
+    "Context of Use: Designing for varied contexts (mobile, desktop, VR) and environments (noisy, multitasking).",
+    "Keeping Up with Technology: Rapidly evolving tech (e.g., AI, IoT, AR/VR) creates new interaction challenges.",
+    "Privacy and Security: Balancing data collection, user trust, and protection of sensitive data.",
+    "Emotional and Social Impact: Considering how interactions affect users\u2019 emotions, well-being, and social behavior.",
+    "Cognitive Load: Minimizing mental effort required to use an interface.",
+    "Cross-Platform Consistency: Ensuring consistent experiences across devices and platforms."
+  ],
+  "applications": [
+    "User Interface (UI) Design -- Designing interfaces for apps, websites, and software to make them intuitive and user-friendly.",
+    "Mobile & Web Applications -- Ensuring responsive and accessible interactions on smartphones, tablets, and browsers.",
+    "Virtual Reality (VR) & Augmented Reality (AR) -- Creating immersive environments with natural and engaging interactions.",
+    "Voice & Gesture Interfaces -- Applications like Siri, Alexa, and gesture-based controls in gaming and smart homes.",
+    "Assistive Technologies -- Designing tools for people with disabilities (e.g., screen readers, adaptive input devices).",
+    "Automotive Interfaces -- In-car entertainment systems, driver assistance, and safety features.",
+    "Healthcare & Telemedicine -- User-friendly systems for patient monitoring, medical devices, and remote consultations.",
+    "Smart Home & IoT Devices -- Designing interactions for home automation and connected devices.",
+    "E-learning & Educational Tools -- Interactive platforms and online learning environments.",
+    "Gaming -- Designing enjoyable and immersive experiences, especially in interactive storytelling and motion-based controls."
+  ],
+  "tools": [
+    "Figma / Sketch / Adobe XD \u2192 Widely used for designing and prototyping user interfaces.",
+    "Axure / Balsamiq \u2192 Wireframing and low-fidelity prototyping.",
+    "UserTesting / Lookback.io \u2192 Tools for remote usability testing and gathering user feedback.",
+    "Eye-tracking tools (Tobii Pro, EyeLink) \u2192 Analyze user gaze behavior to inform design.",
+    "Miro / MURAL \u2192 Collaborative whiteboards for ideation and user journey mapping.",
+    "Unity / Unreal \u2192 Engine Developing interactive 3D/VR/AR experiences.",
+    "p5.js \u2192 JavaScript library for creating interactive visual content.",
+    "D3.js \u2192 For creating dynamic and interactive data visualizations.",
+    "Three.js \u2192 Web-based 3D visualizations, often used in VR/AR prototypes.",
+    "OpenCV \u2192 Computer vision library, useful for gesture-based or camera-based interaction."
+  ],
+  "pioneers": [
+    {
+      "name": "Douglas Engelbart",
+      "link": "https://en.wikipedia.org/wiki/Douglas_Engelbart"
+    },
+    {
+      "name": "Ivan Sutherland",
+      "link": "https://en.wikipedia.org/wiki/Ivan_Sutherland"
+    },
+    {
+      "name": "Alan Kay",
+      "link": "https://en.wikipedia.org/wiki/Alan_Kay"
+    },
+    {
+      "name": "Ben Shneiderman",
+      "link": "https://en.wikipedia.org/wiki/Ben_Shneiderman"
+    },
+    {
+      "name": "Stuart Card",
+      "link": "https://en.wikipedia.org/wiki/Stuart_Card"
+    },
+    {
+      "name": "MIT Media Lab",
+      "link": "https://www.media.mit.edu/"
+    },
+    {
+      "name": "Stanford HCI Group",
+      "link": "https://hci.stanford.edu/"
+    },
+    {
+      "name": "UCL Interaction Centre",
+      "link": "https://www.ucl.ac.uk/uclic/"
+    },
+    {
+      "name": "University of Toronto HCI Group",
+      "link": "https://www.dgp.toronto.edu/"
+    },
+    {
+      "name": "Don Norman",
+      "link": "https://www.jnd.org/"
+    }
+  ],
+  "timeline": [
+    "1945 \u2013 Vannevar Bush envisions \u201cMemex\u201d (hypertext precursor).",
+    "1950s \u2013 Early batch processing; no direct user interaction.",
+    "1963 \u2013 Ivan Sutherland develops Sketchpad, first graphical user interface (GUI).",
+    "1964-1968 \u2013 Douglas Engelbart\u2019s \u201cMother of All Demos\u201d: Introduces mouse, hypertext, and window-based interaction.",
+    "1973 \u2013 Xerox Alto: first computer designed for personal use with GUI.",
+    "1979-1983 \u2013 Apple Lisa and later Macintosh popularize the GUI in personal computing.",
+    "1983 \u2013 The Psychology of Human-Computer Interaction (Card, Moran, Newell) defines HCI as a research domain.",
+    "1984 \u2013 CHI Conference (ACM SIGCHI) becomes the major HCI conference.",
+    "1986 \u2013 Ben Shneiderman\u2019s direct manipulation principles are formally described.",
+    "1990s \u2013 WWW (World Wide Web) emerges, expanding HCI to web-based interactions."
+  ],
+  "subfields": [
+    {
+      "name": "Usability and User Experience (UX)",
+      "coreConcepts": [
+        "Usability",
+        "User Satisfaction",
+        "Learnability",
+        "Efficiency",
+        "Error Prevention"
+      ],
+      "keyProblems": [
+        "Balancing aesthetics with usability",
+        "Measuring subjective user satisfaction",
+        "Cultural differences in UX"
+      ],
+      "applications": [
+        "Website usability testing",
+        "Mobile app user feedback",
+        "E-commerce interface optimization"
+      ],
+      "tools": [
+        "Figma",
+        "UserTesting",
+        "Axure",
+        "Adobe XD"
+      ],
+      "pioneers": [
+        {
+          "name": "Douglas Engelbart",
+          "link": "https://en.wikipedia.org/wiki/Douglas_Engelbart"
+        },
+        {
+          "name": "Ivan Sutherland",
+          "link": "https://en.wikipedia.org/wiki/Ivan_Sutherland"
+        },
+        {
+          "name": "Alan Kay",
+          "link": "https://en.wikipedia.org/wiki/Alan_Kay"
+        }
+      ],
+      "timeline": [
+        "1980s \u2013 Emergence of usability as a research area",
+        "1990s \u2013 Growth of usability testing methods"
+      ],
+      "relatedFields": [
+        {
+          "name": "Programming Languages",
+          "link": "https://en.wikipedia.org/wiki/Programming_language"
+        },
+        {
+          "name": "Operating Systems",
+          "link": "https://en.wikipedia.org/wiki/Operating_system"
+        },
+        {
+          "name": "Software Engineering",
+          "link": "https://en.wikipedia.org/wiki/Software_engineering"
+        },
+        {
+          "name": "Databases",
+          "link": "https://en.wikipedia.org/wiki/Database"
+        },
+        {
+          "name": "Artificial Intelligence",
+          "link": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+        },
+        {
+          "name": "Graphics",
+          "link": "https://en.wikipedia.org/wiki/Computer_graphics"
+        },
+        {
+          "name": "Bioinformatics",
+          "link": "https://en.wikipedia.org/wiki/Bioinformatics"
+        }
+      ],
+      "advancements": [
+        "Usability heuristics",
+        "Remote usability testing"
+      ],
+      "literature": [
+        {
+          "name": "The Design of Everyday Things",
+          "link": "https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things"
+        },
+        {
+          "name": "The Psychology of Human-Computer Interaction",
+          "link": "https://mitpress.mit.edu/9780890119380/"
+        },
+        {
+          "name": "Interaction Design: Beyond Human-Computer Interaction",
+          "link": "https://www.interaction-design.org/literature/book/interaction-design-beyond-human-computer-interaction"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Usability Testing",
+          "coreConcepts": [
+            "Task performance",
+            "Think-aloud protocols"
+          ],
+          "keyProblems": [
+            "Participant recruitment",
+            "Observer bias"
+          ],
+          "applications": [
+            "Website interface studies",
+            "Mobile app feedback collection"
+          ],
+          "tools": [
+            "UserTesting",
+            "Lookback.io"
+          ]
+        },
+        {
+          "name": "User Experience Design",
+          "coreConcepts": [
+            "User emotions",
+            "Delightful interactions"
+          ],
+          "keyProblems": [
+            "Emotional impact",
+            "Retention of user attention"
+          ],
+          "applications": [
+            "E-commerce site redesign",
+            "App gamification"
+          ],
+          "tools": [
+            "Adobe XD",
+            "Figma"
+          ]
+        },
+        {
+          "name": "Heuristic Evaluation",
+          "coreConcepts": [
+            "Nielsen's heuristics",
+            "Expert review"
+          ],
+          "keyProblems": [
+            "Expert subjectivity",
+            "Coverage of use cases"
+          ],
+          "applications": [
+            "Website evaluation",
+            "Mobile app evaluation"
+          ],
+          "tools": [
+            "Heuristic checklist tools"
+          ]
+        },
+        {
+          "name": "User Journey Mapping",
+          "coreConcepts": [
+            "Customer journey",
+            "Touchpoints"
+          ],
+          "keyProblems": [
+            "Incomplete data",
+            "Dynamic user behavior"
+          ],
+          "applications": [
+            "Customer service improvement",
+            "Product onboarding"
+          ],
+          "tools": [
+            "Miro",
+            "MURAL"
+          ]
+        },
+        {
+          "name": "Accessibility UX",
+          "coreConcepts": [
+            "Inclusive design",
+            "WCAG standards"
+          ],
+          "keyProblems": [
+            "Assistive tech compatibility",
+            "Testing diverse abilities"
+          ],
+          "applications": [
+            "Screen reader design",
+            "Color contrast adjustments"
+          ],
+          "tools": [
+            "WAVE",
+            "Axe"
+          ]
+        },
+        {
+          "name": "Emotional UX",
+          "coreConcepts": [
+            "Emotional engagement",
+            "User affect"
+          ],
+          "keyProblems": [
+            "Measuring emotions",
+            "Designing for empathy"
+          ],
+          "applications": [
+            "Healthcare UX",
+            "VR interactions"
+          ],
+          "tools": [
+            "Affective APIs",
+            "Emotion analysis tools"
+          ]
+        }
+      ]
+    }
+  ]
 }

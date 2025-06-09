@@ -620,275 +620,275 @@
               "link": "https://arxiv.org/abs/1703.06870"
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Knowledge Representation & Reasoning",
+      "coreConcepts": [
+        "Formal Logic (Propositional, First-Order, Description Logics)",
+        "Ontologies and Semantic Networks",
+        "Rules and Inference Mechanisms (Deductive, Inductive, Abductive)",
+        "Non-monotonic Reasoning",
+        "Uncertainty Representation (Probabilistic Logic, Fuzzy Logic)",
+        "Common Sense Reasoning",
+        "Knowledge Graphs"
+      ],
+      "keyProblems": [
+        "Scalability of Knowledge Bases and Inference Engines",
+        "Handling Inconsistency and Incompleteness in Knowledge",
+        "Integrating Heterogeneous Knowledge Sources",
+        "Bridging Symbolic and Sub-symbolic AI Paradigms",
+        "The Frame Problem and Qualification Problem",
+        "Knowledge Acquisition Bottleneck",
+        "Representing and Reasoning about Time and Space"
+      ],
+      "applications": [
+        "Expert Systems and Decision Support Systems",
+        "Semantic Web and Linked Data Technologies",
+        "Intelligent Question Answering",
+        "Automated Planning and Scheduling",
+        "Cognitive Robotics",
+        "Medical Diagnosis Support",
+        "Intelligent Tutoring Systems"
+      ],
+      "tools": [
+        "Protégé (Ontology Editor)",
+        "Apache Jena (Semantic Web Framework)",
+        "Prolog (Logic Programming Language)",
+        "CLIPS (Expert System Shell)",
+        "Neo4j (Graph Database)",
+        "DL-Reasoners (e.g., HermiT, Pellet)"
+      ],
+      "pioneers": [
+        {
+          "name": "John McCarthy",
+          "link": "https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)"
         },
         {
-          "name": "Knowledge Representation & Reasoning",
+          "name": "Marvin Minsky",
+          "link": "https://en.wikipedia.org/wiki/Marvin_Minsky"
+        },
+        {
+          "name": "Pat Hayes",
+          "link": "https://en.wikipedia.org/wiki/Patrick_Hayes"
+        },
+        {
+          "name": "Drew McDermott",
+          "link": "https://en.wikipedia.org/wiki/Drew_McDermott"
+        },
+        {
+          "name": "Ronald J. Brachman",
+          "link": "https://en.wikipedia.org/wiki/Ronald_J._Brachman"
+        }
+      ],
+      "timeline": [
+        "1958: John McCarthy introduces the 'Advice Taker,' an early proposal for a logic-based AI system.",
+        "1960s: Development of early semantic networks and frames as knowledge representation schemes.",
+        "1970s: The rise of expert systems and rule-based systems in specific domains.",
+        "1980s: Emphasis on formal logic, non-monotonic reasoning, and the challenges of common sense.",
+        "1990s: Focus on Description Logics and their application in ontologies and the Semantic Web.",
+        "2000s: Growth of large-scale knowledge bases and knowledge graphs.",
+        "2010s: Increased integration of symbolic KRR with statistical and neural AI."
+      ],
+      "relatedFields": [
+        {
+          "name": "Formal Logic",
+          "link": "https://en.wikipedia.org/wiki/Logic"
+        },
+        {
+          "name": "Computational Linguistics",
+          "link": "https://en.wikipedia.org/wiki/Computational_linguistics"
+        },
+        {
+          "name": "Philosophy of Mind",
+          "link": "https://en.wikipedia.org/wiki/Philosophy_of_mind"
+        },
+        {
+          "name": "Database Theory",
+          "link": "https://en.wikipedia.org/wiki/Database_theory"
+        },
+        {
+          "name": "Cognitive Science",
+          "link": "https://en.wikipedia.org/wiki/Cognitive_science"
+        }
+      ],
+      "advancements": [
+        "Neural-symbolic AI architectures for combining learning and reasoning.",
+        "Automated knowledge graph construction from unstructured text.",
+        "Explainable AI frameworks leveraging symbolic representations.",
+        "Probabilistic graphical models for reasoning under uncertainty.",
+        "Inductive Logic Programming (ILP) for learning logical rules."
+      ],
+      "literature": [
+        {
+          "name": "Artificial Intelligence: A Modern Approach (Chapter on KRR)",
+          "link": "http://aima.cs.berkeley.edu/"
+        },
+        {
+          "name": "Knowledge Representation and Reasoning (Brachman & Levesque)",
+          "link": "https://www.cs.toronto.edu/~hector/KR04/Readings/brachman-levesque.pdf"
+        },
+        {
+          "name": "The Description Logic Handbook",
+          "link": "https://books.google.com/books/about/The_Description_Logic_Handbook.html?id=4RzXngEACAAJ"
+        },
+        {
+          "name": "Logic-Based Artificial Intelligence (Minker)",
+          "link": "https://www.springer.com/book/9780792376510"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Ontologies & Semantic Web",
           "coreConcepts": [
-            "Formal Logic (Propositional, First-Order, Description Logics)",
-            "Ontologies and Semantic Networks",
-            "Rules and Inference Mechanisms (Deductive, Inductive, Abductive)",
-            "Non-monotonic Reasoning",
-            "Uncertainty Representation (Probabilistic Logic, Fuzzy Logic)",
-            "Common Sense Reasoning",
-            "Knowledge Graphs"
+            "RDF (Resource Description Framework)",
+            "RDFS (RDF Schema)",
+            "OWL (Web Ontology Language)",
+            "SPARQL (Query Language for RDF)",
+            "Knowledge Graphs",
+            "Linked Data Principles"
           ],
           "keyProblems": [
-            "Scalability of Knowledge Bases and Inference Engines",
-            "Handling Inconsistency and Incompleteness in Knowledge",
-            "Integrating Heterogeneous Knowledge Sources",
-            "Bridging Symbolic and Sub-symbolic AI Paradigms",
-            "The Frame Problem and Qualification Problem",
-            "Knowledge Acquisition Bottleneck",
-            "Representing and Reasoning about Time and Space"
+            "Ontology Alignment and Interoperability",
+            "Scalability of Semantic Data Processing",
+            "Managing Evolving Ontologies",
+            "Data Quality and Trustworthiness in Linked Data",
+            "Expressivity vs. Computability Trade-offs in OWL"
           ],
           "applications": [
-            "Expert Systems and Decision Support Systems",
-            "Semantic Web and Linked Data Technologies",
-            "Intelligent Question Answering",
-            "Automated Planning and Scheduling",
-            "Cognitive Robotics",
-            "Medical Diagnosis Support",
-            "Intelligent Tutoring Systems"
+            "Semantic Search Engines",
+            "Enterprise Knowledge Management",
+            "Biomedical Ontologies and Drug Discovery",
+            "Linked Open Data Publishing",
+            "Intelligent Agents for Web Navigation",
+            "E-commerce Product Catalogs"
           ],
           "tools": [
-            "Protégé (Ontology Editor)",
-            "Apache Jena (Semantic Web Framework)",
-            "Prolog (Logic Programming Language)",
-            "CLIPS (Expert System Shell)",
-            "Neo4j (Graph Database)",
-            "DL-Reasoners (e.g., HermiT, Pellet)"
-          ],
-          "pioneers": [
-            {
-              "name": "John McCarthy",
-              "link": "https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)"
-            },
-            {
-              "name": "Marvin Minsky",
-              "link": "https://en.wikipedia.org/wiki/Marvin_Minsky"
-            },
-            {
-              "name": "Pat Hayes",
-              "link": "https://en.wikipedia.org/wiki/Patrick_Hayes"
-            },
-            {
-              "name": "Drew McDermott",
-              "link": "https://en.wikipedia.org/wiki/Drew_McDermott"
-            },
-            {
-              "name": "Ronald J. Brachman",
-              "link": "https://en.wikipedia.org/wiki/Ronald_J._Brachman"
-            }
-          ],
-          "timeline": [
-            "1958: John McCarthy introduces the 'Advice Taker,' an early proposal for a logic-based AI system.",
-            "1960s: Development of early semantic networks and frames as knowledge representation schemes.",
-            "1970s: The rise of expert systems and rule-based systems in specific domains.",
-            "1980s: Emphasis on formal logic, non-monotonic reasoning, and the challenges of common sense.",
-            "1990s: Focus on Description Logics and their application in ontologies and the Semantic Web.",
-            "2000s: Growth of large-scale knowledge bases and knowledge graphs.",
-            "2010s: Increased integration of symbolic KRR with statistical and neural AI."
+            "Protégé",
+            "Apache Jena",
+            "Stardog",
+            "GraphDB",
+            "Virtuoso",
+            "Neo4j (for knowledge graph storage)"
           ],
           "relatedFields": [
             {
-              "name": "Formal Logic",
-              "link": "https://en.wikipedia.org/wiki/Logic"
+              "name": "Database Systems",
+              "link": "https://en.wikipedia.org/wiki/Database"
             },
             {
-              "name": "Computational Linguistics",
-              "link": "https://en.wikipedia.org/wiki/Computational_linguistics"
+              "name": "Information Science",
+              "link": "https://en.wikipedia.org/wiki/Information_science"
             },
             {
-              "name": "Philosophy of Mind",
-              "link": "https://en.wikipedia.org/wiki/Philosophy_of_mind"
+              "name": "Web Science",
+              "link": "https://en.wikipedia.org/wiki/Web_science"
             },
             {
-              "name": "Database Theory",
-              "link": "https://en.wikipedia.org/wiki/Database_theory"
-            },
-            {
-              "name": "Cognitive Science",
-              "link": "https://en.wikipedia.org/wiki/Cognitive_science"
+              "name": "Data Governance",
+              "link": "https://en.wikipedia.org/wiki/Data_governance"
             }
           ],
           "advancements": [
-            "Neural-symbolic AI architectures for combining learning and reasoning.",
-            "Automated knowledge graph construction from unstructured text.",
-            "Explainable AI frameworks leveraging symbolic representations.",
-            "Probabilistic graphical models for reasoning under uncertainty.",
-            "Inductive Logic Programming (ILP) for learning logical rules."
+            "Automated knowledge graph completion and link prediction.",
+            "Explainable AI through ontology-based reasoning.",
+            "Semantic technologies for AI model explainability.",
+            "Neural-symbolic learning over knowledge graphs.",
+            "Dynamic ontology evolution and versioning systems."
           ],
           "literature": [
             {
-              "name": "Artificial Intelligence: A Modern Approach (Chapter on KRR)",
-              "link": "http://aima.cs.berkeley.edu/"
+              "name": "OWL 2 Web Ontology Language Document Overview",
+              "link": "https://www.w3.org/TR/owl2-overview/"
             },
             {
-              "name": "Knowledge Representation and Reasoning (Brachman & Levesque)",
-              "link": "https://www.cs.toronto.edu/~hector/KR04/Readings/brachman-levesque.pdf"
+              "name": "A Semantic Web Primer",
+              "link": "https://www.w3.org/2004/04/swprimer/"
             },
             {
-              "name": "The Description Logic Handbook",
-              "link": "https://books.google.com/books/about/The_Description_Logic_Handbook.html?id=4RzXngEACAAJ"
+              "name": "Knowledge Graph Embeddings: A Survey",
+              "link": "https://arxiv.org/abs/1702.00037"
             },
             {
-              "name": "Logic-Based Artificial Intelligence (Minker)",
-              "link": "https://www.springer.com/book/9780792376510"
+              "name": "Linked Data: Evolving the Web into a Global Data Space",
+              "link": "https://www.springer.com/book/978-1-4939-9591-6"
+            }
+          ]
+        },
+        {
+          "name": "Logic Programming",
+          "coreConcepts": [
+            "Horn Clauses and Definite Clauses",
+            "Unification and Resolution Principle",
+            "Backtracking Search",
+            "Declarative vs. Procedural Semantics",
+            "Non-monotonic Negation as Failure",
+            "Constraint Logic Programming"
+          ],
+          "keyProblems": [
+            "Efficiency of Resolution for Complex Problems",
+            "Lack of Deterministic Control Flow",
+            "Debugging Complex Logic Programs",
+            "Handling Arithmetic and Floating-Point Operations",
+            "Integration with External Data Sources"
+          ],
+          "applications": [
+            "Automated Theorem Proving",
+            "Expert System Shells",
+            "Natural Language Understanding and Parsing",
+            "Database Querying and Deductive Databases",
+            "Constraint Satisfaction Problems (CSPs)",
+            "Software Verification and Program Synthesis"
+          ],
+          "tools": [
+            "SWI-Prolog",
+            "GNU Prolog",
+            "Answer Set Programming (ASP) Solvers (e.g., Clingo)",
+            "ECLiPSe (Constraint Logic Programming System)",
+            "Mercury"
+          ],
+          "relatedFields": [
+            {
+              "name": "Automated Reasoning",
+              "link": "https://en.wikipedia.org/wiki/Automated_reasoning"
+            },
+            {
+              "name": "Formal Methods",
+              "link": "https://en.wikipedia.org/wiki/Formal_methods"
+            },
+            {
+              "name": "Declarative Programming",
+              "link": "https://en.wikipedia.org/wiki/Declarative_programming"
+            },
+            {
+              "name": "Deductive Databases",
+              "link": "https://en.wikipedia.org/wiki/Deductive_database"
             }
           ],
-          "subsubfields": [
+          "advancements": [
+            "Probabilistic Logic Programming for uncertain knowledge.",
+            "Inductive Logic Programming (ILP) for learning rules from data.",
+            "Hybrid neural-symbolic systems leveraging logic programming.",
+            "Efficient parallel and distributed execution of logic programs.",
+            "Integration of logic programming with optimization techniques."
+          ],
+          "literature": [
             {
-              "name": "Ontologies & Semantic Web",
-              "coreConcepts": [
-                "RDF (Resource Description Framework)",
-                "RDFS (RDF Schema)",
-                "OWL (Web Ontology Language)",
-                "SPARQL (Query Language for RDF)",
-                "Knowledge Graphs",
-                "Linked Data Principles"
-              ],
-              "keyProblems": [
-                "Ontology Alignment and Interoperability",
-                "Scalability of Semantic Data Processing",
-                "Managing Evolving Ontologies",
-                "Data Quality and Trustworthiness in Linked Data",
-                "Expressivity vs. Computability Trade-offs in OWL"
-              ],
-              "applications": [
-                "Semantic Search Engines",
-                "Enterprise Knowledge Management",
-                "Biomedical Ontologies and Drug Discovery",
-                "Linked Open Data Publishing",
-                "Intelligent Agents for Web Navigation",
-                "E-commerce Product Catalogs"
-              ],
-              "tools": [
-                "Protégé",
-                "Apache Jena",
-                "Stardog",
-                "GraphDB",
-                "Virtuoso",
-                "Neo4j (for knowledge graph storage)"
-              ],
-              "relatedFields": [
-                {
-                  "name": "Database Systems",
-                  "link": "https://en.wikipedia.org/wiki/Database"
-                },
-                {
-                  "name": "Information Science",
-                  "link": "https://en.wikipedia.org/wiki/Information_science"
-                },
-                {
-                  "name": "Web Science",
-                  "link": "https://en.wikipedia.org/wiki/Web_science"
-                },
-                {
-                  "name": "Data Governance",
-                  "link": "https://en.wikipedia.org/wiki/Data_governance"
-                }
-              ],
-              "advancements": [
-                "Automated knowledge graph completion and link prediction.",
-                "Explainable AI through ontology-based reasoning.",
-                "Semantic technologies for AI model explainability.",
-                "Neural-symbolic learning over knowledge graphs.",
-                "Dynamic ontology evolution and versioning systems."
-              ],
-              "literature": [
-                {
-                  "name": "OWL 2 Web Ontology Language Document Overview",
-                  "link": "https://www.w3.org/TR/owl2-overview/"
-                },
-                {
-                  "name": "A Semantic Web Primer",
-                  "link": "https://www.w3.org/2004/04/swprimer/"
-                },
-                {
-                  "name": "Knowledge Graph Embeddings: A Survey",
-                  "link": "https://arxiv.org/abs/1702.00037"
-                },
-                {
-                  "name": "Linked Data: Evolving the Web into a Global Data Space",
-                  "link": "https://www.springer.com/book/978-1-4939-9591-6"
-                }
-              ]
+              "name": "Programming in Prolog",
+              "link": "https://books.google.com/books/about/Programming_in_Prolog.html?id=uN6JAAAAIAAJ"
             },
             {
-              "name": "Logic Programming",
-              "coreConcepts": [
-                "Horn Clauses and Definite Clauses",
-                "Unification and Resolution Principle",
-                "Backtracking Search",
-                "Declarative vs. Procedural Semantics",
-                "Non-monotonic Negation as Failure",
-                "Constraint Logic Programming"
-              ],
-              "keyProblems": [
-                "Efficiency of Resolution for Complex Problems",
-                "Lack of Deterministic Control Flow",
-                "Debugging Complex Logic Programs",
-                "Handling Arithmetic and Floating-Point Operations",
-                "Integration with External Data Sources"
-              ],
-              "applications": [
-                "Automated Theorem Proving",
-                "Expert System Shells",
-                "Natural Language Understanding and Parsing",
-                "Database Querying and Deductive Databases",
-                "Constraint Satisfaction Problems (CSPs)",
-                "Software Verification and Program Synthesis"
-              ],
-              "tools": [
-                "SWI-Prolog",
-                "GNU Prolog",
-                "Answer Set Programming (ASP) Solvers (e.g., Clingo)",
-                "ECLiPSe (Constraint Logic Programming System)",
-                "Mercury"
-              ],
-              "relatedFields": [
-                {
-                  "name": "Automated Reasoning",
-                  "link": "https://en.wikipedia.org/wiki/Automated_reasoning"
-                },
-                {
-                  "name": "Formal Methods",
-                  "link": "https://en.wikipedia.org/wiki/Formal_methods"
-                },
-                {
-                  "name": "Declarative Programming",
-                  "link": "https://en.wikipedia.org/wiki/Declarative_programming"
-                },
-                {
-                  "name": "Deductive Databases",
-                  "link": "https://en.wikipedia.org/wiki/Deductive_database"
-                }
-              ],
-              "advancements": [
-                "Probabilistic Logic Programming for uncertain knowledge.",
-                "Inductive Logic Programming (ILP) for learning rules from data.",
-                "Hybrid neural-symbolic systems leveraging logic programming.",
-                "Efficient parallel and distributed execution of logic programs.",
-                "Integration of logic programming with optimization techniques."
-              ],
-              "literature": [
-                {
-                  "name": "Programming in Prolog",
-                  "link": "https://books.google.com/books/about/Programming_in_Prolog.html?id=uN6JAAAAIAAJ"
-                },
-                {
-                  "name": "Foundations of Logic Programming",
-                  "link": "https://books.google.com/books/about/Foundations_of_Logic_Programming.html?id=2bHCAAAAIAAJ"
-                },
-                {
-                  "name": "Answer Set Programming: A Primer",
-                  "link": "https://www.cambridge.org/core/books/answer-set-programming/687E8F1965A206001007E3F11EBEF0D3"
-                },
-                {
-                  "name": "Inductive Logic Programming (Muggleton & De Raedt)",
-                  "link": "https://books.google.com/books/about/Inductive_Logic_Programming.html?id=M8bZ_v8R_pEC"
-                }
-              ]
+              "name": "Foundations of Logic Programming",
+              "link": "https://books.google.com/books/about/Foundations_of_Logic_Programming.html?id=2bHCAAAAIAAJ"
+            },
+            {
+              "name": "Answer Set Programming: A Primer",
+              "link": "https://www.cambridge.org/core/books/answer-set-programming/687E8F1965A206001007E3F11EBEF0D3"
+            },
+            {
+              "name": "Inductive Logic Programming (Muggleton & De Raedt)",
+              "link": "https://books.google.com/books/about/Inductive_Logic_Programming.html?id=M8bZ_v8R_pEC"
             }
           ]
         }

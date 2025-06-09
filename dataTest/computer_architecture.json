@@ -1,13 +1,1222 @@
 {
   "name": "Computer Architecture",
-  "coreConcepts": ["Concept A", "Concept B", "Concept C"],
-  "keyProblems": ["Problem X", "Problem Y"],
-  "applications": ["Application 1", "Application 2"],
-  "tools": ["Tool Alpha", "Tool Beta"],
-  "pioneers": [{"name": "Pioneer One", "link": "https://en.wikipedia.org/wiki/Pioneer_One"}],
-  "timeline": ["Milestone 1", "Milestone 2"],
-  "subfields": [],
-  "relatedFields": [{"name": "Related Field 1", "link": "https://en.wikipedia.org/wiki/Related_Field_1"}],
-  "advancements": ["Advancement 1", "Advancement 2"],
-  "literature": [{"name": "Paper 1", "link": "https://scholar.google.com/scholar?q=Paper+1"}]
+  "coreConcepts": [
+    "Instruction Set Architecture (ISA)",
+    "CPU organization and design",
+    "Memory hierarchy (cache, main memory, virtual memory)",
+    "Pipelining and parallelism",
+    "Input/Output (I/O) systems",
+    "Data path and control unit",
+    "Performance metrics and optimization"
+  ],
+  "keyProblems": [
+    "Memory-processor speed mismatch (Von Neumann bottleneck)",
+    "Power consumption and thermal management",
+    "Scalability of parallel architectures",
+    "Security vulnerabilities in hardware",
+    "Reliability and fault tolerance",
+    "Designing for emerging workloads (AI, quantum)",
+    "Balancing performance, cost, and power"
+  ],
+  "applications": [
+    "High-performance computing systems",
+    "Embedded systems design",
+    "Mobile device processors",
+    "Data center infrastructure",
+    "Graphics Processing Units (GPUs)",
+    "Specialized accelerators (e.g., AI chips)",
+    "Robotics and autonomous systems"
+  ],
+  "tools": [
+    "Hardware Description Languages (HDLs) like Verilog and VHDL",
+    "Logic simulators (e.g., ModelSim, Icarus Verilog)",
+    "Computer-Aided Design (CAD) tools for chip design",
+    "Performance simulators (e.g., Gem5, SimpleScalar)",
+    "Processor emulators",
+    "FPGA development boards and tools",
+    "Assembly language debuggers"
+  ],
+  "pioneers": [
+    {
+      "name": "John von Neumann",
+      "link": "https://en.wikipedia.org/wiki/John_von_Neumann"
+    },
+    {
+      "name": "Charles Babbage",
+      "link": "https://en.wikipedia.org/wiki/Charles_Babbage"
+    },
+    {
+      "name": "Maurice Wilkes",
+      "link": "https://en.wikipedia.org/wiki/Maurice_Wilkes"
+    },
+    {
+      "name": "Seymour Cray",
+      "link": "https://en.wikipedia.org/wiki/Seymour_Cray"
+    },
+    {
+      "name": "David Patterson",
+      "link": "https://en.wikipedia.org/wiki/David_Patterson_(computer_scientist)"
+    },
+    {
+      "name": "John Hennessy",
+      "link": "https://en.wikipedia.org/wiki/John_L._Hennessy"
+    }
+  ],
+  "timeline": [
+    "1822: Charles Babbage conceives the Difference Engine, an early mechanical calculator.",
+    "1944: Harvard Mark I, an electromechanical computer, is completed.",
+    "1945: John von Neumann proposes the stored-program concept, revolutionizing computer design.",
+    "1949: EDSAC, one of the first practical stored-program electronic computers, runs its first program.",
+    "1950s: Introduction of transistors begins the miniaturization trend in computer components.",
+    "1964: IBM System/360 introduces the concept of a compatible family of computers with a common ISA.",
+    "1971: Intel introduces the 4004, the first commercial microprocessor."
+  ],
+  "subfields": [
+    {
+      "name": "Microarchitecture",
+      "coreConcepts": [
+        "Pipeline stages (fetch, decode, execute, memory, write-back)",
+        "Instruction-level parallelism (ILP)",
+        "Superscalar execution",
+        "Out-of-order execution",
+        "Branch prediction"
+      ],
+      "keyProblems": [
+        "Data hazards and control hazards in pipelines",
+        "Optimizing cache performance and reducing miss rates",
+        "Power consumption of complex pipelines",
+        "Balancing speculative execution with security",
+        "Efficiently extracting parallelism from sequential code"
+      ],
+      "applications": [
+        "Modern CPU design (Intel, AMD, ARM)",
+        "High-performance server processors",
+        "Gaming console CPUs",
+        "Mobile phone chipsets",
+        "Embedded processor cores"
+      ],
+      "tools": [
+        "Cycle-accurate simulators",
+        "Processor verification tools",
+        "Microcode assemblers",
+        "Performance counters and profilers",
+        "Logic synthesis tools"
+      ],
+      "pioneers": [
+        {
+          "name": "Robert Dennard",
+          "link": "https://en.wikipedia.org/wiki/Robert_Dennard"
+        },
+        {
+          "name": "John Cocke",
+          "link": "https://en.wikipedia.org/wiki/John_Cocke"
+        },
+        {
+          "name": "Yale Patt",
+          "link": "https://en.wikipedia.org/wiki/Yale_Patt"
+        },
+        {
+          "name": "Jim Keller",
+          "link": "https://en.wikipedia.org/wiki/Jim_Keller_(engineer)"
+        }
+      ],
+      "timeline": [
+        "1966: IBM System/360 Model 91 introduces out-of-order execution concepts.",
+        "1984: Intel 80386 introduces 32-bit architecture and pipelining.",
+        "1990s: Superscalar processors become common, executing multiple instructions per cycle.",
+        "1995: Intel Pentium Pro introduces aggressive out-of-order execution and branch prediction."
+      ],
+      "relatedFields": [
+        {
+          "name": "VLSI Design",
+          "link": "https://en.wikipedia.org/wiki/VLSI_design"
+        },
+        {
+          "name": "Compiler Design",
+          "link": "https://en.wikipedia.org/wiki/Compiler"
+        },
+        {
+          "name": "Operating Systems",
+          "link": "https://en.wikipedia.org/wiki/Operating_system"
+        },
+        {
+          "name": "Digital Logic Design",
+          "link": "https://en.wikipedia.org/wiki/Digital_logic"
+        }
+      ],
+      "advancements": [
+        "Deep out-of-order pipelines for increased ILP",
+        "Advanced branch predictors with machine learning techniques",
+        "Complex cache coherence protocols for multi-core systems",
+        "Integration of specialized functional units (e.g., AVX, AI inference)",
+        "Dynamic voltage and frequency scaling for power efficiency"
+      ],
+      "literature": [
+        {
+          "name": "Computer Architecture: A Quantitative Approach by Hennessy and Patterson",
+          "link": "https://books.google.com/books/about/Computer_Architecture.html?id=Tz10QQAACAAJ"
+        },
+        {
+          "name": "Modern Processor Design by John Paul Shen and Mikko H. Lipasti",
+          "link": "https://books.google.com/books/about/Modern_Processor_Design.html?id=lB8YngEACAAJ"
+        },
+        {
+          "name": "ISCA (International Symposium on Computer Architecture)",
+          "link": "https://www.computer.org/csdl/proceedings/isca"
+        },
+        {
+          "name": "MICRO (International Symposium on Microarchitecture)",
+          "link": "https://www.microarch.org/"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Pipeline Design",
+          "coreConcepts": [
+            "Instruction fetch and decode",
+            "Execution units (ALU, FPU)",
+            "Memory access stages"
+          ],
+          "keyProblems": [
+            "Minimizing pipeline stalls",
+            "Optimizing instruction throughput",
+            "Managing dependencies between instructions"
+          ],
+          "applications": [
+            "Every modern CPU",
+            "Embedded microcontrollers"
+          ],
+          "tools": [
+            "VHDL/Verilog for pipeline implementation",
+            "Cycle-accurate pipeline simulators"
+          ],
+          "relatedFields": [
+            {
+              "name": "Digital Logic Design",
+              "link": "https://en.wikipedia.org/wiki/Digital_logic"
+            },
+            {
+              "name": "VLSI Design",
+              "link": "https://en.wikipedia.org/wiki/VLSI_design"
+            }
+          ]
+        },
+        {
+          "name": "Cache Memory Design",
+          "coreConcepts": [
+            "Cache levels (L1, L2, L3)",
+            "Cache associativity",
+            "Cache write policies (write-through, write-back)"
+          ],
+          "keyProblems": [
+            "Reducing cache miss rates",
+            "Minimizing cache access latency",
+            "Maintaining data consistency in multi-core systems"
+          ],
+          "applications": [
+            "All modern computer systems",
+            "Embedded systems with performance needs"
+          ],
+          "tools": [
+            "Cache simulators (e.g., CACTI)",
+            "Memory hierarchy analysis tools"
+          ],
+          "relatedFields": [
+            {
+              "name": "Memory Systems",
+              "link": "https://en.wikipedia.org/wiki/Computer_memory"
+            },
+            {
+              "name": "Operating Systems",
+              "link": "https://en.wikipedia.org/wiki/Operating_system"
+            }
+          ]
+        },
+        {
+          "name": "Branch Prediction",
+          "coreConcepts": [
+            "Branch target buffer (BTB)",
+            "Pattern history table (PHT)",
+            "Global and local history predictors"
+          ],
+          "keyProblems": [
+            "Reducing misprediction rates",
+            "Minimizing predictor size and complexity",
+            "Handling indirect branches"
+          ],
+          "applications": [
+            "High-performance CPUs",
+            "Accelerators requiring deep pipelines"
+          ],
+          "tools": [
+            "Performance simulators",
+            "Trace-driven simulation"
+          ],
+          "relatedFields": [
+            {
+              "name": "Compiler Optimization",
+              "link": "https://en.wikipedia.org/wiki/Optimizing_compiler"
+            }
+          ]
+        },
+        {
+          "name": "Instruction Set Architectures (ISAs)",
+          "coreConcepts": [
+            "RISC vs. CISC",
+            "Register-register vs. register-memory ISAs",
+            "Addressing modes"
+          ],
+          "keyProblems": [
+            "Designing efficient and orthogonal instruction sets",
+            "Balancing instruction complexity with hardware implementation cost",
+            "Ensuring backward compatibility"
+          ],
+          "applications": [
+            "x86 processors (Intel, AMD)",
+            "ARM processors (mobile, embedded, servers)",
+            "RISC-V processors (open-source hardware)"
+          ],
+          "tools": [
+            "Assemblers and disassemblers",
+            "Instruction set simulators",
+            "Compilers (GCC, LLVM)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Compiler Design",
+              "link": "https://en.wikipedia.org/wiki/Compiler"
+            },
+            {
+              "name": "Operating Systems",
+              "link": "https://en.wikipedia.org/wiki/Operating_system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Parallel Computer Architecture",
+      "coreConcepts": [
+        "Flynn's Taxonomy (SISD, SIMD, MISD, MIMD)",
+        "Shared memory vs. distributed memory systems",
+        "Cache coherence and consistency",
+        "Interconnection networks",
+        "Parallel programming models (OpenMP, MPI, CUDA)"
+      ],
+      "keyProblems": [
+        "Achieving strong scalability for parallel applications",
+        "Managing communication overheads in distributed systems",
+        "Designing efficient cache coherence protocols for many-core systems",
+        "Programming complex parallel architectures effectively",
+        "Power efficiency at scale"
+      ],
+      "applications": [
+        "Supercomputers and high-performance computing clusters",
+        "Multi-core CPUs and GPUs",
+        "Cloud computing infrastructure",
+        "Big data processing platforms",
+        "Scientific simulations"
+      ],
+      "tools": [
+        "MPI (Message Passing Interface)",
+        "OpenMP (Open Multi-Processing)",
+        "CUDA (Compute Unified Device Architecture)",
+        "Parallel debuggers and profilers",
+        "Network simulators"
+      ],
+      "pioneers": [
+        {
+          "name": "Gene Amdahl",
+          "link": "https://en.wikipedia.org/wiki/Gene_Amdahl"
+        },
+        {
+          "name": "John Cocke",
+          "link": "https://en.wikipedia.org/wiki/John_Cocke"
+        },
+        {
+          "name": "Daniel Hillis",
+          "link": "https://en.wikipedia.org/wiki/Danny_Hillis"
+        },
+        {
+          "name": "Burton Smith",
+          "link": "https://en.wikipedia.org/wiki/Burton_J._Smith"
+        }
+      ],
+      "timeline": [
+        "1960s: Early parallel computing concepts emerge, with systems like the ILLIAC IV.",
+        "1980s: Development of shared-memory multiprocessors and early supercomputers.",
+        "1990s: Rise of distributed memory systems and the Message Passing Interface (MPI).",
+        "Early 2000s: Multi-core processors become ubiquitous in desktop and server CPUs."
+      ],
+      "relatedFields": [
+        {
+          "name": "Distributed Systems",
+          "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+        },
+        {
+          "name": "High-Performance Computing",
+          "link": "https://en.wikipedia.org/wiki/High-performance_computing"
+        },
+        {
+          "name": "Operating Systems",
+          "link": "https://en.wikipedia.org/wiki/Operating_system"
+        },
+        {
+          "name": "Algorithms",
+          "link": "https://en.wikipedia.org/wiki/Algorithm"
+        }
+      ],
+      "advancements": [
+        "Heterogeneous computing with CPUs, GPUs, and specialized accelerators",
+        "Emergence of many-core architectures (e.g., Intel Xeon Phi)",
+        "Advanced interconnection networks (e.g., InfiniBand, NVLink)",
+        "Hardware transactional memory for simplified parallel programming",
+        "Near-memory and in-memory computing for data-intensive workloads"
+      ],
+      "literature": [
+        {
+          "name": "Principles and Practices of Interconnection Networks by William James Dally and Brian Towles",
+          "link": "https://books.google.com/books/about/Principles_and_Practices_of_Interconnect.html?id=z1XWAAAAMAAJ"
+        },
+        {
+          "name": "Designing and Building Parallel Programs by Ian Foster",
+          "link": "https://www.mcs.anl.gov/~foster/papers/mpibook/"
+        },
+        {
+          "name": "HPCA (International Symposium on High-Performance Computer Architecture)",
+          "link": "https://www.hpca.org/"
+        },
+        {
+          "name": "SC (International Conference for High Performance Computing, Networking, Storage, and Analysis)",
+          "link": "https://sc25.supercomputing.org/"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Multi-core Processors",
+          "coreConcepts": [
+            "Shared L3 cache",
+            "Private L1/L2 caches",
+            "Cache coherence protocols"
+          ],
+          "keyProblems": [
+            "Cache coherence overhead",
+            "Load balancing across cores",
+            "Thermal management"
+          ],
+          "applications": [
+            "Desktop and laptop CPUs",
+            "Server processors",
+            "Mobile device SoCs"
+          ],
+          "tools": [
+            "OpenMP",
+            "Pthreads",
+            "Perf (Linux profiling tool)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Operating Systems",
+              "link": "https://en.wikipedia.org/wiki/Operating_system"
+            },
+            {
+              "name": "Compiler Optimization",
+              "link": "https://en.wikipedia.org/wiki/Optimizing_compiler"
+            }
+          ]
+        },
+        {
+          "name": "GPU Architecture",
+          "coreConcepts": [
+            "Shader cores",
+            "Streaming multiprocessors (SMs)",
+            "Massive parallelism (thousands of threads)"
+          ],
+          "keyProblems": [
+            "Optimizing data transfer between CPU and GPU",
+            "Managing divergent execution paths",
+            "Memory bandwidth bottlenecks"
+          ],
+          "applications": [
+            "Graphics rendering",
+            "Deep learning training and inference",
+            "Scientific computing"
+          ],
+          "tools": [
+            "CUDA",
+            "OpenCL",
+            "DirectX"
+          ],
+          "relatedFields": [
+            {
+              "name": "Computer Graphics",
+              "link": "https://en.wikipedia.org/wiki/Computer_graphics"
+            },
+            {
+              "name": "Machine Learning",
+              "link": "https://en.wikipedia.org/wiki/Machine_learning"
+            }
+          ]
+        },
+        {
+          "name": "Interconnection Networks",
+          "coreConcepts": [
+            "Topology (mesh, torus, fat-tree)",
+            "Routing algorithms",
+            "Flow control mechanisms"
+          ],
+          "keyProblems": [
+            "Minimizing communication latency",
+            "Maximizing network throughput",
+            "Scalability for large systems"
+          ],
+          "applications": [
+            "Supercomputers",
+            "Data center networks",
+            "Multi-core processors (NoC)"
+          ],
+          "tools": [
+            "Network simulators (e.g., ns-3, OMNeT++)",
+            "Performance analysis tools",
+            "Custom hardware for network interfaces"
+          ],
+          "relatedFields": [
+            {
+              "name": "Computer Networks",
+              "link": "https://en.wikipedia.org/wiki/Computer_network"
+            },
+            {
+              "name": "Distributed Systems",
+              "link": "https://en.wikipedia.org/wiki/Distributed_computing"
+            }
+          ]
+        },
+        {
+          "name": "Systolic Arrays",
+          "coreConcepts": [
+            "Regular array of processing elements",
+            "Local communication between neighbors",
+            "Pipelined data flow"
+          ],
+          "keyProblems": [
+            "Limited programmability for general purpose tasks",
+            "High design complexity for large arrays",
+            "I/O bandwidth limitations"
+          ],
+          "applications": [
+            "Digital signal processing",
+            "Matrix multiplication (AI accelerators)",
+            "Image processing"
+          ],
+          "tools": [
+            "Hardware Description Languages (HDLs)",
+            "FPGA synthesis tools",
+            "Custom ASIC design flows"
+          ],
+          "relatedFields": [
+            {
+              "name": "Digital Signal Processing",
+              "link": "https://en.wikipedia.org/wiki/Digital_signal_processing"
+            },
+            {
+              "name": "VLSI Design",
+              "link": "https://en.wikipedia.org/wiki/VLSI_design"
+            },
+            {
+              "name": "Machine Learning Accelerators",
+              "link": "https://en.wikipedia.org/wiki/AI_accelerator"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Domain-Specific Architectures (DSAs)",
+      "coreConcepts": [
+        "Hardware acceleration for specific workloads",
+        "Custom instruction sets",
+        "Application-Specific Integrated Circuits (ASICs)",
+        "Field-Programmable Gate Arrays (FPGAs)",
+        "Co-design of hardware and software"
+      ],
+      "keyProblems": [
+        "High development cost of ASICs",
+        "Limited flexibility compared to general-purpose processors",
+        "Programming complexity of FPGAs",
+        "Portability of applications across different DSAs",
+        "Maintaining competitiveness against evolving general-purpose hardware"
+      ],
+      "applications": [
+        "AI accelerators (e.g., TPUs, GPUs for AI)",
+        "Cryptocurrency mining hardware",
+        "Network processing units (NPUs)",
+        "Video encoding/decoding chips",
+        "Custom processors for scientific instruments"
+      ],
+      "tools": [
+        "High-Level Synthesis (HLS) tools (e.g., Xilinx Vivado HLS)",
+        "FPGA development suites",
+        "Custom ASIC design tools (e.g., Cadence, Synopsys)",
+        "Domain-specific compilers",
+        "Emulation platforms"
+      ],
+      "pioneers": [
+        {
+          "name": "Kunle Olukotun",
+          "link": "https://en.wikipedia.org/wiki/Kunle_Olukotun"
+        },
+        {
+          "name": "Mark Horowitz",
+          "link": "https://en.wikipedia.org/wiki/Mark_Horowitz"
+        }
+      ],
+      "timeline": [
+        "1980s: Early ASICs for specific functions (e.g., graphics controllers).",
+        "1990s: FPGAs gain prominence for rapid prototyping and reconfigurability.",
+        "Early 2000s: Emergence of specialized media processors and network processors.",
+        "2010s: Rise of AI accelerators like Google TPUs for deep learning workloads."
+      ],
+      "relatedFields": [
+        {
+          "name": "Digital Signal Processing",
+          "link": "https://en.wikipedia.org/wiki/Digital_signal_processing"
+        },
+        {
+          "name": "Machine Learning",
+          "link": "https://en.wikipedia.org/wiki/Machine_learning"
+        },
+        {
+          "name": "VLSI Design",
+          "link": "https://en.wikipedia.org/wiki/VLSI_design"
+        },
+        {
+          "name": "Embedded Systems",
+          "link": "https://en.wikipedia.org/wiki/Embedded_system"
+        }
+      ],
+      "advancements": [
+        "Tensor Processing Units (TPUs) for machine learning",
+        "Versal ACAPs (Adaptive Compute Acceleration Platforms) from Xilinx",
+        "More efficient HLS tools for faster design cycles",
+        "Open-source hardware efforts for custom accelerators",
+        "Near-data processing and in-memory computing for DSAs"
+      ],
+      "literature": [
+        {
+          "name": "Domain-Specific Architectures: Tools and Methodologies",
+          "link": "https://books.google.com/books/about/Domain_Specific_Architectures.html?id=Dq-oDwAAQBAJ"
+        },
+        {
+          "name": "The Case for Domain-Specific Architectures by David Patterson et al.",
+          "link": "https://www.eecs.berkeley.edu/research/cs252/spring2019/lectures/lecture01.pdf"
+        },
+        {
+          "name": "FPGA-based System Design by Wayne Wolf",
+          "link": "https://books.google.com/books/about/FPGA_based_System_Design.html?id=oZ4zPQAACAAJ"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "AI Accelerators",
+          "coreConcepts": [
+            "Matrix multiplication units",
+            "Low-precision arithmetic",
+            "Dataflow architectures"
+          ],
+          "keyProblems": [
+            "Maximizing throughput for neural network operations",
+            "Energy efficiency for inference at the edge",
+            "Flexibility for different neural network models"
+          ],
+          "applications": [
+            "Cloud AI inference and training",
+            "Mobile phone AI processing",
+            "Autonomous driving systems"
+          ],
+          "tools": [
+            "TensorFlow Lite for microcontrollers",
+            "PyTorch with custom backends",
+            "Neural network compilers (e.g., TVM)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Machine Learning",
+              "link": "https://en.wikipedia.org/wiki/Machine_learning"
+            },
+            {
+              "name": "Deep Learning",
+              "link": "https://en.wikipedia.org/wiki/Deep_learning"
+            },
+            {
+              "name": "VLSI Design",
+              "link": "https://en.wikipedia.org/wiki/VLSI_design"
+            }
+          ]
+        },
+        {
+          "name": "Reconfigurable Architectures (FPGAs)",
+          "coreConcepts": [
+            "Configurable Logic Blocks (CLBs)",
+            "Routing resources",
+            "Look-Up Tables (LUTs)"
+          ],
+          "keyProblems": [
+            "Long compilation times for complex designs",
+            "Difficult programming model for non-hardware experts",
+            "Limited clock frequencies compared to ASICs"
+          ],
+          "applications": [
+            "Prototyping ASICs",
+            "Custom digital signal processing",
+            "Network acceleration"
+          ],
+          "tools": [
+            "Xilinx Vivado",
+            "Intel Quartus Prime",
+            "VHDL/Verilog"
+          ],
+          "relatedFields": [
+            {
+              "name": "Digital Logic Design",
+              "link": "https://en.wikipedia.org/wiki/Digital_logic"
+            },
+            {
+              "name": "VLSI Design",
+              "link": "https://en.wikipedia.org/wiki/VLSI_design"
+            },
+            {
+              "name": "Embedded Systems",
+              "link": "https://en.wikipedia.org/wiki/Embedded_system"
+            }
+          ]
+        },
+        {
+          "name": "Network Processors",
+          "coreConcepts": [
+            "Packet processing pipelines",
+            "Traffic management",
+            "Deep Packet Inspection (DPI)"
+          ],
+          "keyProblems": [
+            "Achieving line rate for high-speed networks",
+            "Flexibility for evolving network protocols",
+            "Power efficiency at high throughput"
+          ],
+          "applications": [
+            "Network routers and switches",
+            "Firewalls and intrusion detection systems",
+            "Load balancers"
+          ],
+          "tools": [
+            "P4 language for programmable networks",
+            "Netronome Flow Processors",
+            "Intel Network Interface Cards (NICs) with offload engines"
+          ],
+          "relatedFields": [
+            {
+              "name": "Computer Networks",
+              "link": "https://en.wikipedia.org/wiki/Computer_network"
+            },
+            {
+              "name": "Network Security",
+              "link": "https://en.wikipedia.org/wiki/Network_security"
+            }
+          ]
+        },
+        {
+          "name": "Graphics Processing Units (GPUs) for Graphics",
+          "coreConcepts": [
+            "Vertex shaders",
+            "Fragment (pixel) shaders",
+            "Texture mapping units"
+          ],
+          "keyProblems": [
+            "Real-time rendering of complex scenes",
+            "Efficient utilization of memory bandwidth for textures",
+            "Minimizing rendering latency"
+          ],
+          "applications": [
+            "Video games and simulations",
+            "Computer-aided design (CAD)",
+            "Virtual reality (VR) and augmented reality (AR)"
+          ],
+          "tools": [
+            "OpenGL",
+            "DirectX",
+            "Vulkan"
+          ],
+          "relatedFields": [
+            {
+              "name": "Computer Graphics",
+              "link": "https://en.wikipedia.org/wiki/Computer_graphics"
+            },
+            {
+              "name": "Game Development",
+              "link": "https://en.wikipedia.org/wiki/Video_game_development"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Embedded Systems Architecture",
+      "coreConcepts": [
+        "Real-time operating systems (RTOS)",
+        "Microcontrollers (MCUs) and Digital Signal Processors (DSPs)",
+        "Low-power design",
+        "Sensors and actuators interfacing",
+        "Reliability and safety considerations"
+      ],
+      "keyProblems": [
+        "Meeting strict real-time deadlines",
+        "Minimizing power consumption for battery-powered devices",
+        "Limited memory and processing resources",
+        "Ensuring long-term reliability in harsh environments",
+        "Security of embedded devices against attacks"
+      ],
+      "applications": [
+        "Internet of Things (IoT) devices",
+        "Automotive control units (ECUs)",
+        "Medical devices",
+        "Industrial control systems",
+        "Consumer electronics (washing machines, smart TVs)"
+      ],
+      "tools": [
+        "Embedded C/C++ compilers (e.g., GCC for ARM)",
+        "Integrated Development Environments (IDEs) (e.g., Keil, IAR Embedded Workbench)",
+        "Debuggers (JTAG/SWD)",
+        "Logic analyzers and oscilloscopes",
+        "RTOS (e.g., FreeRTOS, Zephyr)"
+      ],
+      "pioneers": [
+        {
+          "name": "Jack Kilby",
+          "link": "https://en.wikipedia.org/wiki/Jack_Kilby"
+        },
+        {
+          "name": "Gordon Moore",
+          "link": "https://en.wikipedia.org/wiki/Gordon_Moore"
+        },
+        {
+          "name": "Dennis Ritchie",
+          "link": "https://en.wikipedia.org/wiki/Dennis_Ritchie"
+        },
+        {
+          "name": "Ken Thompson",
+          "link": "https://en.wikipedia.org/wiki/Ken_Thompson"
+        }
+      ],
+      "timeline": [
+        "1960s: First integrated circuits lead to simpler embedded control.",
+        "1970s: Introduction of microprocessors and microcontrollers.",
+        "1980s: Growth of automotive electronics and industrial automation.",
+        "1990s: Proliferation of consumer electronics with embedded systems."
+      ],
+      "relatedFields": [
+        {
+          "name": "Real-Time Systems",
+          "link": "https://en.wikipedia.org/wiki/Real-time_computing"
+        },
+        {
+          "name": "Internet of Things (IoT)",
+          "link": "https://en.wikipedia.org/wiki/Internet_of_things"
+        },
+        {
+          "name": "Cyber-Physical Systems",
+          "link": "https://en.wikipedia.org/wiki/Cyber-physical_system"
+        },
+        {
+          "name": "Digital Signal Processing",
+          "link": "https://en.wikipedia.org/wiki/Digital_signal_processing"
+        }
+      ],
+      "advancements": [
+        "Ultra-low power microcontrollers for energy harvesting",
+        "Hardware security modules (HSMs) for embedded devices",
+        "Integrated AI accelerators on MCUs",
+        "Wireless connectivity standards (Bluetooth LE, Wi-Fi HaLow)",
+        "Edge computing paradigms for local data processing"
+      ],
+      "literature": [
+        {
+          "name": "Embedded Systems: Architecture, Programming and Design by Raj Kamal",
+          "link": "https://books.google.com/books/about/Embedded_Systems.html?id=uXU_AQAAIAAJ"
+        },
+        {
+          "name": "Designing Embedded Hardware by John Catsoulis",
+          "link": "https://books.google.com/books/about/Designing_Embedded_Hardware.html?id=sB3mDwAAQBAJ"
+        },
+        {
+          "name": "Real-Time Systems and Programming Languages by Alan Burns and Andy Wellings",
+          "link": "https://books.google.com/books/about/Real_Time_Systems_and_Programming_Langua.html?id=1K2aNqS-XNwC"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Microcontroller Architecture",
+          "coreConcepts": [
+            "CPU core (e.g., ARM Cortex-M)",
+            "Peripherals (GPIO, UART, SPI, I2C)",
+            "Memory (Flash, SRAM)"
+          ],
+          "keyProblems": [
+            "Minimizing die area and cost",
+            "Achieving precise timing for control applications",
+            "Debugging real-time issues"
+          ],
+          "applications": [
+            "Smart sensors",
+            "Wearable devices",
+            "Home appliances"
+          ],
+          "tools": [
+            "Keil \u00b5Vision",
+            "IAR Embedded Workbench",
+            "STM32CubeMX"
+          ],
+          "relatedFields": [
+            {
+              "name": "Digital Electronics",
+              "link": "https://en.wikipedia.org/wiki/Digital_electronics"
+            },
+            {
+              "name": "Control Systems",
+              "link": "https://en.wikipedia.org/wiki/Control_system"
+            }
+          ]
+        },
+        {
+          "name": "Real-Time Operating Systems (RTOS)",
+          "coreConcepts": [
+            "Task scheduling (preemptive, cooperative)",
+            "Inter-task communication (queues, semaphores)",
+            "Memory management (fixed-size blocks, pools)"
+          ],
+          "keyProblems": [
+            "Ensuring task deadlines are met",
+            "Minimizing jitter and latency",
+            "Avoiding priority inversion and deadlocks"
+          ],
+          "applications": [
+            "Industrial automation",
+            "Avionics and aerospace",
+            "Medical devices (e.g., pacemakers)"
+          ],
+          "tools": [
+            "FreeRTOS",
+            "Zephyr RTOS",
+            "VxWorks"
+          ],
+          "relatedFields": [
+            {
+              "name": "Operating Systems",
+              "link": "https://en.wikipedia.org/wiki/Operating_system"
+            },
+            {
+              "name": "Concurrency",
+              "link": "https://en.wikipedia.org/wiki/Concurrency_(computer_science)"
+            }
+          ]
+        },
+        {
+          "name": "Sensor and Actuator Interfacing",
+          "coreConcepts": [
+            "Analog-to-Digital Converters (ADCs)",
+            "Digital-to-Analog Converters (DACs)",
+            "Serial communication protocols (I2C, SPI, UART)"
+          ],
+          "keyProblems": [
+            "Noise reduction in sensor readings",
+            "Synchronization of multiple sensors",
+            "Power management for always-on sensors"
+          ],
+          "applications": [
+            "Environmental monitoring",
+            "Wearable health trackers",
+            "Industrial automation sensors"
+          ],
+          "tools": [
+            "Logic analyzers",
+            "Oscilloscopes",
+            "Digital multimeters"
+          ],
+          "relatedFields": [
+            {
+              "name": "Electronics Engineering",
+              "link": "https://en.wikipedia.org/wiki/Electronics_engineering"
+            },
+            {
+              "name": "Robotics",
+              "link": "https://en.wikipedia.org/wiki/Robotics"
+            }
+          ]
+        },
+        {
+          "name": "Power-Efficient Design",
+          "coreConcepts": [
+            "Dynamic Voltage and Frequency Scaling (DVFS)",
+            "Power gating",
+            "Clock gating"
+          ],
+          "keyProblems": [
+            "Minimizing static and dynamic power consumption",
+            "Balancing performance with power constraints",
+            "Managing power domains in complex SoCs"
+          ],
+          "applications": [
+            "Mobile phones and tablets",
+            "Wearable electronics",
+            "IoT devices"
+          ],
+          "tools": [
+            "Power analysis software (e.g., PrimeTime PX)",
+            "Power management ICs (PMICs)",
+            "Low-power compilers"
+          ],
+          "relatedFields": [
+            {
+              "name": "VLSI Design",
+              "link": "https://en.wikipedia.org/wiki/VLSI_design"
+            },
+            {
+              "name": "Battery Technology",
+              "link": "https://en.wikipedia.org/wiki/Battery"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Computer System Security Architecture",
+      "coreConcepts": [
+        "Trusted execution environments (TEEs)",
+        "Hardware security modules (HSMs)",
+        "Side-channel attacks and mitigations",
+        "Memory safety mechanisms",
+        "Root of trust and secure boot"
+      ],
+      "keyProblems": [
+        "Protecting against hardware vulnerabilities (e.g., Spectre, Meltdown)",
+        "Ensuring data confidentiality and integrity in hardware",
+        "Securely provisioning and updating firmware",
+        "Mitigating side-channel information leakage",
+        "Balancing security with performance overhead"
+      ],
+      "applications": [
+        "Secure processors (e.g., ARM TrustZone)",
+        "Cryptocurrency hardware wallets",
+        "Cloud server security",
+        "Mobile device security",
+        "IoT device security"
+      ],
+      "tools": [
+        "Hardware security verification tools",
+        "Side-channel analysis platforms",
+        "Formal methods for security analysis",
+        "Trusted Platform Modules (TPMs)",
+        "Firmware analysis tools"
+      ],
+      "pioneers": [
+        {
+          "name": "Whitfield Diffie",
+          "link": "https://en.wikipedia.org/wiki/Whitfield_Diffie"
+        },
+        {
+          "name": "Martin Hellman",
+          "link": "https://en.wikipedia.org/wiki/Martin_Hellman"
+        },
+        {
+          "name": "Ron Rivest",
+          "link": "https://en.wikipedia.org/wiki/Ron_Rivest"
+        },
+        {
+          "name": "Adi Shamir",
+          "link": "https://en.wikipedia.org/wiki/Adi_Shamir"
+        }
+      ],
+      "timeline": [
+        "1970s: Early research into public-key cryptography begins.",
+        "1980s: Development of Trusted Platform Modules (TPMs).",
+        "2000s: Hardware-assisted virtualization for isolation.",
+        "2010s: Emergence of Spectre and Meltdown vulnerabilities highlight hardware security flaws."
+      ],
+      "relatedFields": [
+        {
+          "name": "Cryptography",
+          "link": "https://en.wikipedia.org/wiki/Cryptography"
+        },
+        {
+          "name": "Computer Security",
+          "link": "https://en.wikipedia.org/wiki/Computer_security"
+        },
+        {
+          "name": "Operating Systems Security",
+          "link": "https://en.wikipedia.org/wiki/Operating_system_security"
+        },
+        {
+          "name": "Formal Methods",
+          "link": "https://en.wikipedia.org/wiki/Formal_methods"
+        }
+      ],
+      "advancements": [
+        "Intel SGX (Software Guard Extensions) and ARM TrustZone",
+        "Homomorphic encryption hardware accelerators",
+        "Post-quantum cryptography hardware implementations",
+        "Memory tagging for memory safety (e.g., ARM MTE)",
+        "Hardware-enforced isolation for virtual machines"
+      ],
+      "literature": [
+        {
+          "name": "Computer Security: Principles and Practice by William Stallings and Lawrie Brown",
+          "link": "https://books.google.com/books/about/Computer_Security.html?id=lB-aDQAAQBAJ"
+        },
+        {
+          "name": "Hardware Security: A Hands-on Approach by Debdeep Mukhopadhyay and Rajat Subhra Chakraborty",
+          "link": "https://books.google.com/books/about/Hardware_Security.html?id=W949DwAAQBAJ"
+        },
+        {
+          "name": "Meltdown and Spectre: Looking Back at a Decade of Microarchitectural Attacks",
+          "link": "https://www.cs.princeton.edu/~felixs/papers/isca19.pdf"
+        }
+      ],
+      "subsubfields": [
+        {
+          "name": "Trusted Execution Environments (TEEs)",
+          "coreConcepts": [
+            "Hardware-enforced isolation",
+            "Secure boot process",
+            "Attestation mechanisms"
+          ],
+          "keyProblems": [
+            "Minimizing TEE attack surface",
+            "Verifying trusted code",
+            "Performance overhead of TEEs"
+          ],
+          "applications": [
+            "Digital rights management (DRM)",
+            "Payment systems",
+            "Secure storage of cryptographic keys"
+          ],
+          "tools": [
+            "Intel SGX SDK",
+            "ARM TrustZone SDK",
+            "Open-source TEE implementations (e.g., OP-TEE)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Operating Systems Security",
+              "link": "https://en.wikipedia.org/wiki/Operating_system_security"
+            },
+            {
+              "name": "Cryptography",
+              "link": "https://en.wikipedia.org/wiki/Cryptography"
+            }
+          ]
+        },
+        {
+          "name": "Side-Channel Attacks",
+          "coreConcepts": [
+            "Power analysis attacks (SPA, DPA)",
+            "Timing attacks",
+            "Electromagnetic analysis attacks"
+          ],
+          "keyProblems": [
+            "Designing hardware resistant to side-channel leakage",
+            "Developing effective countermeasures",
+            "Detecting and preventing fault injection"
+          ],
+          "applications": [
+            "Smart cards and secure elements",
+            "Cryptographic hardware",
+            "Embedded systems"
+          ],
+          "tools": [
+            "Power analysis workstations",
+            "Electromagnetic probes",
+            "Timing attack frameworks"
+          ],
+          "relatedFields": [
+            {
+              "name": "Cryptography",
+              "link": "https://en.wikipedia.org/wiki/Cryptography"
+            },
+            {
+              "name": "Hardware Security",
+              "link": "https://en.wikipedia.org/wiki/Hardware_security"
+            }
+          ]
+        },
+        {
+          "name": "Hardware Root of Trust",
+          "coreConcepts": [
+            "Immutable hardware component",
+            "Secure boot sequence",
+            "Measurement and verification of firmware"
+          ],
+          "keyProblems": [
+            "Ensuring integrity of the boot process",
+            "Protecting the root of trust from physical attacks",
+            "Managing updates to trusted components"
+          ],
+          "applications": [
+            "Server platforms (e.g., Intel Boot Guard, AMD Secure Processor)",
+            "Mobile devices",
+            "IoT devices"
+          ],
+          "tools": [
+            "Trusted Platform Modules (TPMs)",
+            "Hardware Security Modules (HSMs)",
+            "PUF (Physical Unclonable Function) based roots of trust"
+          ],
+          "relatedFields": [
+            {
+              "name": "Firmware Security",
+              "link": "https://en.wikipedia.org/wiki/Firmware#Firmware_security"
+            },
+            {
+              "name": "Supply Chain Security",
+              "link": "https://en.wikipedia.org/wiki/Supply_chain_security"
+            }
+          ]
+        },
+        {
+          "name": "Memory Safety in Hardware",
+          "coreConcepts": [
+            "Spatial memory safety (bounds checking)",
+            "Temporal memory safety (use-after-free, double-free)",
+            "Memory tagging"
+          ],
+          "keyProblems": [
+            "Performance overhead of hardware checks",
+            "Compatibility with existing software",
+            "Complexity of hardware implementation"
+          ],
+          "applications": [
+            "Secure operating systems",
+            "Web browsers",
+            "Critical infrastructure software"
+          ],
+          "tools": [
+            "ARM Memory Tagging Extension (MTE)",
+            "Cheri (Capability Hardware Enhanced RISC Instructions)",
+            "Software sanitizers (e.g., ASan, HWASan)"
+          ],
+          "relatedFields": [
+            {
+              "name": "Programming Languages",
+              "link": "https://en.wikipedia.org/wiki/Programming_language"
+            },
+            {
+              "name": "Operating Systems",
+              "link": "https://en.wikipedia.org/wiki/Operating_system"
+            },
+            {
+              "name": "Software Security",
+              "link": "https://en.wikipedia.org/wiki/Software_security"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

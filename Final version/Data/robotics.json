@@ -1,5 +1,7 @@
 {
   "name": "Robotics",
+  "professors": [
+    {"name": "Theodor Grumeza", "link": "https://info.uvt.ro/staff/theodor-grumeza/"}],
   "coreConcepts": [
     "Robot Kinematics & Dynamics",
     "Perception (Computer Vision, Sensor Fusion)",

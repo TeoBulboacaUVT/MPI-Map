@@ -1,5 +1,8 @@
 {
   "name": "Computer Architecture",
+  "professors": [
+    {"name": "Cristian Cira", "link": "https://info.uvt.ro/staff/cristian-cira/"}
+  ],
   "coreConcepts": [
     "Instruction Set Architecture (ISA)",
     "CPU organization and design",

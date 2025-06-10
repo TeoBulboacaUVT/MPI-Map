@@ -1,5 +1,8 @@
 {
   "name": "Programming Languages",
+  "professors": [
+    {"name": "Adrian Spataru", "link": "https://info.uvt.ro/staff/adrian-spataru/"}
+  ],
   "coreConcepts": [
     "Syntax and Semantics",
     "Type Systems",

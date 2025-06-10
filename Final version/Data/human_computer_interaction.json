@@ -1,5 +1,8 @@
 {
   "name": "Human-Computer Interaction",
+  "professors": [
+    {"name": "Daniel Pop", "link": "https://info.uvt.ro/staff/daniel-pop/"}
+  ],
   "coreConcepts": [
     "Usability -- the capacity of a system to provide a condition for its users to perform the tasks safely, effectively, and efficiently while enjoying the experience",
     "User-centered Design -- a framework of processes in which usability goals, user characteristics, environment, tasks and workflow of a product, service or brand are given extensive attention at each stage of the design process. This attention includes testing which is conducted during each stage of design and development from the envisioned requirements, through pre-production models to post production.",

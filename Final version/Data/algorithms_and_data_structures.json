@@ -1,5 +1,9 @@
 {
   "name": "Algorithms and Data Structures",
+  "professors": [
+    {"name": "Darian Onchis", "link": "https://info.uvt.ro/staff/darian-onchis/"},
+    {"name": "Adrian Spataru", "link": "https://info.uvt.ro/staff/adrian-spataru/"}
+  ],
   "coreConcepts": [
     "Algorithmic Complexity (Big O Notation)",
     "Recursion and Iteration",

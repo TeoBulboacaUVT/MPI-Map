@@ -1,5 +1,8 @@
 {
   "name": "OS and Networks",
+  "professors": [
+    {"name": "Cirpian Pungila", "link": "https://info.uvt.ro/staff/ciprian-pungila/"}
+  ],
   "coreConcepts": [
     "Virtualization (VMs, containers)",
     "Concurrency (processes, threads)",

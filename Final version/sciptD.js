@@ -69,10 +69,11 @@ async function loadClusterData() {
     return clusterData;
 }
 
-// Render detailed information in the side panel
+// Replace the existing renderInfoPanel function in scriptD.js with this:
 function renderInfoPanel(data, isDefault = false) {
     const sidePanel = document.getElementById('side-panel');
     if (!sidePanel) return;
+    
     if (isDefault) {
         sidePanel.innerHTML = `
             <div class="info-default">
@@ -83,39 +84,76 @@ function renderInfoPanel(data, isDefault = false) {
         `;
         return;
     }
-    let html = '';
-    if (data.name) html += `<h2>${data.name}</h2>`;
-    if (data.description) html += `<p class="description">${data.description}</p>`;
-    // Only display first-level (non-object, non-array-of-object) properties
-    let listItems = '';
-    Object.keys(data).forEach(key => {
-        if (["name", "description", "parentDomain", "parentSubfield"].includes(key)) return;
-        const value = data[key];
-        // If value is a string or number, display as a list item
-        if (typeof value === 'string' || typeof value === 'number') {
-            // If it's a URL, make it a link (improved regex)
-            if (typeof value === 'string' && value.match(/^(https?:\/\/|www\.)/i)) {
-                const url = value.startsWith('http') ? value : 'http://' + value;
-                listItems += `<li><strong>${key}:</strong> <a href="${url}" target="_blank" rel="noopener noreferrer">${value}</a></li>`;
+
+    // Helper function to render arrays with hyperlinks
+    function renderLinks(arr) {
+        if (!arr) return '';
+        return `<ul>` + 
+            arr.map(obj => 
+                `<li>${obj.link ? 
+                    `<a href="${obj.link}" target="_blank" rel="noopener noreferrer">${obj.name || obj.link}</a>` : 
+                    (obj.name || obj)}</li>`
+            ).join('') + 
+        `</ul>`;
+    }
+
+    // Helper function to render regular arrays
+    function renderList(arr) {
+        if (!arr || arr.length === 0) return '';
+        // Handle comma-separated strings if needed
+        let items = [];
+        arr.forEach(item => {
+            if (typeof item === 'string' && item.includes(',')) {
+                items.push(...item.split(/,(?![^()]*\))/).map(s => s.trim()).filter(Boolean));
             } else {
-                listItems += `<li><strong>${key}:</strong> ${value}</li>`;
+                items.push(item);
             }
-        }
-        // If value is an array of strings or numbers, show as a sub-list
-        else if (Array.isArray(value) && value.length && (typeof value[0] === 'string' || typeof value[0] === 'number')) {
-            listItems += `<li><strong>${key}:</strong><ul>`;
-            value.forEach(item => {
-                if (typeof item === 'string' && item.match(/^(https?:\/\/|www\.)/i)) {
-                    const url = item.startsWith('http') ? item : 'http://' + item;
-                    listItems += `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${item}</a></li>`;
-                } else {
-                    listItems += `<li>${item}</li>`;
-                }
-            });
-            listItems += `</ul></li>`;
-        }
-    });
-    if (listItems) html += `<ul>${listItems}</ul>`;
+        });
+        return `<ul>` + items.map(item => `<li>${item}</li>`).join('') + `</ul>`;
+    }
+
+    // Helper to check if a field has content
+    function hasContent(field) {
+        return Array.isArray(field) && field.length > 0;
+    }
+
+    let html = `<h2>${data.name || 'Untitled'}</h2>`;
+    
+    if (data.description) {
+        html += `<p class="description">${data.description}</p>`;
+    }
+
+    // Core information sections (adapt these to match your JSON structure)
+    if (hasContent(data.coreConcepts)) {
+        html += `<div class="info-section"><h3>Core Concepts</h3>${renderList(data.coreConcepts)}</div>`;
+    }
+    
+    if (hasContent(data.tools)) {
+        html += `<div class="info-section"><h3>Key Tools/Languages</h3>${renderList(data.tools)}</div>`;
+    }
+    
+    if (hasContent(data.applications)) {
+        html += `<div class="info-section"><h3>Applications</h3>${renderList(data.applications)}</div>`;
+    }
+
+    // Professors section (UVT)
+    if (hasContent(data.professors)) {
+        html += `<div class="info-section"><h3>Professors (UVT)</h3>${renderLinks(data.professors)}</div>`;
+    }
+    
+    // Sections that might contain links
+    if (hasContent(data.pioneers)) {
+        html += `<div class="info-section"><h3>Pioneers</h3>${renderLinks(data.pioneers)}</div>`;
+    }
+    
+    if (hasContent(data.literature)) {
+        html += `<div class="info-section"><h3>Literature</h3>${renderLinks(data.literature)}</div>`;
+    }
+    
+    if (hasContent(data.relatedFields)) {
+        html += `<div class="info-section"><h3>Related Fields</h3>${renderLinks(data.relatedFields)}</div>`;
+    }
+
     sidePanel.innerHTML = html;
 }
 
@@ -394,32 +432,30 @@ async function renderCSMap() {
                 // Add click handler for subfield node
                 subfieldNode.on('click', function(e) {
                     e.originalEvent.stopPropagation();
-                    resetAllLabels();
                     renderInfoPanel(this.dataRef, false);
-                    // Always show this subfield's label
-                    this.bindTooltip(this.dataRef.name || this.dataRef, {
-                        permanent: true,
-                        direction: 'top',
-                        className: 'child-label'
-                    }).openTooltip();
-                    // Always show parent domain label
-                    const parentDomainNode = allNodes.domains.find(n => n.dataRef.name === domain.name);
-                    if (parentDomainNode) {
-                        parentDomainNode.bindTooltip(parentDomainNode.dataRef.name, {
-                            permanent: true,
-                            direction: 'top',
-                            className: 'center-label'
-                        }).openTooltip();
+                    // Toggle visibility of all subsubfields under this subfield
+                    if (subfield.subsubfields && subfield.subsubfields.length) {
+                        const subsubfieldNodes = allNodes.subsubfields.filter(n => 
+                            n.dataRef.parentSubfield === subfieldName
+                        );
+                        subsubfieldNodes.forEach(node => {
+                            const tooltip = node.getTooltip();
+                            if (tooltip && tooltip.options.permanent) {
+                                node.unbindTooltip();
+                                node.bindTooltip(tooltip._content, { 
+                                    permanent: false, 
+                                    direction: 'top', 
+                                    className: 'child-label' 
+                                });
+                            } else {
+                                node.bindTooltip(node.dataRef.name || node.dataRef, {
+                                    permanent: true,
+                                    direction: 'top',
+                                    className: 'child-label'
+                                }).openTooltip();
+                            }
+                        });
                     }
-                    // Show all subsubfield labels for this subfield (immediately, not in setTimeout)
-                    const subsubfieldNodes = allNodes.subsubfields.filter(n => n.dataRef.parentSubfield === subfieldName);
-                    subsubfieldNodes.forEach(node => {
-                        node.bindTooltip(node.dataRef.name || node.dataRef, {
-                            permanent: true,
-                            direction: 'top',
-                            className: 'child-label'
-                        }).openTooltip();
-                    });
                 });
                 
                 // Create subsubfields if they exist

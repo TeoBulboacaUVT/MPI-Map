@@ -1,5 +1,10 @@
 {
   "name": "Databases and Information Retrieval",
+  
+  "professors": [
+    {"name": "Daniel Pop", "link": "https://info.uvt.ro/staff/daniel-pop/"}
+  ],
+  
   "coreConcepts": [
     "Data modeling and schema design",
     "Query languages and optimization",

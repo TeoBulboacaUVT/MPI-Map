@@ -1,5 +1,8 @@
 {
   "name": "Software Engineering",
+  "professors": [
+    {"name": "Dana Petcu", "link": "https://info.uvt.ro/staff/dana-petcu/"}
+  ],
   "coreConcepts": [
     "Software Development Life Cycle models (Agile, Waterfall, Spiral)",
     "Requirements Engineering and specification",

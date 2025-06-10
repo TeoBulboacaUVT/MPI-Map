@@ -1,5 +1,8 @@
 {
   "name": "Bioinformatics",
+  "professors": [
+    {"name": "Daniela Zaharie", "link": "https://info.uvt.ro/staff/daniela-zaharie/"}
+  ],
   "coreConcepts": [
     "Sequence alignment",
     "Genomic data analysis",

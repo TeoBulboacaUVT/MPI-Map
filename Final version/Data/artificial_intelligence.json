@@ -1,5 +1,8 @@
 {
   "name": "Artificial Intelligence",
+  "professors": [
+    {"name": "Viorel Negru", "link": "https://info.uvt.ro/staff/viorel-negru/"}
+  ],
   "coreConcepts": [
     "Cognitive Architectures",
     "Machine Learning Paradigms",
